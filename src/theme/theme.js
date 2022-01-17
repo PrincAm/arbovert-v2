@@ -2,7 +2,6 @@ import { deepFreeze } from 'grommet/utils';
 
 export const customTheme = deepFreeze({
   global: {
-    background: 'neutral-1',
     colors: {
       brand: '#0072c6',
       control: {
