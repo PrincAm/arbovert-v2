@@ -9,18 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.26.1",
-    "grommet": "^2.17.2",
-    "grommet-icons": "^4.5.0",
-    "next": "latest",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "@nextui-org/react": "^1.0.2-beta.4",
+    "emailjs-com": "^3.2.0",
+    "next": "11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.0"
+    "react-hook-form": "^7.27.1"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.12.0",
-    "eslint": "<8.0.0",
-    "eslint-config-next": "12.0.2",
-    "prettier": "2.4.1"
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.0",
+    "eslint-config-prettier": "^8.4.0",
+    "prettier": "2.5.1"
   }
 }
