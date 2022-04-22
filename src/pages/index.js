@@ -4,6 +4,7 @@ import Certificate from '../components/Certificate';
 
 import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
+import Trusted from '../components/Trusted';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Welcome />
       <Intro />
       <Certificate />
+      <Trusted />
       <ContactUs />
     </Layout>
   );
