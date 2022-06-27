@@ -12,10 +12,11 @@ const Certificate = () => (
       display="flex"
       direction="column"
       alignItems="center"
+      align="center"
       css={{ mt: '$15', mb: '$15' }}
     >
       <Text h1 css={{ lh: 1.2, mt: 0 }}>
-        Mame evropskou certifikaci
+        Máme evropskou certifikaci
       </Text>
       <Link
         href="https://www.eac-arboriculture.com/eac-intro.aspx"

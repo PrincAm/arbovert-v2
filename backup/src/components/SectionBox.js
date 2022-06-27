@@ -19,7 +19,7 @@ const SectionBox = ({ title, description, imageSrc }) => (
       <Text size="large">{description}</Text>
     </Box>
     <ImageBox fill>
-      <Image src={imageSrc} />
+      <Image src={imageSrc} alt={description} />
     </ImageBox>
   </Box>
 );

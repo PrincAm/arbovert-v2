@@ -1,29 +1,34 @@
-import { Card, Container, Grid, Text, Link, styled } from '@nextui-org/react';
-
-const SubTitle = styled('p', {
-  fs: '$sm',
-  fontWeight: '$medium',
-  color: '$accents6',
-  display: 'block',
-});
+import { Card, Container, Grid, Text, Link } from '@nextui-org/react';
 
 const Intro = () => (
-  <Container sm>
-    <Grid.Container gap={5} justify="center">
+  <Container sm id="intro" css={{ pt: 0 }}>
+    <Grid.Container gap={5} justify="center" css={{ pt: 0 }}>
       <Grid sm={7} direction="column">
         <Text h1 css={{ lh: 1.2 }}>
-          Provadime veskere prace v arboristice
+          Zabýváme se kompletní činností v arboristice
         </Text>
-        <SubTitle>Lorem ipsum dolor sit amet</SubTitle>
-        <Link href="/sluzby">Vice o nasich sluzbach</Link>
+        <Text
+          h2
+          css={{
+            fs: '$sm',
+            fontWeight: '$medium',
+            color: '$accents6',
+            mt: '$md',
+            mb: '$md',
+          }}
+        >
+          Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků,
+          údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství
+        </Text>
+        <Link href="/sluzby.html">Více o našich službách</Link>
       </Grid>
       <Grid sm={5}>
-        <Link href="/sluzby">
+        <Link href="/sluzby.html">
           <Card cover clickable hoverable>
             <Card.Image
-              src="images/image.jpg"
-              height="auto"
-              width="100%"
+              src="images/arbo.jpg"
+              width={320}
+              height={320}
               alt="Card image background"
             />
           </Card>
@@ -31,19 +36,29 @@ const Intro = () => (
       </Grid>
       <Grid sm={7} direction="column">
         <Text h1 css={{ lh: 1.2 }}>
-          Arboristikou se zabyvame desitky let
+          Arboristika je náš život
         </Text>
-        <SubTitle>Lorem ipsum dolor sit amet</SubTitle>
-
-        <Link href="/o-nas">Vice o nas</Link>
+        <Text
+          h2
+          css={{
+            fs: '$sm',
+            fontWeight: '$medium',
+            color: '$accents6',
+            mt: '$md',
+            mb: '$md',
+          }}
+        >
+          Jsme tu déle než 10 let
+        </Text>
+        <Link href="/o-nas.html">Více o nás</Link>
       </Grid>
       <Grid sm={5}>
-        <Link href="/o-nas">
+        <Link href="/o-nas.html">
           <Card cover clickable hoverable>
             <Card.Image
-              src="images/image.jpg"
-              height="auto"
-              width="100%"
+              src="images/we.jpg"
+              width={320}
+              height={320}
               alt="Card image background"
             />
           </Card>

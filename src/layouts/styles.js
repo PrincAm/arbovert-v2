@@ -21,3 +21,13 @@ export const StyledNavBar = styled('nav', {
     },
   },
 });
+
+export const StyledMobileNavBar = styled('nav', {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  top: 0,
+  alignItems: 'center',
+  position: 'sticky',
+  zIndex: '$max',
+});

@@ -1,5 +1,6 @@
-import { Container, styled } from '@nextui-org/react';
+import { styled } from '@nextui-org/react';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const StyledContainer = styled('div', {
   display: 'flex',
@@ -11,6 +12,7 @@ const Layouts = ({ children }) => (
   <>
     <NavBar />
     <StyledContainer as="main">{children}</StyledContainer>
+    <Footer />
   </>
 );
 

@@ -63,7 +63,7 @@ export default function Home() {
             </Text>
           </Box>
           <Box>
-            <Image src={route} width={400} height={400} />
+            <Image src={route} width={400} height={400} alt="" />
           </Box>
         </Box>
         <Box
@@ -131,4 +131,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-};
+}
