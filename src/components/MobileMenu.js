@@ -19,6 +19,11 @@ const Container = styled('nav', {
   padding: '$10 $5 $5 $5',
 });
 
+const StyledIcon = styled(FontAwesomeIcon, {
+  width: '$12',
+  height: '$12',
+});
+
 const MobileMenu = ({ navItems, onExpand }) => {
   useLockBodyScroll();
 
@@ -73,19 +78,17 @@ const MobileMenu = ({ navItems, onExpand }) => {
         css={{
           display: 'flex',
           alignItems: 'center',
-          ml: '$5',
-          mt: '$5',
+          color: '$green800',
         }}
       >
-        <Text h2>
-          <FontAwesomeIcon
-            icon={faPhone}
-            css={{
-              color: '$green800',
-            }}
-          />{' '}
-          +420 739 969 933
-        </Text>
+        <StyledIcon
+          icon={faPhone}
+          css={{
+            ml: '$10',
+            mr: '$5',
+          }}
+        />
+        <Text h2>+420 739 969 933</Text>
       </Link>
     </Container>
   );

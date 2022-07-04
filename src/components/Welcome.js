@@ -94,7 +94,7 @@ const Welcome = () => {
                 auto
                 onClick={() => handleScrollToElement('contact')}
               >
-                Poptávka
+                Nezávazná poptávka
               </Button>
             </Grid>
           </Grid.Container>

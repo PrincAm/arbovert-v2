@@ -62,8 +62,11 @@ const ContactUs = () => {
           align="center"
           css={{ p: isMobile && 0 }}
         >
-          <Text h1 css={{ mb: '$10' }}>
+          <Text h1 css={{ mb: '$5' }}>
             Ozvěte se nám
+          </Text>
+          <Text h2 css={{ mb: '$10' }}>
+            Připravíme zdarma nezávaznou nabídku
           </Text>
           <Grid.Container
             css={{ mb: '$8', p: 0 }}
@@ -120,7 +123,6 @@ const ContactUs = () => {
                 <form
                   name="contact"
                   method="post"
-                  action="/thanks/"
                   onSubmit={handleSubmit(onSubmit)}
                 >
                   <Grid.Container gap={2}>
