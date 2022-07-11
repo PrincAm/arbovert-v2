@@ -5,7 +5,7 @@ const StyledContainer = styled('div', {
   backgroundColor: '$accents1',
 });
 
-const Certificate = () => (
+const Organisation = () => (
   <StyledContainer>
     <Container
       sm
@@ -16,18 +16,15 @@ const Certificate = () => (
       css={{ mt: '$15', mb: '$15' }}
     >
       <Text h1 css={{ lh: 1.2, mt: 0 }}>
-        Máme evropskou certifikaci
+        Jsme členy Společnosti pro zahradní a krajinářskou tvorbu{' '}
       </Text>
-      <Link
-        href="https://www.eac-arboriculture.com/eac-intro.aspx"
-        target="_blank"
-      >
+      <Link href="https://szkt.cz/" target="_blank">
         <Card cover clickable hoverable>
           <Card.Image
-            src="images/etw.png"
+            src="images/szkt.svg"
             height="auto"
             width="100%"
-            alt="ETW logo"
+            alt="SZKT logo"
           />
         </Card>
       </Link>
@@ -35,4 +32,4 @@ const Certificate = () => (
   </StyledContainer>
 );
 
-export default Certificate;
+export default Organisation;

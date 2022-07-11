@@ -8,6 +8,7 @@ import Certificate from '../components/Certificate';
 import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
 import Trusted from '../components/Trusted';
+import Organisation from '../components/Organisation';
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
         <Intro />
         <Certificate />
         <Trusted />
+        <Organisation />
         <ContactUs />
       </Layout>
     </>
