@@ -15,6 +15,12 @@ class MyDocument extends Document {
       <Html>
         <Head>{CssBaseline.flush()}</Head>
         <body>
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V7DRKB"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+            }}
+          ></noscript>
           <Main />
           <NextScript />
         </body>

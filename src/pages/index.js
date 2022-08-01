@@ -35,7 +35,7 @@ export default function Home() {
         }}
       />
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        src="https://www.googletagmanager.com/gtag/js?id=G-8GZ2HM5LBZ"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
