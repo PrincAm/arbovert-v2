@@ -78,7 +78,8 @@ const MobileMenu = ({ navItems, onExpand }) => {
         css={{
           display: 'flex',
           alignItems: 'center',
-          color: '$green800',
+          color: '$black',
+          mt: '$5',
         }}
       >
         <StyledIcon
@@ -88,7 +89,14 @@ const MobileMenu = ({ navItems, onExpand }) => {
             mr: '$5',
           }}
         />
-        <Text h2>+420 739 969 933</Text>
+        <Text
+          h2
+          css={{
+            mt: 0,
+          }}
+        >
+          +420 739 969 933
+        </Text>
       </Link>
     </Container>
   );

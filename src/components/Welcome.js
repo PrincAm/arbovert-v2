@@ -1,6 +1,9 @@
 import { Button, Card, Container, Grid, Spacer, Text } from '@nextui-org/react';
+import { useIsMobile } from '../hooks/use-media-query';
 
 const Welcome = () => {
+  const isMobile = useIsMobile();
+
   const handleScrollToElement = (elementName) => {
     const element = document.getElementById(elementName);
     const offset = 75;
@@ -14,18 +17,23 @@ const Welcome = () => {
       behavior: 'smooth',
     });
   };
+
+  const textSize = isMobile ? 50 : 60;
+
   return (
     <Container
       sm
       display="flex"
       alignItems="center"
-      css={{ minHeight: '100vh' }}
+      css={{
+        minHeight: '100vh',
+      }}
     >
       <Grid.Container gap={5} justify="center">
         <Grid sm={6} direction="column" justify="center">
           <Text
             h1
-            size={60}
+            size={textSize}
             css={{
               display: 'inline',
               textGradient: '45deg, $blue500 -20%, $green500 50%',
@@ -38,7 +46,7 @@ const Welcome = () => {
           </Text>
           <Text
             h1
-            size={60}
+            size={textSize}
             css={{
               display: 'inline',
               color: '$text',
@@ -51,7 +59,7 @@ const Welcome = () => {
           </Text>
           <Text
             h1
-            size={60}
+            size={40}
             css={{
               display: 'inline',
               color: '$text',
@@ -104,8 +112,7 @@ const Welcome = () => {
             <Card.Image
               src="images/welcome.jpg"
               alt="práce v koruně stromu"
-              width={396}
-              height={396}
+              width={isMobile ? 260 : 396}
             />
           </Card>
         </Grid>
