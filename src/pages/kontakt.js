@@ -1,10 +1,10 @@
 import { Card, Container, Grid, Text, styled } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { NextSeo } from 'next-seo';
 
 import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const StyledContainer = styled('div', {
   display: 'flex',

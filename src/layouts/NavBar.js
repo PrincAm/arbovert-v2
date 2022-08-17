@@ -21,6 +21,11 @@ const navItems = [
   { label: 'Služby', href: 'sluzby.html' },
   { label: 'O nás', href: 'o-nas.html' },
   { label: 'Kontakt', href: 'kontakt.html' },
+  {
+    label: 'Výškové práce',
+    href: 'https://vyskoveprace-arbovert.cz/',
+    target: '_blank',
+  },
 ];
 
 const StyledIcon = styled(FontAwesomeIcon, {
@@ -87,7 +92,7 @@ const NavBar = () => {
             </Link>
             <Col>
               <Row justify="flex-end">
-                {navItems.map(({ href, label }) => (
+                {navItems.map(({ href, label, target }) => (
                   <Link
                     key={label}
                     href={href}
@@ -95,6 +100,7 @@ const NavBar = () => {
                       ml: '$6',
                       color: '$green800',
                     }}
+                    target={target && target}
                   >
                     {label}
                   </Link>

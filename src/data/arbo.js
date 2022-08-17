@@ -1,5 +1,3 @@
-const image = 'images/route.jpg';
-
 const data = [
   {
     title: 'Rizikové kácení stromů',

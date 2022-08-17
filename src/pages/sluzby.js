@@ -1,5 +1,7 @@
-import { Container, Image, Grid, Text, styled } from '@nextui-org/react';
+import { Container, Image, Grid, Text, Link, styled } from '@nextui-org/react';
 import { NextSeo } from 'next-seo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../layouts/index';
 import data from '../data/arbo';
@@ -7,6 +9,12 @@ import data from '../data/arbo';
 const StyledContainer = styled('div', {
   display: 'flex',
   backgroundColor: '$accents1',
+});
+
+const StyledIcon = styled(FontAwesomeIcon, {
+  width: '$10',
+  height: '$10',
+  ml: '$3',
 });
 
 const Service = () => (
@@ -39,6 +47,38 @@ const Service = () => (
               </Grid>
             </Grid.Container>
           ))}
+          <Grid.Container
+            key="upwork"
+            gap={2}
+            css={{ mb: '$10', bc: '#fff', borderRadius: '$lg' }}
+          >
+            <Grid sm={7} direction="column">
+              <Text h3>Výškové práce</Text>
+              <Text>
+                Máme bohaté zkušenosti i s prací ve výškách. Pokud potřebujete
+                čištění a mytí nebo nátěry a opravy fasád, až po opravy střech a
+                drobných klempířských prvků, jsou práce z lana ta nejlepší
+                varianta.
+              </Text>
+              <Link
+                href="https://vyskoveprace-arbovert.cz/"
+                target="_blank"
+                css={{
+                  mt: '$5',
+                  display: 'flex',
+                  alignItems: 'center',
+                  fontWeight: 500,
+                }}
+              >
+                Více <StyledIcon icon={faArrowUpRightFromSquare} />
+              </Link>
+            </Grid>
+            <Grid sm={5}>
+              <Link href="https://vyskoveprace-arbovert.cz/" target="_blank">
+                <Image src="images/service/vysky.webp" alt="vyskove prace" />
+              </Link>
+            </Grid>
+          </Grid.Container>
         </Container>
       </StyledContainer>
     </Layout>

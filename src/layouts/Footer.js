@@ -35,16 +35,6 @@ const Footer = () => (
     >
       <StyledIcon icon={faPhone} /> +420 739 969 933
     </Link>
-    <Link
-      href="https://vyskoveprace-arbovert.cz/"
-      css={{
-        mt: '$8',
-        color: '$green800',
-      }}
-      target="_blank"
-    >
-      Arbovert Výškové práce
-    </Link>
   </Container>
 );
 
