@@ -1,5 +1,4 @@
 import { Image, Link, styled, Text } from '@nextui-org/react';
-import NextLink from 'next/link';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -29,7 +28,7 @@ const MobileMenu = ({ navItems, onExpand }) => {
 
   return (
     <Container>
-      <NextLink href="/">
+      <Link href="/">
         <Image
           src="images/arbovert-logo.svg"
           width={220}
@@ -37,13 +36,32 @@ const MobileMenu = ({ navItems, onExpand }) => {
           onClick={() => onExpand(false)}
           alt="arbovert green logo"
         />
-      </NextLink>
-      <NextLink href="/" key="home">
+      </Link>
+      <Link
+        href="/"
+        key="home"
+        css={{
+          ml: '$5',
+        }}
+        onClick={() => onExpand(false)}
+      >
+        <Text
+          h1
+          css={{
+            color: '$green800',
+          }}
+        >
+          Domů
+        </Text>
+      </Link>
+      {navItems.map(({ href, label, target }) => (
         <Link
+          href={href}
+          key={label}
+          target={target && target}
           css={{
             ml: '$5',
           }}
-          onClick={() => onExpand(false)}
         >
           <Text
             h1
@@ -51,27 +69,9 @@ const MobileMenu = ({ navItems, onExpand }) => {
               color: '$green800',
             }}
           >
-            Domů
+            {label}
           </Text>
         </Link>
-      </NextLink>
-      {navItems.map(({ href, label }) => (
-        <NextLink href={href} key={label}>
-          <Link
-            css={{
-              ml: '$5',
-            }}
-          >
-            <Text
-              h1
-              css={{
-                color: '$green800',
-              }}
-            >
-              {label}
-            </Text>
-          </Link>
-        </NextLink>
       ))}
       <Link
         href="tel:+420739969933"
