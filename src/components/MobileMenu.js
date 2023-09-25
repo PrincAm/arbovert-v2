@@ -1,4 +1,5 @@
 import { Image, Link, styled, Text } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -103,3 +104,14 @@ const MobileMenu = ({ navItems, onExpand }) => {
 };
 
 export default MobileMenu;
+
+MobileMenu.propType = {
+  navItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string,
+      label: PropTypes.string,
+      target: PropTypes.string,
+    })
+  ).isRequired,
+  onExpand: PropTypes.func.isRequired,
+};

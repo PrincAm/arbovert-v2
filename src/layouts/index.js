@@ -1,4 +1,6 @@
 import { styled } from '@nextui-org/react';
+import PropTypes from 'prop-types';
+
 import NavBar from './NavBar';
 import Footer from './Footer';
 
@@ -17,3 +19,7 @@ const Layouts = ({ children }) => (
 );
 
 export default Layouts;
+
+Layouts.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -1,19 +1,4 @@
-import {
-  Card,
-  Container,
-  Grid,
-  Image,
-  Link,
-  styled,
-  Text,
-} from '@nextui-org/react';
-
-import mnisek from '../../public/images/reference/mnisek.png';
-import ttp from '../../public/images/reference/ttp-logo.png';
-import povodi from '../../public/images/reference/povodni.png';
-import vsem from '../../public/images/reference/vsem.png';
-import lisno from '../../public/images/reference/lisno.png';
-import vimperk from '../../public/images/reference/vimperk.png';
+import { Container, Grid, Image, Text } from '@nextui-org/react';
 
 const Trusted = () => (
   <Container

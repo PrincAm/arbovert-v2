@@ -1,18 +1,8 @@
-import {
-  Container,
-  Link,
-  Row,
-  Col,
-  Grid,
-  styled,
-  Text,
-  useTheme,
-} from '@nextui-org/react';
+import { Link, Grid, styled, Text } from '@nextui-org/react';
 import NextLink from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-// import styled from 'styled-components';
 import Head from 'next/head';
 
 const navItems = [
@@ -29,23 +19,13 @@ const HeaderContainer = styled('div', {
   zIndex: 1,
 });
 
-const StyledLink = styled(Link, {
-  height: '50px',
-});
-
 const Header = () => {
-  const { theme } = useTheme();
-
-  console.log('THEME 1');
-  console.log(theme);
-
   return (
     <HeaderContainer>
       <Head>
         <title>Arbovert</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*<div style={{ maxWidth: 1170, margin: '0 auto' }}>*/}
       <Text
         css={{
           color: '$blue800',
@@ -75,7 +55,6 @@ const Header = () => {
           <Link href="tel:+420739969933">+420 739 969 933</Link>
         </Grid>
       </Grid.Container>
-      {/*</div>*/}
     </HeaderContainer>
   );
 };
