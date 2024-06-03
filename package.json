@@ -16,6 +16,7 @@
     "@nextui-org/react": "^1.0.8-beta.5",
     "emailjs-com": "^3.2.0",
     "hamburger-react": "^2.5.0",
+    "js-cookie": "^3.0.5",
     "next": "^12.1.6",
     "next-seo": "^5.4.0",
     "prop-types": "^15.8.1",

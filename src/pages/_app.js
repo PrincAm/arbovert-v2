@@ -2,6 +2,8 @@ import '../../styles/globals.css';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
 import Script from 'next/script';
 
+import CookieBanner from '../components/CookieBanner';
+
 function MyApp({ Component, pageProps }) {
   const theme = createTheme({
     type: 'light',
@@ -26,6 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ></Script>
       <NextUIProvider theme={theme}>
         <Component {...pageProps} />
+        <CookieBanner />
       </NextUIProvider>
     </>
   );
