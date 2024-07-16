@@ -1,4 +1,4 @@
-import { Button, Card, Container, Grid, Spacer, Text } from '@nextui-org/react';
+import { Button, Card, Container, Grid, Text } from '@nextui-org/react';
 import { useIsMobile } from '../hooks/use-media-query';
 
 const Welcome = () => {
@@ -6,7 +6,7 @@ const Welcome = () => {
 
   const handleScrollToElement = (elementName) => {
     const element = document.getElementById(elementName);
-    const offset = 75;
+    const offset = 80;
     const bodyRect = document.body.getBoundingClientRect().top;
     const elementRect = element.getBoundingClientRect().top;
     const elementPosition = elementRect - bodyRect;
@@ -41,7 +41,7 @@ const Welcome = () => {
             }}
             weight="bold"
           >
-            Arboristika,
+            O stromy
             <br />
           </Text>
           <Text
@@ -54,7 +54,7 @@ const Welcome = () => {
             }}
             weight="bold"
           >
-            rizikové kácení,
+            se postaráme za vás.
             <br />
           </Text>
           <Text
@@ -67,45 +67,8 @@ const Welcome = () => {
             }}
             weight="bold"
           >
-            stromolezectví
+            Pokácíme, ošetříme, poradíme.
           </Text>
-          <Text
-            h2
-            css={{
-              color: '$accents6',
-              fs: '$sm',
-              fontWeight: '$medium',
-              mt: '$md',
-            }}
-          >
-            Pomůžeme Vám se stromy
-          </Text>
-          <Spacer y={1.5} />
-          <Grid.Container justify="flex-star">
-            <Grid sm={4.5}>
-              <Button
-                shadow
-                color="gradient"
-                rounded
-                bordered
-                auto
-                onClick={() => handleScrollToElement('intro')}
-              >
-                Chci vědět více
-              </Button>
-            </Grid>
-            <Grid sm={4}>
-              <Button
-                shadow
-                color="gradient"
-                rounded
-                auto
-                onClick={() => handleScrollToElement('contact')}
-              >
-                Nezávazná poptávka
-              </Button>
-            </Grid>
-          </Grid.Container>
         </Grid>
         <Grid sm={6}>
           <Card cover>
@@ -115,6 +78,18 @@ const Welcome = () => {
               width={isMobile ? 260 : 396}
             />
           </Card>
+        </Grid>
+        <Grid sm={12} alignItems="center" justify="center">
+          <Button
+            size="lg"
+            shadow
+            color="gradient"
+            rounded
+            auto
+            onClick={() => handleScrollToElement('contact')}
+          >
+            Chci nabídku zdarma
+          </Button>
         </Grid>
       </Grid.Container>
     </Container>

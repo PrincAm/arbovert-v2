@@ -9,6 +9,7 @@ import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
 import Trusted from '../components/Trusted';
 import Organisation from '../components/Organisation';
+import GoToFormButton from '../components/GoToFormButton';
 
 export default function Home() {
   return (
@@ -50,10 +51,11 @@ export default function Home() {
       <Layout>
         <Welcome />
         <Intro />
+        <ContactUs />
         <Certificate />
         <Trusted />
         <Organisation />
-        <ContactUs />
+        <GoToFormButton />
       </Layout>
     </>
   );

@@ -9,7 +9,7 @@ const Intro = () => {
       <Grid.Container gap={5} justify="center" css={{ pt: 0 }}>
         <Grid sm={7} direction="column">
           <Text h1 css={{ lh: 1.2 }}>
-            Zabýváme se kompletní činností v arboristice
+            Co umíme
           </Text>
           <Text
             h2
@@ -22,7 +22,8 @@ const Intro = () => {
             }}
           >
             Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků,
-            údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství
+            údržba zahrad, řez ovocných dřevin, inventarizace dřevin, ošetřování
+            památných stromů, posudky stromů a poradenství
           </Text>
           <Link href="/sluzby.html">Více o našich službách</Link>
         </Grid>
@@ -51,7 +52,8 @@ const Intro = () => {
               mb: '$md',
             }}
           >
-            Jsme tu déle než 10 let
+            Máme přes 10 let zkušeností.
+            <br />A na naší práci to uvidíte.
           </Text>
           <Link href="/o-nas.html">Více o nás</Link>
         </Grid>

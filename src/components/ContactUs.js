@@ -53,8 +53,8 @@ const ContactUs = () => {
     >
       <Card
         bordered
-        shadow={false}
-        css={{ borderColor: '$green800', pb: '$4', p: 0 }}
+        shadow={true}
+        css={{ borderColor: '$green800', p: '$15 0' }}
       >
         <Container
           display="flex"
@@ -62,14 +62,11 @@ const ContactUs = () => {
           align="center"
           css={{ p: isMobile && 0 }}
         >
-          <Text h1 css={{ mb: '$5' }}>
-            Ozvěte se nám
-          </Text>
-          <Text h2 css={{ mb: '$10' }}>
-            Připravíme zdarma nezávaznou nabídku
+          <Text h1 css={{ mb: '$10' }}>
+            Nezávazná nabídka zdarma
           </Text>
           <Grid.Container
-            css={{ mb: '$8', p: 0 }}
+            css={{ mb: '$10', p: 0 }}
             gap={2}
             align="center"
             justify="center"
@@ -115,7 +112,9 @@ const ContactUs = () => {
                 <Text css={{ fs: '$md' }}>
                   Děkujeme za odeslání dotazu, byl Vám zaslán potvrzující email.
                 </Text>
-                <Text css={{ fs: '$md' }}>Budeme Vás brzy kontaktovat.</Text>
+                <Text css={{ fs: '$md' }}>
+                  Ozveme se vám do příštího pracovního dne.
+                </Text>
               </>
             ) : (
               <>
@@ -240,6 +239,15 @@ const ContactUs = () => {
                       )}
                     </Grid>
                   </Grid.Container>
+                  <Text
+                    h5
+                    css={{
+                      mt: '$2',
+                      mb: '$10',
+                    }}
+                  >
+                    Ozveme se vám do <b>příštího</b> pracovního dne.
+                  </Text>
                   <Button
                     type="submit"
                     rounded
