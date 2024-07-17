@@ -32,6 +32,26 @@ const Service = () => (
           <Text h1 css={{ mt: '$5', mb: '$5' }}>
             Služby
           </Text>
+          <Link href="/inventarizace-drevin.html">
+            <Grid.Container
+              gap={2}
+              css={{ mb: '$10', bc: '#fff', borderRadius: '$lg' }}
+            >
+              <Grid sm={7} direction="column">
+                <Text h3>Inventarizace dřevin</Text>
+                <Text>
+                  Při inventarizaci dřevin analyzujeme informace o stromovém
+                  porostu na různých místech, nejen v lesích, ale i v městských
+                  parcích a jiných zelených plochách. Což je zásadní pro
+                  udržitelné využívání dřevní hmoty a ochranu přírody.
+                </Text>
+              </Grid>
+
+              <Grid sm={5}>
+                <Image src="images/service/strom.jpg" alt="tree" />
+              </Grid>
+            </Grid.Container>
+          </Link>
           {data.map(({ title, description, imageSrc }) => (
             <Grid.Container
               key={title}

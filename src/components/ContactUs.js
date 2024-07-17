@@ -189,7 +189,7 @@ const ContactUs = () => {
                           <Textarea
                             {...field}
                             bordered
-                            label="Seznamte nás s Vašim problémem*"
+                            label="Seznamte nás s vaším problémem*"
                             helperText={errors.problem && 'Povinné'}
                             color={errors.problem && 'error'}
                             fullWidth
