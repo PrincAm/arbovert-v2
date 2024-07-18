@@ -22,8 +22,9 @@ const Intro = () => {
             }}
           >
             Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků,
-            údržba zahrad, řez ovocných dřevin, inventarizace dřevin, ošetřování
-            památných stromů, posudky stromů a poradenství
+            údržba zahrad, řez ovocných dřevin,
+            <Link href="/inventarizace-drevin.html">inventarizace dřevin</Link>,
+            ošetřování památných stromů, posudky stromů a poradenství
           </Text>
           <Link href="/sluzby.html">Více o našich službách</Link>
         </Grid>

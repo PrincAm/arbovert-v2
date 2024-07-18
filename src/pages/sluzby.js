@@ -48,7 +48,7 @@ const Service = () => (
               </Grid>
 
               <Grid sm={5}>
-                <Image src="images/service/strom.jpg" alt="tree" />
+                <Image src="images/service/strom-cropped.jpg" alt="tree" />
               </Grid>
             </Grid.Container>
           </Link>

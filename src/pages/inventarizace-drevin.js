@@ -91,10 +91,7 @@ const Invent = () => {
                 </Text>
               </Grid>
               <Grid sm={5}>
-                <Image
-                  src="images/service/strom.jpg"
-                  alt="man in front of tree"
-                />
+                <Image src="images/strom.jpg" alt="man in front of tree" />
               </Grid>
               <Grid sm={12}>
                 <Container
