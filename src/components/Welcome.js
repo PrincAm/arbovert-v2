@@ -1,5 +1,19 @@
-import { Button, Card, Container, Grid, Text } from '@nextui-org/react';
+import { Button, Grid, Text, styled } from '@nextui-org/react';
 import { useIsMobile } from '../hooks/use-media-query';
+
+const BackgroundContainer = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minHeight: 'calc(100vh - 76px)',
+  backgroundImage: 'url(/images/background-landing-page.png)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  position: 'relative',
+  zIndex: '1',
+  padding: '0',
+});
 
 const Welcome = () => {
   const isMobile = useIsMobile();
@@ -21,16 +35,18 @@ const Welcome = () => {
   const textSize = isMobile ? 50 : 60;
 
   return (
-    <Container
-      sm
-      display="flex"
-      alignItems="center"
-      css={{
-        minHeight: '100vh',
-      }}
-    >
-      <Grid.Container gap={5} justify="center">
-        <Grid sm={6} direction="column" justify="center">
+    <BackgroundContainer>
+      <Grid.Container
+        gap={3}
+        justify="center"
+        align="center"
+        css={{
+          background: 'rgba(0, 0, 0, 0.5)',
+          maxWidth: isMobile ? 'auto' : '650px',
+          borderRadius: isMobile ? 0 : '$xl',
+        }}
+      >
+        <Grid sm={12} direction="column">
           <Text
             h1
             size={textSize}
@@ -49,8 +65,8 @@ const Welcome = () => {
             size={textSize}
             css={{
               display: 'inline',
-              color: '$text',
               lh: '1.2',
+              color: 'white',
             }}
             weight="bold"
           >
@@ -62,27 +78,17 @@ const Welcome = () => {
             size={40}
             css={{
               display: 'inline',
-              color: '$text',
-              lh: '1.2',
+              color: 'white',
+              lh: '1.6',
             }}
             weight="bold"
           >
             Pokácíme, ošetříme, poradíme.
           </Text>
         </Grid>
-        <Grid sm={6}>
-          <Card cover>
-            <Card.Image
-              src="images/welcome.jpg"
-              alt="práce v koruně stromu"
-              width={isMobile ? 260 : 396}
-            />
-          </Card>
-        </Grid>
         <Grid sm={12} alignItems="center" justify="center">
           <Button
             size="lg"
-            shadow
             color="gradient"
             rounded
             auto
@@ -92,7 +98,7 @@ const Welcome = () => {
           </Button>
         </Grid>
       </Grid.Container>
-    </Container>
+    </BackgroundContainer>
   );
 };
 

@@ -5,7 +5,7 @@ const Intro = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Container sm id="intro" css={{ pt: 0 }}>
+    <Container sm id="intro" css={{ pt: '$15' }}>
       <Grid.Container gap={5} justify="center" css={{ pt: 0 }}>
         <Grid sm={7} direction="column">
           <Text h1 css={{ lh: 1.2 }}>
