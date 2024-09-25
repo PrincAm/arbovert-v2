@@ -29,19 +29,11 @@ const MobileMenu = ({ navItems, onExpand }) => {
 
   return (
     <Container>
-      <Link href="/">
-        <Image
-          src="images/arbovert-logo.svg"
-          width={220}
-          css={{ '&:hover': { cursor: 'pointer' }, mb: '$10' }}
-          onClick={() => onExpand(false)}
-          alt="arbovert green logo"
-        />
-      </Link>
       <Link
         href="/"
         key="home"
         css={{
+          mt: '$13',
           ml: '$5',
         }}
         onClick={() => onExpand(false)}

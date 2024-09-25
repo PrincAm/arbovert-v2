@@ -53,6 +53,12 @@ const NavBar = () => {
     }
   }, [isMobile]);
 
+  const handleLogoClick = () => {
+    if (isExpanded) {
+      setIsExpanded(false);
+    }
+  };
+
   return (
     <>
       {isMobile ? (
@@ -60,11 +66,15 @@ const NavBar = () => {
           {isExpanded && (
             <MobileMenu navItems={navItems} onExpand={setIsExpanded} />
           )}
-          <Link href="/">
+          <Link href="/" onClick={handleLogoClick}>
             <Image
               src="images/arbovert-logo.svg"
               width={220}
-              css={{ '&:hover': { cursor: 'pointer' } }}
+              css={{
+                '&:hover': { cursor: 'pointer' },
+                position: 'relative',
+                zIndex: '$max',
+              }}
               containerCss={{ m: '$6' }}
               alt="green logo arbovert"
             />

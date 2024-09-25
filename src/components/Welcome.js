@@ -44,6 +44,7 @@ const Welcome = () => {
           background: 'rgba(0, 0, 0, 0.5)',
           maxWidth: isMobile ? 'auto' : '650px',
           borderRadius: isMobile ? 0 : '$xl',
+          m: 0,
         }}
       >
         <Grid sm={12} direction="column">
