@@ -15,11 +15,11 @@ const BackgroundContainer = styled('div', {
 
 const Welcome = () => {
   const isMobile = useIsMobile();
-  const [imageSrc, setImageSrc] = useState('/images/background-small.webp');
+  const [imageSrc, setImageSrc] = useState('background-small_fx4luw.webp');
 
   useEffect(() => {
     if (!isMobile) {
-      setImageSrc('/images/background.webp');
+      setImageSrc('background_ehubfy.webp');
     }
   }, [isMobile]);
 
@@ -48,6 +48,9 @@ const Welcome = () => {
         objectFit="cover"
         priority={true}
         quality={75}
+        loader={({ src }) =>
+          `https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/${src}`
+        }
       />
       <Grid.Container
         gap={3}
