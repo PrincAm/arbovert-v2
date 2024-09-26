@@ -1,4 +1,6 @@
+import { useState, useEffect } from 'react';
 import { Button, Grid, Text, styled } from '@nextui-org/react';
+import Image from 'next/image';
 import { useIsMobile } from '../hooks/use-media-query';
 
 const BackgroundContainer = styled('div', {
@@ -6,10 +8,6 @@ const BackgroundContainer = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   minHeight: 'calc(100vh - 76px)',
-  backgroundImage: 'url(/images/background-landing-page.png)',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
   position: 'relative',
   zIndex: '1',
   padding: '0',
@@ -17,6 +15,13 @@ const BackgroundContainer = styled('div', {
 
 const Welcome = () => {
   const isMobile = useIsMobile();
+  const [imageSrc, setImageSrc] = useState('/images/background-small.webp');
+
+  useEffect(() => {
+    if (!isMobile) {
+      setImageSrc('/images/background.webp');
+    }
+  }, [isMobile]);
 
   const handleScrollToElement = (elementName) => {
     const element = document.getElementById(elementName);
@@ -36,6 +41,14 @@ const Welcome = () => {
 
   return (
     <BackgroundContainer>
+      <Image
+        src={imageSrc}
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        priority={true}
+        quality={75}
+      />
       <Grid.Container
         gap={3}
         justify="center"
@@ -45,6 +58,7 @@ const Welcome = () => {
           maxWidth: isMobile ? 'auto' : '650px',
           borderRadius: isMobile ? 0 : '$xl',
           m: 0,
+          zIndex: 1,
         }}
       >
         <Grid sm={12} direction="column">
