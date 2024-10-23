@@ -15,12 +15,21 @@ const CookieBanner = () => {
   const handleAccept = () => {
     Cookies.set('ga_consent', 'accepted', { expires: 365 });
     setShowBanner(false);
-    window.dataLayer.push({ event: 'consent_given' });
+    // Update GTM's consent mode
+    window.gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+    });
   };
 
   const handleDecline = () => {
     Cookies.set('ga_consent', 'declined', { expires: 365 });
     setShowBanner(false);
+    // Update GTM's consent mode
+    window.gtag('consent', 'update', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+    });
   };
 
   if (!showBanner) return null;
