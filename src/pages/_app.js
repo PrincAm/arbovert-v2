@@ -1,10 +1,44 @@
 import '../../styles/globals.css';
+import { useEffect } from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
 import Script from 'next/script';
+import Cookies from 'js-cookie';
 
 import CookieBanner from '../components/CookieBanner';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const loadGtagScript = () => {
+      const script = document.createElement('script');
+      script.src = `https://www.googletagmanager.com/gtag/js?id=GTM-5V7DRKB`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        updateGtagConsent();
+      };
+    };
+
+    const updateGtagConsent = () => {
+      const consent = Cookies.get('ga_consent');
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          analytics_storage: consent === 'accepted' ? 'granted' : 'denied',
+          ad_storage: consent === 'accepted' ? 'granted' : 'denied',
+          ad_user_data: consent === 'accepted' ? 'granted' : 'denied',
+          ad_personalization: consent === 'accepted' ? 'granted' : 'denied',
+        });
+      }
+    };
+
+    loadGtagScript();
+  }, []);
+
   const theme = createTheme({
     type: 'light',
     theme: {
@@ -15,17 +49,6 @@ function MyApp({ Component, pageProps }) {
   });
   return (
     <>
-      <Script
-        id="google-tag-manager"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5V7DRKB');`,
-        }}
-      ></Script>
       <NextUIProvider theme={theme}>
         <Component {...pageProps} />
         <CookieBanner />
