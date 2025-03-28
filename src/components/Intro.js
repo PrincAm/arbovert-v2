@@ -1,6 +1,12 @@
 import { Card, Container, Grid, Text, Link } from '@nextui-org/react';
 import { useIsMobile } from '../hooks/use-media-query';
 
+const getYearsSinceFounded = () => {
+  const foundedYear = 2011;
+  const currentYear = new Date().getFullYear();
+  return currentYear - foundedYear;
+};
+
 const Intro = () => {
   const isMobile = useIsMobile();
 
@@ -53,7 +59,7 @@ const Intro = () => {
               mb: '$md',
             }}
           >
-            Máme přes 10 let zkušeností.
+            Máme přes {getYearsSinceFounded()} let zkušeností.
             <br />A na naší práci to uvidíte.
           </Text>
           <Link href="/o-nas.html">Více o nás</Link>

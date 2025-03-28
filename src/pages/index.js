@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <NextSeo
         title="Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert"
-        description="Zabýváme se kompletní čiností v arboristice, což zahrnuje rizikové kácení, prořezávání stromů, ošetřování stromů, výsadby, instalace stabilizačních prvků, údržby zahrad, řez ovocných dřevin, posudky stromů a poradenství."
+        description="Rizikové kácení, ošetřování stromů, inventarizace dřevin, ošetřování památných stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství."
         canonical="https://www.arbovert.cz/"
         openGraph={{
           type: 'website',
@@ -24,7 +24,7 @@ export default function Home() {
           title:
             'Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert',
           description:
-            'Zabýváme se kompletní čiností v arboristice, což zahrnuje rizikové kácení, prořezávání stromů, ošetřování stromů, výsadby, instalace stabilizačních prvků, údržby zahrad, řez ovocných dřevin, posudky stromů a poradenství.',
+            'Rizikové kácení, ošetřování stromů, inventarizace dřevin, ošetřování památných stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství.',
           images: [
             {
               url: 'https://arbovert.cz/images/welcome.jpg',
