@@ -1,7 +1,6 @@
 import '../../styles/globals.css';
 import { useEffect } from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
-import Script from 'next/script';
 import Cookies from 'js-cookie';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../../next-seo.config';

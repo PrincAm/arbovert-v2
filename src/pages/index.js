@@ -1,4 +1,3 @@
-import { NextSeo } from 'next-seo';
 import Script from 'next/script';
 
 import Welcome from '../components/Welcome';
@@ -14,27 +13,6 @@ import GoToFormButton from '../components/GoToFormButton';
 export default function Home() {
   return (
     <>
-      <NextSeo
-        title="Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert"
-        description="Rizikové kácení, ošetřování stromů, inventarizace dřevin, ošetřování památných stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství."
-        canonical="https://www.arbovert.cz/"
-        openGraph={{
-          type: 'website',
-          url: 'https://www.arbovert.cz/',
-          title:
-            'Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert',
-          description:
-            'Rizikové kácení, ošetřování stromů, inventarizace dřevin, ošetřování památných stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství.',
-          images: [
-            {
-              url: 'https://arbovert.cz/images/welcome.jpg',
-              width: 1536,
-              height: 1536,
-              alt: 'Ropes and trees',
-            },
-          ],
-        }}
-      />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8GZ2HM5LBZ"
         strategy="afterInteractive"

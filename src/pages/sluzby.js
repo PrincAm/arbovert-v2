@@ -1,5 +1,4 @@
 import { Container, Image, Grid, Text, Link, styled } from '@nextui-org/react';
-import { NextSeo } from 'next-seo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,13 +18,6 @@ const StyledIcon = styled(FontAwesomeIcon, {
 
 const Service = () => (
   <>
-    <NextSeo
-      title="Naše služby | Arbovert"
-      description="Zabýváme se kompletní čiností v arboristice, jako je rizikové kácení stromů, odborné ošetřování stromů,
-                   zajišťovaní stromů, prořezávání ovocných stromů, likvidace dřevní hmoty, výsadba stromů a povýsadbová péče"
-      canonical="https://www.arbovert.cz/sluzby.html"
-    />
-
     <Layout>
       <StyledContainer>
         <Container sm>

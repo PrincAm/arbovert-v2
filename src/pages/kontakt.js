@@ -1,7 +1,6 @@
 import { Card, Container, Grid, Text, styled } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { NextSeo } from 'next-seo';
 
 import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
@@ -29,11 +28,6 @@ const ContactPerson = styled(Text, {
 
 const Contact = () => (
   <>
-    <NextSeo
-      title="Kontakt | Arbovert"
-      description="Obraťte se na nás s jakýmikoliv problémy"
-      canonical="https://www.arbovert.cz/kontakt.html"
-    />
     <Layout>
       <StyledContainer>
         <Container sm>

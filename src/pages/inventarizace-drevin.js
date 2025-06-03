@@ -6,7 +6,6 @@ import {
   styled,
   Button,
 } from '@nextui-org/react';
-import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
@@ -35,11 +34,6 @@ const Invent = () => {
 
   return (
     <>
-      <NextSeo
-        title="Inventarizace dřevin | Arbovert"
-        description="Uděláme evidenci vašich stromů, a to komplexně. Můžete tak efektivně a udržitelně využívat zdroje dřeva. Při inventarizaci dřevin analyzujeme informace o stromovém porostu na různých místech, nejen v lesích, ale i v městských parcích a jiných zelených plochách. Což je zásadní pro udržitelné využívání dřevní hmoty a ochranu přírody."
-        canonical="https://www.arbovert.cz/o-nas.html"
-      />
       <Layout>
         <StyledContainer>
           <Container sm>

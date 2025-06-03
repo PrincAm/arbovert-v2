@@ -1,5 +1,4 @@
 import { Container, Image, Grid, Text, styled } from '@nextui-org/react';
-import { NextSeo } from 'next-seo';
 
 import Layout from '../layouts/index';
 
@@ -10,13 +9,6 @@ const StyledContainer = styled('div', {
 
 const AboutUs = () => (
   <>
-    <NextSeo
-      title="O nás | Arbovert"
-      description="Arboristice se věnujeme déle než 10 let. Naší hlavní činností není jen
-                   rizikové kácení a těžba stromů, ale i ošetřování a prořezávání
-                   stromů, které rostou na nejrůznějších špatně přístupných místech."
-      canonical="https://www.arbovert.cz/o-nas.html"
-    />
     <Layout>
       <StyledContainer>
         <Container sm>
