@@ -8,6 +8,7 @@ import {
 } from '@nextui-org/react';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { NextSeo } from 'next-seo';
 
 import Layout from '../layouts/index';
 
@@ -34,6 +35,24 @@ const Invent = () => {
 
   return (
     <>
+      <NextSeo
+        title="Inventarizace dřevin - Komplexní analýza stromového porostu | Arbovert"
+        description="Profesionální inventarizace dřevin pro udržitelné hospodaření. Analyzujeme stromový porost v lesích, parcích a městských zelených plochách. Zajistíme efektivní využití dřevní hmoty."
+        canonical="https://www.arbovert.cz/inventarizace-drevin"
+        openGraph={{
+          title: "Inventarizace dřevin - Komplexní analýza stromového porostu | Arbovert",
+          description: "Profesionální inventarizace dřevin pro udržitelné hospodaření. Analyzujeme stromový porost v lesích, parcích a městských zelených plochách.",
+          url: "https://www.arbovert.cz/inventarizace-drevin",
+          images: [
+            {
+              url: "https://arbovert.cz/images/strom.jpg",
+              width: 800,
+              height: 600,
+              alt: "Inventarizace dřevin - stromy",
+            },
+          ],
+        }}
+      />
       <Layout>
         <StyledContainer>
           <Container sm>
