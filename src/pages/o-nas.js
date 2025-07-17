@@ -13,11 +13,11 @@ const AboutUs = () => (
     <NextSeo
       title="O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011"
       description="Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů, inventarizace dřevin a údržbu zahrad."
-      canonical="https://www.arbovert.cz/o-nas"
+      canonical="https://arbovert.cz/o-nas"
       openGraph={{
         title: "O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011",
         description: "Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů a údržbu zahrad.",
-        url: "https://www.arbovert.cz/o-nas",
+        url: "https://arbovert.cz/o-nas",
         images: [
           {
             url: "https://arbovert.cz/images/aboutUs.jpg",

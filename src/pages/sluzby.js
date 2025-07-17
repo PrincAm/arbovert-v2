@@ -17,16 +17,37 @@ const StyledIcon = styled(FontAwesomeIcon, {
   ml: '$3',
 });
 
+const StyledServiceCard = styled(Link, {
+  display: 'block',
+  textDecoration: 'none',
+  '&:hover': {
+    transform: 'translateY(-2px)',
+    transition: 'transform 0.2s ease-in-out',
+  },
+});
+
+// Function to generate slug from title
+const generateSlug = (title) => {
+  return title
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+};
+
 const Service = () => (
   <>
     <NextSeo
       title="Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert"
       description="Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce."
-      canonical="https://www.arbovert.cz/sluzby"
+      canonical="https://arbovert.cz/sluzby"
       openGraph={{
         title: "Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert",
         description: "Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce.",
-        url: "https://www.arbovert.cz/sluzby",
+        url: "https://arbovert.cz/sluzby",
         images: [
           {
             url: "https://arbovert.cz/images/service/strom-cropped.jpg",
@@ -43,10 +64,12 @@ const Service = () => (
           <Text h1 css={{ mt: '$5', mb: '$5' }}>
             Služby
           </Text>
-          <Link href="/inventarizace-drevin.html">
+          
+          {/* Inventarizace dřevin - Special case with existing page */}
+          <StyledServiceCard href="/sluzby/inventarizace-drevin.html">
             <Grid.Container
               gap={2}
-              css={{ mb: '$10', bc: '#fff', borderRadius: '$lg' }}
+              css={{ mb: '$10', bc: '#fff', borderRadius: '$lg', p: '$4' }}
             >
               <Grid sm={7} direction="column">
                 <Text h3>Inventarizace dřevin</Text>
@@ -56,32 +79,45 @@ const Service = () => (
                   parcích a jiných zelených plochách. Což je zásadní pro
                   udržitelné využívání dřevní hmoty a ochranu přírody.
                 </Text>
+                <Text css={{ mt: '$3', color: '$primary', fontWeight: 500 }}>
+                  Více informací →
+                </Text>
               </Grid>
+              <Grid sm={5}>
+                <Image src="/images/service/strom-cropped.jpg" alt="Inventarizace dřevin" />
+              </Grid>
+            </Grid.Container>
+          </StyledServiceCard>
 
-              <Grid sm={5}>
-                <Image src="images/service/strom-cropped.jpg" alt="tree" />
-              </Grid>
-            </Grid.Container>
-          </Link>
-          {data.map(({ title, description, imageSrc }) => (
-            <Grid.Container
-              key={title}
-              gap={2}
-              css={{ mb: '$10', bc: '#fff', borderRadius: '$lg' }}
-            >
-              <Grid sm={7} direction="column">
-                <Text h3>{title}</Text>
-                <Text>{description}</Text>
-              </Grid>
-              <Grid sm={5}>
-                <Image src={imageSrc} alt={title} />
-              </Grid>
-            </Grid.Container>
-          ))}
+          {/* Services from arbo.js data */}
+          {data.map(({ title, description, imageSrc }) => {
+            const slug = generateSlug(title);
+            return (
+              <StyledServiceCard key={title} href={`/sluzby/${slug}.html`}>
+                <Grid.Container
+                  gap={2}
+                  css={{ mb: '$10', bc: '#fff', borderRadius: '$lg', p: '$4' }}
+                >
+                  <Grid sm={7} direction="column">
+                    <Text h3>{title}</Text>
+                    <Text>{description}</Text>
+                    <Text css={{ mt: '$3', color: '$primary', fontWeight: 500 }}>
+                      Více informací →
+                    </Text>
+                  </Grid>
+                  <Grid sm={5}>
+                    <Image src={imageSrc} alt={title} />
+                  </Grid>
+                </Grid.Container>
+              </StyledServiceCard>
+            );
+          })}
+
+          {/* Výškové práce - External link */}
           <Grid.Container
             key="upwork"
             gap={2}
-            css={{ mb: '$10', bc: '#fff', borderRadius: '$lg' }}
+            css={{ mb: '$10', bc: '#fff', borderRadius: '$lg', p: '$4' }}
           >
             <Grid sm={7} direction="column">
               <Text h3>Výškové práce</Text>
@@ -95,18 +131,19 @@ const Service = () => (
                 href="https://vyskoveprace-arbovert.cz/"
                 target="_blank"
                 css={{
-                  mt: '$5',
+                  mt: '$3',
                   display: 'flex',
                   alignItems: 'center',
                   fontWeight: 500,
+                  color: '$primary',
                 }}
               >
-                Více <StyledIcon icon={faArrowUpRightFromSquare} />
+                Více informací <StyledIcon icon={faArrowUpRightFromSquare} />
               </Link>
             </Grid>
             <Grid sm={5}>
               <Link href="https://vyskoveprace-arbovert.cz/" target="_blank">
-                <Image src="images/service/vysky.webp" alt="vyskove prace" />
+                <Image src="/images/service/vysky.webp" alt="Výškové práce" />
               </Link>
             </Grid>
           </Grid.Container>

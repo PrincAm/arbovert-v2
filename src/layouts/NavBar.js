@@ -18,9 +18,9 @@ import { useIsMobile } from '../hooks/use-media-query';
 import MobileMenu from '../components/MobileMenu';
 
 const navItems = [
-  { label: 'Služby', href: 'sluzby.html' },
-  { label: 'O nás', href: 'o-nas.html' },
-  { label: 'Kontakt', href: 'kontakt.html' },
+  { label: 'Služby', href: '/sluzby.html' },
+  { label: 'O nás', href: '/o-nas.html' },
+  { label: 'Kontakt', href: '/kontakt.html' },
   {
     label: 'Výškové práce',
     href: 'https://vyskoveprace-arbovert.cz/',
@@ -67,17 +67,17 @@ const NavBar = () => {
             <MobileMenu navItems={navItems} onExpand={setIsExpanded} />
           )}
           <Link href="/" onClick={handleLogoClick}>
-            <Image
-              src="images/arbovert-logo.svg"
-              width={220}
-              css={{
-                '&:hover': { cursor: 'pointer' },
-                position: 'relative',
-                zIndex: '$max',
-              }}
-              containerCss={{ m: '$6' }}
-              alt="green logo arbovert"
-            />
+                          <Image
+                src="/images/arbovert-logo.svg"
+                width={220}
+                css={{
+                  '&:hover': { cursor: 'pointer' },
+                  position: 'relative',
+                  zIndex: '$max',
+                }}
+                containerCss={{ m: '$6' }}
+                alt="green logo arbovert"
+              />
           </Link>
           <HamburgerContainer>
             <Hamburger toggled={isExpanded} toggle={setIsExpanded} />
@@ -94,7 +94,7 @@ const NavBar = () => {
           >
             <Link href="/">
               <Image
-                src="images/arbovert-logo.svg"
+                src="/images/arbovert-logo.svg"
                 width={220}
                 css={{ '&:hover': { cursor: 'pointer' } }}
                 alt="green logo arbovert"

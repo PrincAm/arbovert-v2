@@ -17,7 +17,7 @@ export default function Home() {
     "@type": "LocalBusiness",
     "name": "Arbovert s.r.o.",
     "description": "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad.",
-    "url": "https://www.arbovert.cz",
+    "url": "https://arbovert.cz",
     "telephone": "+420-XXX-XXX-XXX",
     "address": {
       "@type": "PostalAddress",
@@ -50,11 +50,11 @@ export default function Home() {
       <NextSeo
         title="Arbovert - Arboristika, rizikové kácení, prořezávání stromů"
         description="Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad. Certifikovaní pracovníci s 12+ lety zkušeností."
-        canonical="https://www.arbovert.cz/"
+        canonical="https://arbovert.cz/"
         openGraph={{
           title: "Arbovert - Arboristika, rizikové kácení, prořezávání stromů",
           description: "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad.",
-          url: "https://www.arbovert.cz/",
+          url: "https://arbovert.cz/",
           images: [
             {
               url: "https://arbovert.cz/images/welcome.jpg",

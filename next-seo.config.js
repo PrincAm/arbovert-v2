@@ -2,7 +2,7 @@ export default {
   title: 'Arbovert',
   description:
     'Rizikové kácení, ošetřování stromů, inventarizace dřevin a další arboristické služby. Profesionální péče o stromy a zahrady.',
-  canonical: 'https://www.arbovert.cz/',
+  canonical: 'https://arbovert.cz/',
   additionalMetaTags: [
     {
       name: 'robots',
@@ -20,7 +20,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'cs_CZ',
-    url: 'https://www.arbovert.cz/',
+    url: 'https://arbovert.cz/',
     siteName: 'Arbovert',
     title:
       'Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert',

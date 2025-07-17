@@ -32,3 +32,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# documents
+documents/
+
+# logs
+logs/
+
+# temp
+temp/

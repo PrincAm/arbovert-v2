@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.arbovert.cz/sitemap.xml
+Sitemap: https://arbovert.cz/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1 

@@ -2,31 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://arbovert.cz/</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://arbovert.cz/sluzby.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://arbovert.cz/inventarizace-drevin.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://arbovert.cz/sluzby/rizikove-kaceni-stromu.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/odborne-osetrovani-stromu.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/zajistovani-stromu.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/prorezavani-ovocnych-stromu.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/likvidace-drevni-hmoty.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/vysadba-stromu-a-povysadbova-pece.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://arbovert.cz/sluzby/inventarizace-drevin.html</loc>
+        <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://arbovert.cz/o-nas.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://arbovert.cz/kontakt.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

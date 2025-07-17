@@ -20,7 +20,7 @@ const Container = styled('div', {
 const Footer = () => (
   <Container>
     <Image
-      src="images/arbovert-logo-cropped.svg"
+      src="/images/arbovert-logo-cropped.svg"
       width={100}
       alt="green logo arbovert without text"
     />
