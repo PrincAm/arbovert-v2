@@ -1,5 +1,6 @@
 import { Container, Image, Grid, Text, styled } from '@nextui-org/react';
 import { NextSeo } from 'next-seo';
+import { useCanonicalUrl } from '../hooks/use-canonical-url';
 
 import Layout from '../layouts/index';
 
@@ -8,26 +9,29 @@ const StyledContainer = styled('div', {
   backgroundColor: '$accents1',
 });
 
-const AboutUs = () => (
-  <>
-    <NextSeo
-      title="O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011"
-      description="Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů, inventarizace dřevin a údržbu zahrad."
-      canonical="https://arbovert.cz/o-nas"
-      openGraph={{
-        title: "O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011",
-        description: "Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů a údržbu zahrad.",
-        url: "https://arbovert.cz/o-nas",
-        images: [
-          {
-            url: "https://arbovert.cz/images/aboutUs.jpg",
-            width: 800,
-            height: 600,
-            alt: "O nás - Arbovert tým",
-          },
-        ],
-      }}
-    />
+const AboutUs = () => {
+  const canonicalUrl = useCanonicalUrl();
+  
+  return (
+    <>
+      <NextSeo
+        title="O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011"
+        description="Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů, inventarizace dřevin a údržbu zahrad."
+        canonical={canonicalUrl}
+        openGraph={{
+          title: "O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011",
+          description: "Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů a údržbu zahrad.",
+          url: canonicalUrl,
+          images: [
+            {
+              url: "https://arbovert.cz/images/aboutUs.jpg",
+              width: 800,
+              height: 600,
+              alt: "O nás - Arbovert tým",
+            },
+          ],
+        }}
+      />
     <Layout>
       <StyledContainer>
         <Container sm>
@@ -61,7 +65,8 @@ const AboutUs = () => (
         </Container>
       </StyledContainer>
     </Layout>
-  </>
-);
+    </>
+  );
+};
 
 export default AboutUs;

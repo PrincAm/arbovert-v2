@@ -16,6 +16,10 @@ export default {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1',
     },
+    {
+      name: 'google-site-verification',
+      content: 'zMUZM15srEbg3K_WgezAHLSL-DHVdEB083lhlPt4TjQ',
+    },
   ],
   openGraph: {
     type: 'website',
@@ -45,6 +49,10 @@ export default {
     {
       rel: 'icon',
       href: '/favicon.ico',
+    },
+    {
+      rel: 'canonical',
+      href: 'https://arbovert.cz/',
     },
   ],
 };

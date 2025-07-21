@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
+import { useCanonicalUrl } from '../hooks/use-canonical-url';
 
 import Welcome from '../components/Welcome';
 import Intro from '../components/Intro';
@@ -12,6 +13,8 @@ import Organisation from '../components/Organisation';
 import GoToFormButton from '../components/GoToFormButton';
 
 export default function Home() {
+  const canonicalUrl = useCanonicalUrl();
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -50,11 +53,11 @@ export default function Home() {
       <NextSeo
         title="Arbovert - Arboristika, rizikové kácení, prořezávání stromů"
         description="Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad. Certifikovaní pracovníci s 12+ lety zkušeností."
-        canonical="https://arbovert.cz/"
+        canonical={canonicalUrl}
         openGraph={{
           title: "Arbovert - Arboristika, rizikové kácení, prořezávání stromů",
           description: "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad.",
-          url: "https://arbovert.cz/",
+          url: canonicalUrl,
           images: [
             {
               url: "https://arbovert.cz/images/welcome.jpg",

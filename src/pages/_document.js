@@ -15,7 +15,7 @@ class MyDocument extends Document {
       <Html lang="cs">
         <Head>
           {CssBaseline.flush()}
-          <link rel="canonical" href="https://arbovert.cz" />
+          <link rel="canonical" href="https://arbovert.cz/" />
           <meta name="robots" content="index, follow" />
         </Head>
         <body>

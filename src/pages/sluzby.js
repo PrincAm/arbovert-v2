@@ -2,6 +2,7 @@ import { Container, Image, Grid, Text, Link, styled } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { NextSeo } from 'next-seo';
+import { useCanonicalUrl } from '../hooks/use-canonical-url';
 
 import Layout from '../layouts/index';
 import data from '../data/arbo';
@@ -38,26 +39,29 @@ const generateSlug = (title) => {
     .trim();
 };
 
-const Service = () => (
-  <>
-    <NextSeo
-      title="Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert"
-      description="Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce."
-      canonical="https://arbovert.cz/sluzby"
-      openGraph={{
-        title: "Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert",
-        description: "Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce.",
-        url: "https://arbovert.cz/sluzby",
-        images: [
-          {
-            url: "https://arbovert.cz/images/service/strom-cropped.jpg",
-            width: 800,
-            height: 600,
-            alt: "Arboristické služby - stromy",
-          },
-        ],
-      }}
-    />
+const Service = () => {
+  const canonicalUrl = useCanonicalUrl();
+  
+  return (
+    <>
+      <NextSeo
+        title="Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert"
+        description="Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce."
+        canonical={canonicalUrl}
+        openGraph={{
+          title: "Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert",
+          description: "Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce.",
+          url: canonicalUrl,
+          images: [
+            {
+              url: "https://arbovert.cz/images/service/strom-cropped.jpg",
+              width: 800,
+              height: 600,
+              alt: "Arboristické služby - stromy",
+            },
+          ],
+        }}
+      />
     <Layout>
       <StyledContainer>
         <Container sm>
@@ -150,7 +154,8 @@ const Service = () => (
         </Container>
       </StyledContainer>
     </Layout>
-  </>
-);
+    </>
+  );
+};
 
 export default Service;

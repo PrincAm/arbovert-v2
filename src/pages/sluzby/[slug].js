@@ -9,6 +9,7 @@ import {
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
+import { useCanonicalUrl } from '../../hooks/use-canonical-url';
 
 import Layout from '../../layouts/index';
 import data from '../../data/arbo';
@@ -189,6 +190,7 @@ export async function getStaticProps({ params }) {
 
 const ServicePage = ({ service, slug }) => {
   const router = useRouter();
+  const canonicalUrl = useCanonicalUrl();
 
   useEffect(() => {
     // Client-side only logic
@@ -220,11 +222,11 @@ const ServicePage = ({ service, slug }) => {
       <NextSeo
         title={service.seoTitle}
         description={service.seoDescription}
-        canonical={`https://arbovert.cz/sluzby/${slug}.html`}
+        canonical={canonicalUrl}
         openGraph={{
           title: service.seoTitle,
           description: service.seoDescription,
-          url: `https://arbovert.cz/sluzby/${slug}.html`,
+          url: canonicalUrl,
           images: [
             {
               url: `https://arbovert.cz/${service.imageSrc}`,

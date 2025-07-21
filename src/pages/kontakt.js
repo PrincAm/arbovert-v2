@@ -2,6 +2,7 @@ import { Card, Container, Grid, Text, styled } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { NextSeo } from 'next-seo';
+import { useCanonicalUrl } from '../hooks/use-canonical-url';
 
 import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
@@ -27,26 +28,29 @@ const ContactPerson = styled(Text, {
   pb: '$6',
 });
 
-const Contact = () => (
-  <>
-    <NextSeo
-      title="Kontakt - Arbovert s.r.o. | Arboristické služby"
-      description="Kontaktujte nás pro arboristické služby. Sídlo ve Vimperku, pobočka v Praze. Lukáš Kačer - certifikovaný arborista s 12+ lety zkušeností."
-      canonical="https://arbovert.cz/kontakt"
-      openGraph={{
-        title: "Kontakt - Arbovert s.r.o. | Arboristické služby",
-        description: "Kontaktujte nás pro arboristické služby. Sídlo ve Vimperku, pobočka v Praze. Lukáš Kačer - certifikovaný arborista.",
-        url: "https://arbovert.cz/kontakt",
-        images: [
-          {
-            url: "https://arbovert.cz/images/aboutUs.jpg",
-            width: 800,
-            height: 600,
-            alt: "Kontakt Arbovert",
-          },
-        ],
-      }}
-    />
+const Contact = () => {
+  const canonicalUrl = useCanonicalUrl();
+  
+  return (
+    <>
+      <NextSeo
+        title="Kontakt - Arbovert s.r.o. | Arboristické služby"
+        description="Kontaktujte nás pro arboristické služby. Sídlo ve Vimperku, pobočka v Praze. Lukáš Kačer - certifikovaný arborista s 12+ lety zkušeností."
+        canonical={canonicalUrl}
+        openGraph={{
+          title: "Kontakt - Arbovert s.r.o. | Arboristické služby",
+          description: "Kontaktujte nás pro arboristické služby. Sídlo ve Vimperku, pobočka v Praze. Lukáš Kačer - certifikovaný arborista.",
+          url: canonicalUrl,
+          images: [
+            {
+              url: "https://arbovert.cz/images/aboutUs.jpg",
+              width: 800,
+              height: 600,
+              alt: "Kontakt Arbovert",
+            },
+          ],
+        }}
+      />
     <Layout>
       <StyledContainer>
         <Container sm>
@@ -86,7 +90,8 @@ const Contact = () => (
         </Container>
       </StyledContainer>
     </Layout>
-  </>
-);
+    </>
+  );
+};
 
 export default Contact;
