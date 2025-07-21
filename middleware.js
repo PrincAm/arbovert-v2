@@ -19,17 +19,17 @@ export function middleware(request) {
     return NextResponse.redirect(url, 301);
   }
 
+  // Handle .html URLs - strip .html for internal routing
+  if (pathname.endsWith('.html') && pathname !== '/index.html') {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.replace('.html', '');
+    return NextResponse.rewrite(url);
+  }
+
   // Ensure trailing slash is handled properly
   if (pathname !== '/' && pathname.endsWith('/')) {
     const url = request.nextUrl.clone();
     url.pathname = pathname.slice(0, -1);
-    return NextResponse.redirect(url, 301);
-  }
-
-  // Redirect URLs without .html suffix to .html version (except homepage)
-  if (pathname !== '/' && !pathname.endsWith('.html') && !pathname.startsWith('/api/') && !pathname.startsWith('/_next/')) {
-    const url = request.nextUrl.clone();
-    url.pathname = `${pathname}.html`;
     return NextResponse.redirect(url, 301);
   }
 
