@@ -61,7 +61,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   
   // Generate canonical URL based on current path
-  const canonicalUrl = `https://arbovert.cz${router.asPath}`;
+  // Add .html suffix for all pages except homepage (consistent with useCanonicalUrl hook)
+  const path = router.asPath;
+  const canonicalUrl = path === '/' 
+    ? 'https://arbovert.cz/' 
+    : `https://arbovert.cz${path}.html`;
   
   // Create SEO config with dynamic canonical URL
   const seoConfig = {
