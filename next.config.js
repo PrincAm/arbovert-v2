@@ -1,8 +1,12 @@
 module.exports = {
   reactStrictMode: true,
-  trailingSlash: false,
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     loader: 'cloudinary',
     path: '',
   },
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  }
 };

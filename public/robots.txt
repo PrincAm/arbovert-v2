@@ -4,6 +4,11 @@ Allow: /
 # Sitemap location
 Sitemap: https://arbovert.cz/sitemap.xml
 
-# Disallow admin or private areas if any
+# Disallow admin or private areas
 Disallow: /api/
-Disallow: /_next/ 
+Disallow: /_next/
+Disallow: /out/
+
+# Allow all HTML pages
+Allow: /*.html
+Allow: /sluzby/ 

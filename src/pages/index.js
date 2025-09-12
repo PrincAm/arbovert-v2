@@ -19,21 +19,58 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Arbovert s.r.o.",
-    "description": "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad.",
+    "alternateName": "Arbovert",
+    "description": "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad v Praze a Vimperku.",
     "url": "https://arbovert.cz",
-    "telephone": "+420-XXX-XXX-XXX",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Pasovská 84/37",
-      "addressLocality": "Vimperk",
-      "postalCode": "38501",
-      "addressCountry": "CZ"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "49.0556",
-      "longitude": "13.7733"
-    },
+    "telephone": "+420-739-969-933",
+    "email": "info@arbovert.cz",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Pasovská 84/37",
+        "addressLocality": "Vimperk",
+        "postalCode": "38501",
+        "addressCountry": "CZ"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Jirsíkova 484/6",
+        "addressLocality": "Praha",
+        "addressCountry": "CZ"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Praha",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Hlavní město Praha"
+        }
+      },
+      {
+        "@type": "City", 
+        "name": "Vimperk",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Jihočeský kraj"
+        }
+      }
+    ],
+    "geo": [
+      {
+        "@type": "GeoCoordinates",
+        "latitude": "50.0755",
+        "longitude": "14.4378",
+        "name": "Praha"
+      },
+      {
+        "@type": "GeoCoordinates", 
+        "latitude": "49.0556",
+        "longitude": "13.7733",
+        "name": "Vimperk"
+      }
+    ],
     "openingHours": "Mo-Fr 08:00-17:00",
     "priceRange": "$$",
     "serviceType": [
@@ -41,22 +78,28 @@ export default function Home() {
       "Ošetřování stromů", 
       "Inventarizace dřevin",
       "Údržba zahrad",
-      "Výškové práce"
+      "Výškové práce",
+      "Prořezávání stromů",
+      "Výsadby stromů"
     ],
     "foundingDate": "2011",
     "image": "https://arbovert.cz/images/welcome.jpg",
-    "logo": "https://arbovert.cz/images/arbovert-logo.svg"
+    "logo": "https://arbovert.cz/images/arbovert-logo.svg",
+    "sameAs": [
+      "https://vyskoveprace-arbovert.cz/",
+      "https://www.facebook.com/arbovertcz/"
+    ]
   };
 
   return (
     <>
       <NextSeo
-        title="Arbovert - Arboristika, rizikové kácení, prořezávání stromů"
-        description="Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad. Certifikovaní pracovníci s 12+ lety zkušeností."
+        title="Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů"
+        description="Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností, certifikovaní pracovníci."
         canonical={canonicalUrl}
         openGraph={{
-          title: "Arbovert - Arboristika, rizikové kácení, prořezávání stromů",
-          description: "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad.",
+          title: "Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů",
+          description: "Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností.",
           url: canonicalUrl,
           images: [
             {
@@ -70,7 +113,19 @@ export default function Home() {
         additionalMetaTags={[
           {
             name: 'keywords',
-            content: 'arboristika, rizikové kácení, ošetřování stromů, inventarizace dřevin, údržba zahrad, výškové práce, prořezávání stromů, výsadby',
+            content: 'arbovert, arboristika praha, arboristika vimperk, rizikové kácení praha, rizikové kácení vimperk, ošetřování stromů praha, ošetřování stromů vimperk, inventarizace dřevin, výsadby stromů, arboristické služby praha, arboristické služby vimperk, výškové práce, prořezávání stromů, arboristika střední čechy, arboristika jihočeský kraj',
+          },
+          {
+            name: 'geo.region',
+            content: 'CZ-PR,CZ-PL',
+          },
+          {
+            name: 'geo.placename',
+            content: 'Praha, Vimperk',
+          },
+          {
+            name: 'geo.position',
+            content: '50.0755;14.4378;49.0556;13.7733',
           },
         ]}
       />
