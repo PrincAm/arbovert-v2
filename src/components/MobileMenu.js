@@ -1,4 +1,4 @@
-import { Image, Link, styled, Text } from '@nextui-org/react';
+import { Link, styled, Text } from '@nextui-org/react';
 import PropTypes from 'prop-types';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -29,13 +29,13 @@ const Intro = () => {
           >
             Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků,
             údržba zahrad, řez ovocných dřevin,
-            <Link href="/sluzby/inventarizace-drevin.html">inventarizace dřevin</Link>,
+            <Link href="/sluzby/inventarizace-drevin">inventarizace dřevin</Link>,
             ošetřování památných stromů, posudky stromů a poradenství
           </Text>
-          <Link href="/sluzby.html">Více o našich službách</Link>
+          <Link href="/sluzby">Více o našich službách</Link>
         </Grid>
         <Grid sm={5}>
-          <Link href="/sluzby.html">
+          <Link href="/sluzby">
             <Card cover clickable hoverable>
               <Card.Image
                 src="images/arbo.jpg"
@@ -62,10 +62,10 @@ const Intro = () => {
             Máme přes {getYearsSinceFounded()} let zkušeností.
             <br />A na naší práci to uvidíte.
           </Text>
-          <Link href="/o-nas.html">Více o nás</Link>
+          <Link href="/o-nas">Více o nás</Link>
         </Grid>
         <Grid sm={5}>
-          <Link href="/o-nas.html">
+          <Link href="/o-nas">
             <Card cover clickable hoverable>
               <Card.Image
                 src="images/we.jpg"

@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  trailingSlash: true,
+  trailingSlash: false,
   images: {
     unoptimized: true,
     loader: 'cloudinary',

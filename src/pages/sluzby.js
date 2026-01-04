@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 import { useCanonicalUrl } from '../hooks/use-canonical-url';
 
 import Layout from '../layouts/index';
-import data from '../data/arbo';
+import { serviceContent } from '../data/arbo';
 
 const StyledContainer = styled('div', {
   display: 'flex',
@@ -27,17 +27,10 @@ const StyledServiceCard = styled(Link, {
   },
 });
 
-// Function to generate slug from title
-const generateSlug = (title) => {
-  return title
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-};
+// Convert serviceContent to array, excluding inventarizace-drevin (handled separately)
+const services = Object.entries(serviceContent)
+  .filter(([slug]) => slug !== 'inventarizace-drevin')
+  .map(([slug, service]) => ({ ...service, slug }));
 
 const Service = () => {
   const canonicalUrl = useCanonicalUrl();
@@ -70,7 +63,7 @@ const Service = () => {
           </Text>
           
           {/* Inventarizace dřevin - Special case with existing page */}
-          <StyledServiceCard href="/sluzby/inventarizace-drevin.html">
+          <StyledServiceCard href="/sluzby/inventarizace-drevin">
             <Grid.Container
               gap={2}
               css={{ mb: '$10', bc: '#fff', borderRadius: '$lg', p: '$4' }}
@@ -93,11 +86,10 @@ const Service = () => {
             </Grid.Container>
           </StyledServiceCard>
 
-          {/* Services from arbo.js data */}
-          {data.map(({ title, description, imageSrc }) => {
-            const slug = generateSlug(title);
+          {/* Services from serviceContent */}
+          {services.map(({ title, description, imageSrc, slug }) => {
             return (
-              <StyledServiceCard key={title} href={`/sluzby/${slug}.html`}>
+              <StyledServiceCard key={slug} href={`/sluzby/${slug}`}>
                 <Grid.Container
                   gap={2}
                   css={{ mb: '$10', bc: '#fff', borderRadius: '$lg', p: '$4' }}

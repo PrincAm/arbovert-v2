@@ -18,9 +18,9 @@ import { useIsMobile } from '../hooks/use-media-query';
 import MobileMenu from '../components/MobileMenu';
 
 const navItems = [
-  { label: 'Služby', href: '/sluzby.html' },
-  { label: 'O nás', href: '/o-nas.html' },
-  { label: 'Kontakt', href: '/kontakt.html' },
+  { label: 'Služby', href: '/sluzby' },
+  { label: 'O nás', href: '/o-nas' },
+  { label: 'Kontakt', href: '/kontakt' },
   {
     label: 'Výškové práce',
     href: 'https://vyskoveprace-arbovert.cz/',

@@ -7,81 +7,6 @@ import { useRouter } from 'next/router';
 
 import CookieBanner from '../components/CookieBanner';
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Arbovert s.r.o.",
-  "alternateName": "Arbovert",
-  "description": "Profesionální arboristické služby včetně rizikového kácení, ošetřování stromů, inventarizace dřevin a údržby zahrad v Praze a Vimperku.",
-  "url": "https://arbovert.cz",
-  "telephone": "+420-739-969-933",
-  "email": "info@arbovert.cz",
-  "address": [
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "Pasovská 84/37",
-      "addressLocality": "Vimperk",
-      "postalCode": "38501",
-      "addressCountry": "CZ"
-    },
-    {
-      "@type": "PostalAddress",
-      "streetAddress": "Jirsíkova 484/6",
-      "addressLocality": "Praha",
-      "addressCountry": "CZ"
-    }
-  ],
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Praha",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Hlavní město Praha"
-      }
-    },
-    {
-      "@type": "City", 
-      "name": "Vimperk",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Jihočeský kraj"
-      }
-    }
-  ],
-  "geo": [
-    {
-      "@type": "GeoCoordinates",
-      "latitude": "50.0755",
-      "longitude": "14.4378",
-      "name": "Praha"
-    },
-    {
-      "@type": "GeoCoordinates", 
-      "latitude": "49.0556",
-      "longitude": "13.7733",
-      "name": "Vimperk"
-    }
-  ],
-  "openingHours": "Mo-Fr 08:00-17:00",
-  "priceRange": "$$",
-  "serviceType": [
-    "Rizikové kácení",
-    "Ošetřování stromů", 
-    "Inventarizace dřevin",
-    "Údržba zahrad",
-    "Výškové práce",
-    "Prořezávání stromů",
-    "Výsadby stromů"
-  ],
-  "foundingDate": "2011",
-  "image": "https://arbovert.cz/images/welcome.jpg",
-  "logo": "https://arbovert.cz/images/arbovert-logo.svg",
-  "sameAs": [
-    "https://vyskoveprace-arbovert.cz/",
-    "https://www.facebook.com/arbovertcz/"
-  ]
-};
 
 // Base SEO configuration
 const baseSEO = {
@@ -131,12 +56,11 @@ const baseSEO = {
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   
-  // Generate canonical URL based on current path
-  // Only add .html suffix for pages that actually have .html files
-  const path = router.asPath;
+  // Generate canonical URL based on current path (remove query params for canonical)
+  const path = router.asPath.split('?')[0] || '/';
   const canonicalUrl = path === '/' 
     ? 'https://arbovert.cz/' 
-    : `https://arbovert.cz${path}${path.endsWith('.html') ? '' : '.html'}`;
+    : `https://arbovert.cz${path}`;
   
   // Create SEO config with dynamic canonical URL
   const seoConfig = {

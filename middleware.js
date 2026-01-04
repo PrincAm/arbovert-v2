@@ -19,14 +19,21 @@ export function middleware(request) {
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle .html URLs - strip .html for internal routing
+  // === SINGLE SOURCE OF TRUTH: .html to clean URL redirects ===
+  // This handles redirects in Next.js server mode
+  // For static export, see .htaccess (lines 22-26) which handles the same redirects
+  // Canonical URLs (use-canonical-url.js) should use paths as-is since redirects ensure they're clean
   if (pathname.endsWith('.html') && pathname !== '/index.html') {
     const url = request.nextUrl.clone();
-    url.pathname = pathname.replace('.html', '');
-    return NextResponse.rewrite(url);
+    // Remove .html suffix and preserve query parameters
+    url.pathname = pathname.replace(/\.html$/, '');
+    // Ensure we don't create a redirect loop
+    if (url.pathname !== pathname) {
+      return NextResponse.redirect(url, 301);
+    }
   }
 
-  // Ensure trailing slash is handled properly
+  // Ensure trailing slash is removed (consistent with trailingSlash: false)
   if (pathname !== '/' && pathname.endsWith('/')) {
     const url = request.nextUrl.clone();
     url.pathname = pathname.slice(0, -1);
