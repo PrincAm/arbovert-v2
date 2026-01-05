@@ -5,9 +5,14 @@
 # htaccess pravidla pro subdomeny a samostatne weby aliasu
 # pro vytvoreni subdomeny vytvorte adresar www/subdom/(nazev subdomeny)
 # pro vytvoreni webu pro alias vytvorte adresar www/domains/(cely domenovy nazev)
-# dalsi info a priklady: http://kb.wedos.com/r/32/webhosting-htaccess.html
+# dalsi info a priklady: https://kb.wedos.com/cs/webhosting/htaccess/htaccess-na-webhostingu
 
 RewriteEngine On
+
+# Disable automatic trailing slash addition for directories
+# This prevents redirect loops when directories have corresponding .html files
+# Note: Some servers may not support this directive
+DirectorySlash Off
 
 # 1) www.arbovert.cz → arbovert.cz (na jakékoli schéma)
 RewriteCond %{HTTP_HOST} ^www\.arbovert\.cz$ [NC]
@@ -15,36 +20,46 @@ RewriteRule ^ https://arbovert.cz%{REQUEST_URI} [L,R=301]
 
 # 2) http://arbovert.cz → https://arbovert.cz
 RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^arbovert\.cz$      [NC]
+RewriteCond %{HTTP_HOST} ^arbovert\.cz$ [NC]
 RewriteRule ^ https://arbovert.cz%{REQUEST_URI} [L,R=301]
 
-# This handles redirects for static export/server-level (Apache)
-# For Next.js server mode, see middleware.js (lines 22-31) which handles the same redirects
-# Canonical URLs (use-canonical-url.js) should use paths as-is since redirects ensure they're clean
-# Redirect .html URLs to clean URLs (301 permanent redirect)
-# This must come before other rules to catch .html requests first
-RewriteCond %{REQUEST_URI} \.html$
-RewriteCond %{REQUEST_URI} !^/index\.html$
-RewriteRule ^(.+)\.html$ $1 [R=301,L]
-
-# Redirect trailing slash URLs to clean URLs (consistent with trailingSlash: false)
-RewriteCond %{REQUEST_URI} ^(.+)/$
-RewriteCond %{REQUEST_URI} !^/$
-RewriteRule ^(.+)/$ $1 [R=301,L]
-
-# Redirect old inventarizace-drevin URL to new location (clean URL)
+# Redirect old inventarizace-drevin URL to new location
 RewriteRule ^inventarizace-drevin/?$ /sluzby/inventarizace-drevin [L,R=301]
 
+# Redirect .html URLs to clean URLs (301 permanent redirect for SEO)
+# This must come BEFORE the rewrite rule that serves .html files
+# Only process external requests, not internal rewrites (prevents loops)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_URI} \.html$
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Redirect trailing slash to clean URL (if corresponding .html file exists)
+# This prevents directory listing and redirect loops
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
 # Handle clean URLs - rewrite to .html file for Next.js static export
-# This allows Next.js static export to work while serving clean URLs
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# Priority: If a .html file exists for a path, serve it instead of directory
+# This handles the case where both /sluzby (directory) and /sluzby.html exist
+# Only process if URI doesn't already end in .html and is not root
 RewriteCond %{REQUEST_URI} !\.html$
 RewriteCond %{REQUEST_URI} !^/$
+# Check that the .html file actually exists
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+# Don't rewrite if the requested path is already a file
+RewriteCond %{REQUEST_FILENAME} !-f
+# Don't rewrite if this is already an internal redirect (prevents loops)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteRule ^(.*)$ $1.html [L]
 
 # cele domeny (aliasy)
+# Skip for main domain - only apply to aliases
+RewriteCond %{HTTP_HOST} !^arbovert\.cz$ [NC]
+RewriteCond %{HTTP_HOST} !^www\.arbovert\.cz$ [NC]
 RewriteCond %{REQUEST_URI} !^domains/
 RewriteCond %{REQUEST_URI} !^/domains/
 RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
@@ -52,6 +67,9 @@ RewriteCond %{DOCUMENT_ROOT}/domains/%2 -d
 RewriteRule (.*) domains/%2/$1 [DPI]
 
 # subdomeny (s nebo bez www na zacatku)
+# Skip for main domain - only apply to subdomains
+RewriteCond %{HTTP_HOST} !^arbovert\.cz$ [NC]
+RewriteCond %{HTTP_HOST} !^www\.arbovert\.cz$ [NC]
 RewriteCond %{REQUEST_URI} !^subdom/
 RewriteCond %{REQUEST_URI} !^/subdom/
 RewriteCond %{HTTP_HOST} ^(www\.)?(.*)\.([^\.]*)\.([^\.]*)$
