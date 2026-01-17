@@ -1,14 +1,10 @@
+"use client";
+
 import { useState, useEffect } from 'react';
-import {
-  Container,
-  Image,
-  Link,
-  Row,
-  Col,
-  Spacer,
-  styled,
-} from '@nextui-org/react';
-import Hamburger from 'hamburger-react';
+import { Link } from '@heroui/react';
+import NextLink from 'next/link';
+import Image from 'next/image';
+import Hamburger from '../components/Hamburger';
 
 import { StyledNavBar, StyledMobileNavBar } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,20 +24,24 @@ const navItems = [
   },
 ];
 
-const StyledIcon = styled(FontAwesomeIcon, {
-  marginRight: '$2',
-  width: '$9',
-  height: '$9',
-});
+const StyledIcon = ({ className = '', ...props }) => (
+  <FontAwesomeIcon
+    className={`mr-2 w-5 h-5 ${className}`}
+    {...props}
+  />
+);
 
-const IconContainer = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-});
+const IconContainer = ({ children, className = '', ...props }) => (
+  <div className={`flex items-center ${className}`} {...props}>
+    {children}
+  </div>
+);
 
-const HamburgerContainer = styled('div', {
-  zIndex: '$max',
-});
+const HamburgerContainer = ({ children, className = '', ...props }) => (
+  <div className={`z-[9999] ${className}`} {...props}>
+    {children}
+  </div>
+);
 
 const NavBar = () => {
   const isMobile = useIsMobile();
@@ -66,83 +66,60 @@ const NavBar = () => {
           {isExpanded && (
             <MobileMenu navItems={navItems} onExpand={setIsExpanded} />
           )}
-          <Link href="/" onClick={handleLogoClick}>
-                          <Image
-                src="/images/arbovert-logo.svg"
-                width={220}
-                css={{
-                  '&:hover': { cursor: 'pointer' },
-                  position: 'relative',
-                  zIndex: '$max',
-                }}
-                containerCss={{ m: '$6' }}
-                alt="green logo arbovert"
-              />
-          </Link>
+          <NextLink href="/" onClick={handleLogoClick}>
+            <Image
+              src="/images/arbovert-logo.svg"
+              width={220}
+              height={76}
+              className="hover:cursor-pointer relative z-[9999] m-6"
+              alt="green logo arbovert"
+            />
+          </NextLink>
           <HamburgerContainer>
-            <Hamburger toggled={isExpanded} toggle={setIsExpanded} />
+            <Hamburger toggle={() => setIsExpanded(!isExpanded)} isExpanded={isExpanded} />
           </HamburgerContainer>
         </StyledMobileNavBar>
       ) : (
         <StyledNavBar showBlur detached>
-          <Container
-            sm
-            as="nav"
-            display="flex"
-            wrap="nowrap"
-            alignItems="center"
-          >
-            <Link href="/">
+          <nav className="max-w-screen-lg mx-auto flex items-center w-full px-4 gap-4">
+            <NextLink href="/" className="flex-shrink-0">
               <Image
                 src="/images/arbovert-logo.svg"
-                width={220}
-                css={{ '&:hover': { cursor: 'pointer' } }}
+                width={180}
+                height={62}
+                className="hover:cursor-pointer"
                 alt="green logo arbovert"
               />
-            </Link>
-            <Col>
-              <Row justify="flex-end">
-                {navItems.map(({ href, label, target }) => (
-                  <Link
-                    key={label}
-                    href={href}
-                    css={{
-                      ml: '$6',
-                      color: '$green800',
-                    }}
-                    target={target && target}
-                  >
-                    {label}
-                  </Link>
-                ))}
-                <Spacer x={1} y={0} />
-                <IconContainer>
-                  <Link
-                    href="https://www.facebook.com/arbovertcz/"
-                    target="_blank"
-                    css={{
-                      color: '$blue600',
-                      fs: '1.2rem',
-                    }}
-                  >
-                    <StyledIcon icon={faFacebook} title="facebook" />
-                  </Link>
-                  <Link
-                    href="tel:+420739969933"
-                    css={{
-                      marginLeft: '$5',
-                      color: '$green800',
-                      display: 'flex',
-                      alignItems: 'center',
-                    }}
-                  >
-                    <StyledIcon icon={faPhone} title="telefon" /> +420 739 969
-                    933
-                  </Link>
-                </IconContainer>
-              </Row>
-            </Col>
-          </Container>
+            </NextLink>
+            <div className="flex-1 min-w-0 flex justify-end items-center gap-4">
+              {navItems.map(({ href, label, target }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="text-green-800 hover:underline whitespace-nowrap text-base md:text-lg"
+                  target={target && target}
+                >
+                  {label}
+                </Link>
+              ))}
+              <IconContainer className="flex-shrink-0 ml-2">
+                <Link
+                  href="https://www.facebook.com/arbovertcz/"
+                  target="_blank"
+                  className="text-blue-600 text-xl"
+                >
+                  <StyledIcon icon={faFacebook} title="facebook" />
+                </Link>
+                <Link
+                  href="tel:+420739969933"
+                  className="ml-3 text-green-800 flex items-center whitespace-nowrap text-base md:text-lg"
+                >
+                  <StyledIcon icon={faPhone} title="telefon" /> +420 739 969
+                  933
+                </Link>
+              </IconContainer>
+            </div>
+          </nav>
         </StyledNavBar>
       )}
     </>

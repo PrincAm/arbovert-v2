@@ -1,14 +1,16 @@
-import { styled } from '@nextui-org/react';
 import PropTypes from 'prop-types';
 
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-const StyledContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignContent: 'space-between',
-});
+const StyledContainer = ({ children, className = '', ...props }) => (
+  <div
+    className={`flex flex-col content-between ${className}`}
+    {...props}
+  >
+    {children}
+  </div>
+);
 
 const Layouts = ({ children }) => (
   <>

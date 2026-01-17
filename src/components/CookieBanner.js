@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
-import { Button, Row } from '@nextui-org/react';
+import { Button } from '@heroui/react';
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -55,19 +55,19 @@ const CookieBanner = () => {
         Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v
         návštěvě tohoto webu souhlasíte s používáním cookies.
       </p>
-      <Row align="center" justify="center">
-        <Button onClick={handleAccept} css={{ mr: '$2' }} size="sm" rounded>
+      <div className="flex items-center justify-center gap-2">
+        <Button onClick={handleAccept} size="sm" radius="full">
           Přijmout
         </Button>
         <Button
           onClick={handleDecline}
-          css={{ ml: '$2', bc: '$blue100', color: '$gray900' }}
+          className="bg-blue-100 text-gray-900"
           size="sm"
-          rounded
+          radius="full"
         >
           Odmítnout
         </Button>
-      </Row>
+      </div>
     </div>
   );
 };

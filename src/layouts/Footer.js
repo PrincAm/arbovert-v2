@@ -1,41 +1,27 @@
-import { Link, Image, styled } from '@nextui-org/react';
+import { Link } from '@heroui/react';
+import Image from 'next/image';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const StyledIcon = styled(FontAwesomeIcon, {
-  marginRight: '$2',
-  width: '$9',
-  height: '$9',
-});
-
-const Container = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  mt: '$10',
-  mb: '$10',
-});
+const StyledIcon = ({ className = '', ...props }) => (
+  <FontAwesomeIcon className={`mr-2 w-5 h-5 ${className}`} {...props} />
+);
 
 const Footer = () => (
-  <Container>
+  <div className="flex flex-col items-center justify-center mt-10 mb-10">
     <Image
       src="/images/arbovert-logo-cropped.svg"
       width={100}
+      height={100}
       alt="green logo arbovert without text"
     />
     <Link
       href="tel:+420739969933"
-      css={{
-        mt: '$8',
-        color: '$green800',
-        display: 'flex',
-        alignItems: 'center',
-      }}
+      className="mt-8 text-green-800 flex items-center"
     >
       <StyledIcon icon={faPhone} /> +420 739 969 933
     </Link>
-  </Container>
+  </div>
 );
 
 export default Footer;

@@ -1,35 +1,31 @@
-import { Card, Container, Link, styled, Text } from '@nextui-org/react';
-
-const StyledContainer = styled('div', {
-  display: 'flex',
-  backgroundColor: '$accents1',
-});
+import { Card, Link } from "@heroui/react";
+import Image from "next/image";
 
 const Organisation = () => (
-  <StyledContainer>
-    <Container
-      sm
-      display="flex"
-      direction="column"
-      alignItems="center"
-      align="center"
-      css={{ mt: '$15', mb: '$15' }}
-    >
-      <Text h1 css={{ lh: 1.2, mt: 0 }}>
-        Jsme členy Společnosti pro zahradní a krajinářskou tvorbu{' '}
-      </Text>
+  <div className="flex bg-gray-50">
+    <div className="max-w-screen-lg mx-auto w-full flex flex-col items-center pt-20 pb-20 px-6">
+      <div className="flex flex-col items-center text-center mb-12 space-y-4">
+        <h1 className="leading-tight text-4xl md:text-6xl font-bold text-foreground">
+          Jsme členy SZKT
+        </h1>
+        <p className="text-lg md:text-xl font-medium text-default-600 leading-relaxed max-w-2xl">
+          Společnost pro zahradní a krajinářskou tvorbu
+        </p>
+      </div>
       <Link href="https://szkt.cz/" target="_blank">
-        <Card cover clickable hoverable>
-          <Card.Image
-            src="images/szkt.svg"
-            height="auto"
-            width="100%"
+        <Card className="overflow-hidden border-2 border-success-500 hover:border-success-600 transition-colors duration-300 rounded-lg">
+          <Image
+            src="/images/szkt.svg"
+            width={300}
+            height={200}
             alt="SZKT logo"
+            className="object-contain"
+            style={{ width: "100%", height: "auto" }}
           />
         </Card>
       </Link>
-    </Container>
-  </StyledContainer>
+    </div>
+  </div>
 );
 
 export default Organisation;

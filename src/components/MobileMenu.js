@@ -1,109 +1,65 @@
-import { Link, styled, Text } from '@nextui-org/react';
-import PropTypes from 'prop-types';
+import { Link } from '@heroui/react';
+import NextLink from 'next/link';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import useLockBodyScroll from '../hooks/use-lock-body-scroll';
+// import useLockBodyScroll from '../hooks/use-lock-body-scroll';
 
-const Container = styled('nav', {
-  position: 'absolute',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  top: 0,
-  left: 0,
-  height: '100vh',
-  width: '100%',
-  backgroundColor: '#fff',
-  zIndex: '$1',
-  padding: '$10 $5 $5 $5',
-});
+const Container = ({ children, className = '', ...props }) => (
+  <nav
+    className={`absolute flex flex-col items-start top-0 left-0 h-screen w-full bg-white z-10 p-10 ${className}`}
+    {...props}
+  >
+    {children}
+  </nav>
+);
 
-const StyledIcon = styled(FontAwesomeIcon, {
-  width: '$12',
-  height: '$12',
-});
+const StyledIcon = ({ className = '', ...props }) => (
+  <FontAwesomeIcon className={`w-12 h-12 ${className}`} {...props} />
+);
 
 const MobileMenu = ({ navItems, onExpand }) => {
-  useLockBodyScroll();
+  // useLockBodyScroll();
 
   return (
     <Container>
-      <Link
+      <NextLink
         href="/"
         key="home"
-        css={{
-          mt: '$13',
-          ml: '$5',
-        }}
+        className="mt-13 ml-5 mb-4"
         onClick={() => onExpand(false)}
       >
-        <Text
-          h1
-          css={{
-            color: '$green800',
-          }}
-        >
+        <h1 className="text-green-800 text-3xl md:text-4xl font-bold">
           Domů
-        </Text>
-      </Link>
-      {navItems.map(({ href, label, target }) => (
-        <Link
-          href={href}
-          key={label}
-          target={target && target}
-          css={{
-            ml: '$5',
-          }}
-        >
-          <Text
-            h1
-            css={{
-              color: '$green800',
-            }}
+        </h1>
+      </NextLink>
+      {navItems.map(({ href, label, target }) => {
+        const LinkComponent = target === '_blank' ? Link : NextLink;
+        return (
+          <LinkComponent
+            href={href}
+            key={label}
+            target={target && target}
+            className="ml-5 mb-4"
+            onClick={() => onExpand(false)}
           >
-            {label}
-          </Text>
-        </Link>
-      ))}
+            <h1 className="text-green-800 text-3xl md:text-4xl font-bold">
+              {label}
+            </h1>
+          </LinkComponent>
+        );
+      })}
       <Link
         href="tel:+420739969933"
-        css={{
-          display: 'flex',
-          alignItems: 'center',
-          color: '$black',
-          mt: '$5',
-        }}
+        className="flex items-center text-black mt-5"
       >
-        <StyledIcon
-          icon={faPhone}
-          css={{
-            ml: '$10',
-            mr: '$5',
-          }}
-        />
-        <Text
-          h2
-          css={{
-            mt: 0,
-          }}
-        >
+        <StyledIcon icon={faPhone} className="ml-10 mr-5 text-2xl" />
+        <h2 className="mt-0 text-2xl md:text-3xl font-semibold">
           +420 739 969 933
-        </Text>
+        </h2>
       </Link>
     </Container>
   );
 };
 
 export default MobileMenu;
-
-MobileMenu.propType = {
-  navItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string,
-      label: PropTypes.string,
-      target: PropTypes.string,
-    })
-  ).isRequired,
-  onExpand: PropTypes.func.isRequired,
-};

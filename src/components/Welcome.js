@@ -1,17 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Button, Grid, Text, styled } from '@nextui-org/react';
+import { Button } from '@heroui/react';
 import Image from 'next/image';
 import { useIsMobile } from '../hooks/use-media-query';
 
-const BackgroundContainer = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  minHeight: 'calc(100vh - 76px)',
-  position: 'relative',
-  zIndex: '1',
-  padding: '0',
-});
+const BackgroundContainer = ({ children, className = '', ...props }) => (
+  <div
+    className={`flex items-center justify-center min-h-[calc(100vh-76px)] relative z-[1] p-0 ${className}`}
+    {...props}
+  >
+    {children}
+  </div>
+);
 
 const Welcome = () => {
   const isMobile = useIsMobile();
@@ -38,84 +37,50 @@ const Welcome = () => {
   };
 
   const textSize = isMobile ? 50 : 60;
+  const subTextSize = isMobile ? 28 : 36;
 
   return (
     <BackgroundContainer>
       <Image
-        src={imageSrc}
+        src={`https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/${imageSrc}`}
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
         priority={true}
         quality={75}
-        loader={({ src }) =>
-          `https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/${src}`
-        }
+        className="object-cover"
       />
-      <Grid.Container
-        gap={3}
-        justify="center"
-        align="center"
-        css={{
-          background: 'rgba(0, 0, 0, 0.5)',
-          maxWidth: isMobile ? 'auto' : '650px',
-          borderRadius: isMobile ? 0 : '$xl',
-          m: 0,
-          zIndex: 1,
-        }}
+      <div
+        className={`flex flex-col items-center justify-center bg-black/50 ${isMobile ? 'max-w-full rounded-none p-10' : 'max-w-[900px] rounded-xl p-16'} m-0 z-[1] gap-8`}
       >
-        <Grid sm={12} direction="column">
-          <Text
-            h1
-            size={textSize}
-            css={{
-              display: 'inline',
-              textGradient: '45deg, $blue500 -20%, $green500 50%',
-              lh: '1.2',
-            }}
-            weight="bold"
+        <div className="flex flex-col items-center text-center gap-6">
+          <h1
+            className="leading-tight font-bold"
+            style={{ fontSize: `${textSize}px` }}
           >
-            O stromy
+            <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+              O stromy
+            </span>
             <br />
-          </Text>
-          <Text
-            h1
-            size={textSize}
-            css={{
-              display: 'inline',
-              lh: '1.2',
-              color: 'white',
-            }}
-            weight="bold"
-          >
-            se postaráme za vás.
-            <br />
-          </Text>
-          <Text
-            h1
-            size={40}
-            css={{
-              display: 'inline',
-              color: 'white',
-              lh: '1.6',
-            }}
-            weight="bold"
+            <span className="text-white">se postaráme za vás.</span>
+          </h1>
+          <h2
+            className="text-white leading-relaxed font-bold"
+            style={{ fontSize: `${subTextSize}px` }}
           >
             Pokácíme, ošetříme, poradíme.
-          </Text>
-        </Grid>
-        <Grid sm={12} alignItems="center" justify="center">
+          </h2>
+        </div>
+        <div className="flex items-center justify-center w-full">
           <Button
             size="lg"
-            color="gradient"
-            rounded
-            auto
+            className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold text-lg px-10 py-6 rounded-full flex items-center justify-center"
+            radius="full"
             onClick={() => handleScrollToElement('contact')}
           >
             Chci nabídku zdarma
           </Button>
-        </Grid>
-      </Grid.Container>
+        </div>
+      </div>
     </BackgroundContainer>
   );
 };

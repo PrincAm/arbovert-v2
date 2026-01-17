@@ -1,20 +1,15 @@
-import Script from 'next/script';
-import { NextSeo } from 'next-seo';
-import { useCanonicalUrl } from '../hooks/use-canonical-url';
+"use client";
 
+import Script from 'next/script';
 import Welcome from '../components/Welcome';
 import Intro from '../components/Intro';
 import Certificate from '../components/Certificate';
-
-import Layout from '../layouts/index';
 import ContactUs from '../components/ContactUs';
 import Trusted from '../components/Trusted';
 import Organisation from '../components/Organisation';
 import GoToFormButton from '../components/GoToFormButton';
 
 export default function Home() {
-  const canonicalUrl = useCanonicalUrl();
-  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -93,42 +88,6 @@ export default function Home() {
 
   return (
     <>
-      <NextSeo
-        title="Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů"
-        description="Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností, certifikovaní pracovníci."
-        canonical={canonicalUrl}
-        openGraph={{
-          title: "Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů",
-          description: "Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností.",
-          url: canonicalUrl,
-          images: [
-            {
-              url: "https://arbovert.cz/images/welcome.jpg",
-              width: 1536,
-              height: 1536,
-              alt: "Arboristické práce - lana a stromy",
-            },
-          ],
-        }}
-        additionalMetaTags={[
-          {
-            name: 'keywords',
-            content: 'arbovert, arboristika praha, arboristika vimperk, rizikové kácení praha, rizikové kácení vimperk, ošetřování stromů praha, ošetřování stromů vimperk, inventarizace dřevin, výsadby stromů, arboristické služby praha, arboristické služby vimperk, výškové práce, prořezávání stromů, arboristika střední čechy, arboristika jihočeský kraj',
-          },
-          {
-            name: 'geo.region',
-            content: 'CZ-PR,CZ-PL',
-          },
-          {
-            name: 'geo.placename',
-            content: 'Praha, Vimperk',
-          },
-          {
-            name: 'geo.position',
-            content: '50.0755;14.4378;49.0556;13.7733',
-          },
-        ]}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -146,15 +105,13 @@ export default function Home() {
           gtag('config', 'G-8GZ2HM5LBZ');
         `}
       </Script>
-      <Layout>
-        <Welcome />
-        <Intro />
-        <ContactUs />
-        <Certificate />
-        <Trusted />
-        <Organisation />
-        <GoToFormButton />
-      </Layout>
+      <Welcome />
+      <Intro />
+      <ContactUs />
+      <Certificate />
+      <Trusted />
+      <Organisation />
+      <GoToFormButton />
     </>
   );
 }

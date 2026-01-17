@@ -1,8 +1,6 @@
-import { Button, Container, styled } from '@nextui-org/react';
+"use client";
 
-const StyledContainer = styled('div', {
-  display: 'flex',
-});
+import { Button } from "@heroui/react";
 
 const GoToFormButton = () => {
   const handleScrollToElement = (elementName) => {
@@ -15,32 +13,23 @@ const GoToFormButton = () => {
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <StyledContainer>
-      <Container
-        sm
-        display="flex"
-        direction="column"
-        alignItems="center"
-        align="center"
-        css={{ mt: '$15', mb: '$15' }}
-      >
+    <div className="flex">
+      <div className="max-w-screen-lg mx-auto w-full flex flex-col items-center pt-20 pb-20 px-6">
         <Button
           size="lg"
-          shadow
-          color="gradient"
-          rounded
-          auto
-          onClick={() => handleScrollToElement('contact')}
+          className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold text-lg px-10 py-6 rounded-full"
+          radius="full"
+          onClick={() => handleScrollToElement("contact")}
         >
           Chci nabídku zdarma
         </Button>
-      </Container>
-    </StyledContainer>
+      </div>
+    </div>
   );
 };
 

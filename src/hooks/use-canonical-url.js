@@ -1,15 +1,20 @@
-import { useRouter } from 'next/router';
+"use client";
+
+import { usePathname, useSearchParams } from 'next/navigation';
 
 export const useCanonicalUrl = () => {
-  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   
   // Generate canonical URL based on current path
-  // Redirects in middleware.js and .htaccess ensure URLs are already clean (no .html suffix)
-  // Only remove query params for canonical URLs
-  const path = router.asPath.split('?')[0] || '/';
+  // Only include search params if needed, otherwise use clean pathname
+  const path = pathname || '/';
+  const query = searchParams?.toString();
+  const fullPath = query ? `${path}?${query}` : path;
+  
   const canonicalUrl = path === '/' 
     ? 'https://arbovert.cz/' 
-    : `https://arbovert.cz${path}`;
+    : `https://arbovert.cz${fullPath}`;
   
   return canonicalUrl;
 }; 

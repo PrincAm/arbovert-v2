@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+:root {
+  /* Dark Forest/Olive Green Theme Colors (from envelope icon) */
+  /* Success - Primary dark muted forest green */
+  --success: oklch(0.42 0.10 135);
+  --success-foreground: oklch(0.98 0 0);
+
+  /* Accent - Slightly lighter dark green */
+  --accent: oklch(0.48 0.12 135);
+  --accent-foreground: oklch(0.98 0 0);
+
+  /* Link color - Use accent for consistency */
+  --link: var(--accent);
+}
+
+body {
+  min-height: 100vh;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: var(--link, var(--accent));
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover, var(--accent));
+}
+
+* {
+  box-sizing: border-box;
+}

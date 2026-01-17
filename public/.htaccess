@@ -26,14 +26,8 @@ RewriteRule ^ https://arbovert.cz%{REQUEST_URI} [L,R=301]
 # Redirect old inventarizace-drevin URL to new location
 RewriteRule ^inventarizace-drevin/?$ /sluzby/inventarizace-drevin [L,R=301]
 
-# Redirect .html URLs to clean URLs (301 permanent redirect for SEO)
-# This must come BEFORE the rewrite rule that serves .html files
-# Only process external requests, not internal rewrites (prevents loops)
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteCond %{REQUEST_URI} \.html$
-RewriteCond %{REQUEST_URI} !^/$
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+# REMOVED: The block that redirected .html to clean URLs was here.
+# This prevents the redirect loop while still allowing clean URLs to function below.
 
 # Redirect trailing slash to clean URL (if corresponding .html file exists)
 # This prevents directory listing and redirect loops

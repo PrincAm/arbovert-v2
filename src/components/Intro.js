@@ -1,5 +1,9 @@
-import { Card, Container, Grid, Text, Link } from '@nextui-org/react';
-import { useIsMobile } from '../hooks/use-media-query';
+"use client";
+
+import { Card, Link } from "@heroui/react";
+import NextLink from "next/link";
+import Image from "next/image";
+import { useIsMobile } from "../hooks/use-media-query";
 
 const getYearsSinceFounded = () => {
   const foundedYear = 2011;
@@ -11,72 +15,67 @@ const Intro = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Container sm id="intro" css={{ pt: '$15' }}>
-      <Grid.Container gap={5} justify="center" css={{ pt: 0 }}>
-        <Grid sm={7} direction="column">
-          <Text h1 css={{ lh: 1.2 }}>
-            Co umíme
-          </Text>
-          <Text
-            h2
-            css={{
-              fs: '$sm',
-              fontWeight: '$medium',
-              color: '$accents6',
-              mt: '$md',
-              mb: '$md',
-            }}
+    <div id="intro" className="max-w-screen-lg mx-auto w-full pt-20 px-6">
+      <div className="grid grid-cols-12 gap-8 md:gap-10 justify-center">
+        <div className="col-span-12 md:col-span-7 flex flex-col gap-6">
+          <h1 className="leading-tight text-4xl md:text-6xl font-bold text-foreground">Co umíme</h1>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+            Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, inventarizace dřevin, ošetřování památných stromů, posudky stromů a poradenství
+          </p>
+          <Link
+            as={NextLink}
+            href="/sluzby"
+            className="text-success-600 hover:text-success-700 text-lg md:text-xl font-semibold transition-colors w-fit group"
           >
-            Rizikové kácení, ošetřování stromů, instalace stabilizačních prvků,
-            údržba zahrad, řez ovocných dřevin,
-            <Link href="/sluzby/inventarizace-drevin">inventarizace dřevin</Link>,
-            ošetřování památných stromů, posudky stromů a poradenství
-          </Text>
-          <Link href="/sluzby">Více o našich službách</Link>
-        </Grid>
-        <Grid sm={5}>
-          <Link href="/sluzby">
-            <Card cover clickable hoverable>
-              <Card.Image
-                src="images/arbo.jpg"
-                width={isMobile ? 260 : 320}
-                alt="Card image background"
+            <span className="border-b-2 border-success-600 group-hover:border-success-700 pb-1">
+              Více o našich službách →
+            </span>
+          </Link>
+        </div>
+        <div className="col-span-12 md:col-span-5">
+          <NextLink href="/sluzby">
+            <Card className="overflow-hidden hover:border-success-600 transition-colors duration-300 rounded-lg p-0">
+              <Image
+                src="/images/arbo.jpg"
+                width={isMobile ? 320 : 400}
+                height={isMobile ? 320 : 400}
+                alt="Arboristické služby"
+                className="object-cover w-full h-full"
               />
             </Card>
-          </Link>
-        </Grid>
-        <Grid sm={7} direction="column">
-          <Text h1 css={{ lh: 1.2 }}>
-            Arboristika je náš život
-          </Text>
-          <Text
-            h2
-            css={{
-              fs: '$sm',
-              fontWeight: '$medium',
-              color: '$accents6',
-              mt: '$md',
-              mb: '$md',
-            }}
-          >
+          </NextLink>
+        </div>
+
+        <div className="col-span-12 md:col-span-7 flex flex-col gap-6 mt-8 md:mt-12">
+          <h1 className="leading-tight text-4xl md:text-6xl font-bold text-foreground">Arboristika je náš život</h1>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Máme přes {getYearsSinceFounded()} let zkušeností.
             <br />A na naší práci to uvidíte.
-          </Text>
-          <Link href="/o-nas">Více o nás</Link>
-        </Grid>
-        <Grid sm={5}>
-          <Link href="/o-nas">
-            <Card cover clickable hoverable>
-              <Card.Image
-                src="images/we.jpg"
-                width={isMobile ? 260 : 320}
-                alt="Card image background"
+          </p>
+          <Link
+            as={NextLink}
+            href="/o-nas"
+            className="text-success-600 hover:text-success-700 text-lg md:text-xl font-semibold transition-colors w-fit group"
+          >
+            <span className="border-b-2 border-success-600 group-hover:border-success-700 pb-1">Více o nás →</span>
+          </Link>
+        </div>
+        <div className="col-span-12 md:col-span-5 mt-8 md:mt-12">
+          <NextLink href="/o-nas">
+            <Card className="overflow-hidden hover:border-success-600 transition-colors duration-300 rounded-lg p-0">
+              <Image
+                src="/images/we.jpg"
+                width={isMobile ? 320 : 400}
+                height={isMobile ? 320 : 400}
+                alt="Náš tým"
+                className="object-cover w-full h-full"
               />
             </Card>
-          </Link>
-        </Grid>
-      </Grid.Container>
-    </Container>
+          </NextLink>
+        </div>
+      </div>
+    </div>
   );
 };
+
 export default Intro;
