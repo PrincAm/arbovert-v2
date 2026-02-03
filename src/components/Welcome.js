@@ -58,10 +58,10 @@ const Welcome = () => {
             style={{ fontSize: `${textSize}px` }}
           >
             <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
-              O stromy
+              Kácení stromů
             </span>
             <br />
-            <span className="text-white">se postaráme za vás.</span>
+            <span className="text-white">Praha a Šumava</span>
           </h1>
           <h2
             className="text-white leading-relaxed font-bold"

@@ -51,7 +51,7 @@ export default async function ServicePage({ params }) {
   if (!service) {
     return (
       <StyledContainer>
-        <div className="max-w-screen-lg mx-auto w-full pt-20 pb-20 px-6">
+        <div className="max-w-screen-lg mx-auto w-full pt-8 md:pt-20 pb-12 md:pb-20 px-4 md:px-6">
           <h1 className="leading-tight text-4xl md:text-6xl font-bold text-foreground">
             Služba nenalezena
           </h1>

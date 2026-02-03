@@ -15,6 +15,7 @@ import MobileMenu from '../components/MobileMenu';
 
 const navItems = [
   { label: 'Služby', href: '/sluzby' },
+  { label: 'Realizace', href: '/realizace' },
   { label: 'O nás', href: '/o-nas' },
   { label: 'Kontakt', href: '/kontakt' },
   {

@@ -2,7 +2,7 @@ export const serviceContent = {
   'rizikove-kaceni-stromu': {
     title: 'Rizikové kácení stromů',
     description: 'Profesionální rizikové kácení stromů v obtížně přístupných místech.',
-    longDescription: 'Naší činností je odborné kácení stromů v místech kam se nedostane technika, je potřeba strom pokácet a při tom nepoškodit místo. Zabýváme se rizikovým kácením a postupným kácením bez možnosti dopadu částí dřeva na zem.',
+    longDescription: 'Naší činností je odborné kácení stromů v místech kam se nedostane technika, je potřeba strom pokácet a při tom nepoškodit místo. Zabýváme se rizikovým kácením a postupným kácením bez možnosti dopadu částí dřeva na zem. Jsme tým certifikovaných arboristů. Díky pobočkám v Praze a Vimperku na Šumavě zajišťujeme rychlé a profesionální kácení stromů v Praze, na Šumavě a v celých jižních Čechách.',
     imageSrc: '/images/service/kaceni.jpg',
     benefits: [
       { title: 'Obtížně přístupná místa', description: 'Kde se nedostane technika nebo je omezený prostor.' },
@@ -12,8 +12,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci rizikové kácení stromů',
     question: 'Potřebujete profesionální pomoc s rizikovým kácením?',
-    seoTitle: 'Rizikové kácení stromů - Profesionální arboristické služby | Arbovert',
-    seoDescription: 'Odborné rizikové kácení stromů v obtížně přístupných místech. Postupné kácení bez možnosti dopadu částí dřeva na zem. Profesionální arboristické služby.',
+    seoTitle: 'Rizikové kácení stromů Praha, Šumava a jižní Čechy | Arbovert',
+    seoDescription: 'Profesionální rizikové kácení stromů v Praze a na Šumavě. Kácení stromů v obtížně přístupných místech. Pobočky Praha a Vimperk. 14+ let praxe, certifikovaní arboristé.',
   },
   'odborne-osetrovani-stromu': {
     title: 'Odborné ošetřování stromů',
@@ -29,8 +29,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci ošetřování stromů',
     question: 'Máte stromy, které potřebují odborné ošetření?',
-    seoTitle: 'Odborné ošetřování stromů - Profesionální arboristické služby | Arbovert',
-    seoDescription: 'Komplexní ošetřování stromů: zdravotní řezy, obvodové redukce, stabilizace korun a výchovné řezy. Profesionální arboristické služby.',
+    seoTitle: 'Ošetřování stromů Praha, Šumava | Arboristika jižní Čechy',
+    seoDescription: 'Profesionální ošetřování stromů v Praze a na Šumavě. Zdravotní řezy, stabilizace korun, péče o památné stromy. Certifikovaní arboristé pro Prahu a jižní Čechy.',
   },
   'zajistovani-stromu': {
     title: 'Zajišťování stromů',
@@ -46,8 +46,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci zajišťování stromů',
     question: 'Potřebujete zajištění problematických stromů?',
-    seoTitle: 'Zajišťování stromů - Dynamické vazby a stabilizace | Arbovert',
-    seoDescription: 'Instalace dynamických vazeb pro stromy s problémovým větvením. Lana s nosností 2, 4 nebo 8 tun. Kompletní zahradnické práce a údržba zeleně.',
+    seoTitle: 'Zajišťování stromů Praha, Šumava - Dynamické vazby | Arbovert',
+    seoDescription: 'Instalace dynamických vazeb a stabilizace stromů v Praze a na Šumavě. Profesionální zajištění stromů s problémovým větvením. Působíme v celých jižních Čechách.',
   },
   'prorezavani-ovocnych-stromu': {
     title: 'Prořezávání ovocných stromů',
@@ -63,8 +63,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci prořezávání ovocných stromů',
     question: 'Chcete zlepšit úrodu vašich ovocných stromů?',
-    seoTitle: 'Prořezávání ovocných stromů - Odborné ošetřování | Arbovert',
-    seoDescription: 'Odborné ošetřování ovocných stromů: povýsadbová péče, zakládací a udržovací řez, údržba starých stromů v parcích a alejích.',
+    seoTitle: 'Prořezávání ovocných stromů Praha, Šumava | Arbovert',
+    seoDescription: 'Odborné prořezávání ovocných stromů v Praze a na Šumavě. Povýsadbová péče, zakládací a udržovací řez. Údržba starých ovocných sadů v jižních Čechách.',
   },
   'likvidace-drevni-hmoty': {
     title: 'Likvidace dřevní hmoty',
@@ -80,8 +80,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci likvidaci dřevní hmoty',
     question: 'Potřebujete kompletní úklid po kácení stromů?',
-    seoTitle: 'Likvidace dřevní hmoty - Frézování pařezů a štěpkování | Arbovert',
-    seoDescription: 'Kompletní likvidace dřevní hmoty: frézování pařezů po pokácení stromů, štěpkování větví a dřevní hmoty. Profesionální zpracování dřeva.',
+    seoTitle: 'Frézování pařezů a likvidace dřeva Praha, Šumava | Arbovert',
+    seoDescription: 'Frézování pařezů a likvidace dřevní hmoty v Praze a na Šumavě. Štěpkování větví, kompletní úklid po kácení stromů. Profesionální služby v jižních Čechách.',
   },
   'vysadba-stromu-a-povysadbova-pece': {
     title: 'Výsadba stromů a povýsadbová péče',
@@ -97,8 +97,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci výsadbu stromů',
     question: 'Chcete vysadit nové stromy na vašem pozemku?',
-    seoTitle: 'Výsadba stromů a povýsadbová péče - Profesionální arboristické služby | Arbovert',
-    seoDescription: 'Výsadba stromů pro města, obce i soukromé osoby. Povýsadbová péče po několik let. Profesionální arboristické služby výsadby a údržby.',
+    seoTitle: 'Výsadba stromů Praha, Šumava a jižní Čechy | Arbovert',
+    seoDescription: 'Profesionální výsadba stromů v Praze a na Šumavě. Výsadba pro města, obce i soukromé zahrady. Povýsadbová péče po několik let. Arboristé pro jižní Čechy.',
   },
   'inventarizace-drevin': {
     title: 'Inventarizace dřevin',
@@ -113,7 +113,7 @@ export const serviceContent = {
     ],
     ctaText: 'Chci inventarizaci dřevin',
     question: 'Potřebujete inventarizaci vašich stromů?',
-    seoTitle: 'Inventarizace dřevin - Komplexní analýza stromového porostu | Arbovert',
-    seoDescription: 'Profesionální inventarizace dřevin pro udržitelné hospodaření. Analyzujeme stromový porost v lesích, parcích a městských zelených plochách. Zajistíme efektivní využití dřevní hmoty.',
+    seoTitle: 'Inventarizace dřevin Praha, Šumava | Pasportizace zeleně',
+    seoDescription: 'Inventarizace dřevin a pasportizace zeleně v Praze a na Šumavě. Analýza stromového porostu v lesích, parcích a městech. Profesionální služby pro jižní Čechy.',
   },
 };

@@ -27,7 +27,7 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <StyledContainer>
-      <div className="max-w-screen-lg mx-auto w-full pt-20 pb-20 px-4 md:px-6">
+      <div className="max-w-screen-lg mx-auto w-full pt-8 md:pt-20 pb-12 md:pb-20 px-4 md:px-6">
         <h1 className="leading-tight text-3xl md:text-6xl font-bold text-foreground mb-8 md:mb-12">
           O nás
         </h1>

@@ -4,25 +4,32 @@ import NavBar from '../layouts/NavBar';
 import Footer from '../layouts/Footer';
 
 export const metadata = {
-  title: 'Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů',
+  title: 'Arbovert - Kácení stromů Praha, Šumava | Arboristika a rizikové kácení',
   description:
-    'Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností, certifikovaní pracovníci.',
+    'Profesionální kácení stromů a arboristika v Praze a na Šumavě. Rizikové kácení, ošetřování stromů, péče o památné stromy. Certifikovaní arboristé s 14+ lety zkušeností. Pobočky Praha a Vimperk.',
   keywords: [
-    'arbovert',
+    'kácení stromů praha',
+    'kácení stromů šumava',
     'arboristika praha',
-    'arboristika vimperk',
+    'arboristika šumava',
     'rizikové kácení praha',
+    'rizikové kácení šumava',
     'rizikové kácení vimperk',
     'ošetřování stromů praha',
-    'ošetřování stromů vimperk',
+    'ošetřování stromů šumava',
+    'arborista praha',
+    'arborista šumava',
+    'kácení stromů jižní čechy',
+    'arboristické služby praha',
+    'arboristické služby šumava',
+    'prořezávání stromů praha',
+    'péče o stromy praha',
+    'péče o stromy šumava',
     'inventarizace dřevin',
     'výsadby stromů',
-    'arboristické služby praha',
-    'arboristické služby vimperk',
-    'výškové práce',
-    'prořezávání stromů',
     'arboristika střední čechy',
     'arboristika jihočeský kraj',
+    'kácení stromů prachatice',
   ],
   authors: [{ name: 'Arbovert s.r.o.' }],
   robots: {
@@ -33,9 +40,9 @@ export const metadata = {
     type: 'website',
     locale: 'cs_CZ',
     siteName: 'Arbovert',
-    title: 'Arbovert - Arboristika Praha, Vimperk | Rizikové kácení, ošetřování stromů',
+    title: 'Arbovert - Kácení stromů Praha, Šumava | Arboristika a rizikové kácení',
     description:
-      'Arbovert Praha, Vimperk - profesionální arboristické služby: rizikové kácení stromů, ošetřování stromů, inventarizace dřevin, výsadby. 12+ let zkušeností.',
+      'Profesionální kácení stromů a arboristika v Praze a na Šumavě. Rizikové kácení, ošetřování stromů, péče o památné stromy. Certifikovaní arboristé.',
     images: [
       {
         url: 'https://arbovert.cz/images/welcome.jpg',

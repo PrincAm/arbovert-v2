@@ -31,12 +31,12 @@ const services = Object.entries(serviceContent)
   .map(([slug, service]) => ({ ...service, slug }));
 
 export const metadata = {
-  title: "Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert",
+  title: "Kácení stromů a arboristika Praha, Šumava - Služby | Arbovert",
   description:
-    "Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce.",
+    "Profesionální kácení stromů v Praze a na Šumavě. Rizikové kácení, ošetřování stromů, péče o památné stromy, inventarizace dřevin. Certifikovaní arboristé pro jižní Čechy.",
   openGraph: {
-    title: "Služby - Rizikové kácení, ošetřování stromů, inventarizace dřevin | Arbovert",
-    description: "Kompletní arboristické služby: rizikové kácení, ošetřování stromů, inventarizace dřevin, výsadby, údržba zahrad, řez ovocných dřevin a výškové práce.",
+    title: "Kácení stromů a arboristika Praha, Šumava - Služby | Arbovert",
+    description: "Profesionální kácení stromů v Praze a na Šumavě. Rizikové kácení, ošetřování stromů, péče o památné stromy, inventarizace dřevin.",
     images: [
       {
         url: "https://arbovert.cz/images/service/strom-cropped.jpg",
@@ -51,7 +51,7 @@ export const metadata = {
 export default function Service() {
   return (
     <StyledContainer>
-      <div className="max-w-screen-lg mx-auto w-full pt-20 pb-20 px-4 md:px-6">
+      <div className="max-w-screen-lg mx-auto w-full pt-8 md:pt-20 pb-12 md:pb-20 px-4 md:px-6">
         <h1 className="leading-tight text-3xl md:text-6xl font-bold text-foreground mb-8 md:mb-12">
           Služby
         </h1>
@@ -65,7 +65,7 @@ export default function Service() {
                 Při inventarizaci dřevin analyzujeme informace o stromovém porostu na různých místech, nejen v lesích, ale i v městských
                 parcích a jiných zelených plochách. Což je zásadní pro udržitelné využívání dřevní hmoty a ochranu přírody.
               </p>
-              <p className="mt-2 md:mt-3 text-success-600 hover:text-success-700 font-semibold text-base md:text-xl transition-colors">
+              <p className="mt-2 md:mt-3 text-default-700 hover:text-default-900 font-semibold text-base md:text-xl transition-colors">
                 Více informací →
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function Service() {
                 <div className="col-span-12 md:col-span-7 flex flex-col gap-3 md:gap-4">
                   <h3 className="text-xl md:text-3xl font-semibold text-foreground">{title}</h3>
                   <p className="text-base md:text-lg text-default-600 leading-relaxed">{description}</p>
-                  <p className="mt-2 md:mt-3 text-success-600 hover:text-success-700 font-semibold text-base md:text-xl transition-colors">
+                  <p className="mt-2 md:mt-3 text-default-700 hover:text-default-900 font-semibold text-base md:text-xl transition-colors">
                     Více informací →
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function Service() {
             <Link
               href="https://vyskoveprace-arbovert.cz/"
               target="_blank"
-              className="mt-2 md:mt-3 flex items-center font-semibold text-success-600 hover:text-success-700 text-base md:text-xl transition-colors w-fit"
+              className="mt-2 md:mt-3 flex items-center font-semibold text-default-700 hover:text-default-900 text-base md:text-xl transition-colors w-fit"
             >
               Více informací <StyledIcon icon={faArrowUpRightFromSquare} />
             </Link>
