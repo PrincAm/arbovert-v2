@@ -3,6 +3,12 @@ import { Button } from '@heroui/react';
 import Image from 'next/image';
 import { useIsMobile } from '../hooks/use-media-query';
 
+const getYearsSinceFounded = () => {
+  const foundedYear = 2011;
+  const currentYear = new Date().getFullYear();
+  return currentYear - foundedYear;
+};
+
 const BackgroundContainer = ({ children, className = '', ...props }) => (
   <div
     className={`flex items-center justify-center min-h-[calc(100vh-76px)] relative z-[1] p-0 ${className}`}
@@ -49,36 +55,46 @@ const Welcome = () => {
         quality={75}
         className="object-cover"
       />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50" />
       <div
-        className={`flex flex-col items-center justify-center bg-black/50 ${isMobile ? 'max-w-full rounded-none p-10' : 'max-w-[900px] rounded-xl p-16'} m-0 z-[1] gap-8`}
+        className={`flex flex-col items-center justify-center ${isMobile ? 'max-w-full p-8' : 'max-w-[900px] p-16'} m-0 z-[1] gap-6`}
       >
-        <div className="flex flex-col items-center text-center gap-6">
+        <div className="flex flex-col items-center text-center gap-4">
+          <p className="text-emerald-400 text-lg md:text-xl font-medium tracking-wide uppercase">
+            Certifikovaní arboristé
+          </p>
           <h1
-            className="leading-tight font-bold"
+            className="leading-tight font-bold text-white drop-shadow-lg"
             style={{ fontSize: `${textSize}px` }}
           >
-            <span className="text-emerald-400">
-              Kácení stromů
-            </span>
+            Kácení stromů
             <br />
-            <span className="text-white">Praha a Šumava</span>
+            <span className="text-emerald-400">Praha a jižní Čechy</span>
           </h1>
-          <h2
-            className="text-white leading-relaxed font-bold"
-            style={{ fontSize: `${subTextSize}px` }}
+          <p
+            className="text-white/90 leading-relaxed max-w-lg"
+            style={{ fontSize: `${isMobile ? 18 : 22}px` }}
           >
-            Pokácíme, ošetříme, poradíme.
-          </h2>
+            Pokácíme, ošetříme, poradíme. Přes {getYearsSinceFounded()} let zkušeností.
+          </p>
         </div>
-        <div className="flex items-center justify-center w-full">
+        <div className="flex flex-col items-center justify-center gap-6 mt-4">
           <Button
             size="lg"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full flex items-center justify-center transition-colors"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors shadow-lg"
             radius="full"
             onClick={() => handleScrollToElement('contact')}
           >
             Chci nabídku zdarma
           </Button>
+          <a
+            href="tel:+420739969933"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
+            <span className="text-white text-lg">nebo volejte</span>
+            <span className="text-2xl md:text-3xl font-bold text-emerald-400">739 969 933</span>
+          </a>
         </div>
       </div>
     </BackgroundContainer>

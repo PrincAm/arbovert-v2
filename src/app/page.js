@@ -3,11 +3,8 @@
 import Script from 'next/script';
 import Welcome from '../components/Welcome';
 import Intro from '../components/Intro';
-import Certificate from '../components/Certificate';
+import TrustSection from '../components/TrustSection';
 import ContactUs from '../components/ContactUs';
-import Trusted from '../components/Trusted';
-import Organisation from '../components/Organisation';
-import GoToFormButton from '../components/GoToFormButton';
 
 export default function Home() {
   const structuredData = {
@@ -107,11 +104,8 @@ export default function Home() {
       </Script>
       <Welcome />
       <Intro />
+      <TrustSection />
       <ContactUs />
-      <Certificate />
-      <Trusted />
-      <Organisation />
-      <GoToFormButton />
     </>
   );
 }
