@@ -197,7 +197,7 @@ const ContactUs = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className={`bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold ${isMobile ? "text-base px-12 py-5 w-full max-w-xs" : "text-2xl px-24 py-8"} rounded-full hover:opacity-90 transition-opacity shadow-md`}
+                    className={`bg-emerald-600 hover:bg-emerald-700 text-white font-bold ${isMobile ? "text-base px-12 py-5 w-full max-w-xs" : "text-2xl px-24 py-8"} rounded-full transition-colors shadow-md`}
                     radius="full"
                   >
                     Odeslat

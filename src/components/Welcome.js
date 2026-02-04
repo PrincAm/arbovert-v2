@@ -57,7 +57,7 @@ const Welcome = () => {
             className="leading-tight font-bold"
             style={{ fontSize: `${textSize}px` }}
           >
-            <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+            <span className="text-emerald-400">
               Kácení stromů
             </span>
             <br />
@@ -73,7 +73,7 @@ const Welcome = () => {
         <div className="flex items-center justify-center w-full">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold text-lg px-10 py-6 rounded-full flex items-center justify-center"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full flex items-center justify-center transition-colors"
             radius="full"
             onClick={() => handleScrollToElement('contact')}
           >

@@ -62,7 +62,7 @@ export default function ServicePageClient({ service, slug }) {
             <div className="max-w-screen-lg mx-auto flex flex-col items-center mt-8 mb-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold text-lg px-10 py-6 rounded-full"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors"
                 radius="full"
                 onClick={handleButtonClick}
               >
