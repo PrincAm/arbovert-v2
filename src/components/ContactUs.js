@@ -95,7 +95,7 @@ const ContactUs = () => {
                 }}
                 className="w-full"
               >
-                <Label className="font-medium text-gray-700 mb-2">Jméno *</Label>
+                <Label className="font-medium text-gray-700 mb-2">Jméno</Label>
                 <Input
                   placeholder="Vaše jméno"
                   className="border-2 border-gray-200 bg-white rounded-xl h-12 px-4 hover:border-gray-300 focus:border-success-500"
@@ -118,7 +118,7 @@ const ContactUs = () => {
                 }}
                 className="w-full"
               >
-                <Label className="font-medium text-gray-700 mb-2">Email *</Label>
+                <Label className="font-medium text-gray-700 mb-2">Email</Label>
                 <Input
                   placeholder="vas@email.cz"
                   className="border-2 border-gray-200 bg-white rounded-xl h-12 px-4 hover:border-gray-300 focus:border-success-500"
@@ -147,7 +147,7 @@ const ContactUs = () => {
               className="w-full"
             >
               <Label className="font-medium text-gray-700 mb-2">
-                Popište váš problém *
+                Popište váš problém
               </Label>
               <TextArea
                 placeholder="Co potřebujete? Kde se nachází strom/stromy? Máte fotky?"
@@ -183,7 +183,7 @@ const ContactUs = () => {
                     >
                       zpracováním osobních údajů
                     </Link>{" "}
-                    *
+                    <span className="text-danger-500">*</span>
                   </Label>
                 </Checkbox.Content>
               </Checkbox>
