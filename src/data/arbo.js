@@ -12,8 +12,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci rizikové kácení stromů',
     question: 'Potřebujete profesionální pomoc s rizikovým kácením?',
-    seoTitle: 'Rizikové kácení stromů Praha, Šumava a jižní Čechy | Arbovert',
-    seoDescription: 'Profesionální rizikové kácení stromů v Praze a na Šumavě. Kácení stromů v obtížně přístupných místech. Pobočky Praha a Vimperk. 14+ let praxe, certifikovaní arboristé.',
+    seoTitle: 'Rizikové kácení stromů Praha, Šumava | Arborista Praha - Arbovert',
+    seoDescription: 'Rizikové kácení stromů Praha a Šumava. Profesionální technika kácení stromů v obtížně přístupných místech. Arborista Praha s 14+ lety zkušeností. Certifikovaní arboristé Arbovert.',
   },
   'odborne-osetrovani-stromu': {
     title: 'Odborné ošetřování stromů',
@@ -69,7 +69,7 @@ export const serviceContent = {
   'likvidace-drevni-hmoty': {
     title: 'Likvidace dřevní hmoty',
     description: 'Kompletní likvidace dřevní hmoty a zpracování dřeva.',
-    longDescription: 'Zařizujeme likvidace dřeva, frézování pařezů po pokácení stromů, včetně štěpkování dřevní hmoty a větví. Profesionální zpracování a likvidace všech druhů dřevního odpadu.',
+    longDescription: 'Zařizujeme likvidaci dřeva a likvidaci dřevního odpadu, frézování pařezů po pokácení stromů, včetně štěpkování dřevní hmoty, štěpkování dřeva a větví. Profesionální zpracování a likvidace všech druhů dřevního odpadu.',
     imageSrc: '/images/service/frezovani.jpg',
     benefits: [
       { title: 'Frézování pařezů', description: 'Kompletní odstranění pařezů po pokácení stromů.' },
@@ -80,8 +80,8 @@ export const serviceContent = {
     ],
     ctaText: 'Chci likvidaci dřevní hmoty',
     question: 'Potřebujete kompletní úklid po kácení stromů?',
-    seoTitle: 'Frézování pařezů a likvidace dřeva Praha, Šumava | Arbovert',
-    seoDescription: 'Frézování pařezů a likvidace dřevní hmoty v Praze a na Šumavě. Štěpkování větví, kompletní úklid po kácení stromů. Profesionální služby v jižních Čechách.',
+    seoTitle: 'Štěpkování dřevní hmoty a likvidace dřevního odpadu Praha | Arbovert',
+    seoDescription: 'Štěpkování dřevní hmoty a štěpkování dřeva Praha a Šumava. Likvidace dřevního odpadu, likvidace dřeva, frézování pařezů. Profesionální služby v jižních Čechách.',
   },
   'vysadba-stromu-a-povysadbova-pece': {
     title: 'Výsadba stromů a povýsadbová péče',
@@ -113,7 +113,7 @@ export const serviceContent = {
     ],
     ctaText: 'Chci inventarizaci dřevin',
     question: 'Potřebujete inventarizaci vašich stromů?',
-    seoTitle: 'Inventarizace dřevin Praha, Šumava | Pasportizace zeleně',
-    seoDescription: 'Inventarizace dřevin a pasportizace zeleně v Praze a na Šumavě. Analýza stromového porostu v lesích, parcích a městech. Profesionální služby pro jižní Čechy.',
+    seoTitle: 'Inventarizace dřevin a inventarizace stromů Praha | Arbovert',
+    seoDescription: 'Inventarizace dřevin a inventarizace stromů Praha a Šumava. Pasportizace zeleně, analýza stromového porostu v lesích, parcích a městech. Profesionální arboristé pro jižní Čechy.',
   },
 };

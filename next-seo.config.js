@@ -1,7 +1,7 @@
 export default {
   title: 'Arbovert',
   description:
-    'Rizikové kácení, ošetřování stromů, inventarizace dřevin a další arboristické služby. Profesionální péče o stromy a zahrady.',
+    'Arbovert - profesionální arborista Praha a Šumava. Rizikové kácení stromů, inventarizace dřevin, štěpkování dřevní hmoty a likvidace dřevního odpadu. Certifikovaní arboristé s 14+ lety zkušeností.',
   canonical: 'https://arbovert.cz/',
   additionalMetaTags: [
     {
@@ -27,9 +27,9 @@ export default {
     url: 'https://arbovert.cz/',
     siteName: 'Arbovert',
     title:
-      'Arboristika, rizikové kácení, prořezávání stromů, výsadby | Arbovert',
+      'Arbovert - Arborista Praha | Rizikové kácení stromů a inventarizace dřevin',
     description:
-      'Rizikové kácení, ošetřování stromů, inventarizace dřevin, ošetřování památných stromů, instalace stabilizačních prvků, údržba zahrad, řez ovocných dřevin, posudky stromů a poradenství.',
+      'Arbovert - profesionální arborista Praha a Šumava. Rizikové kácení stromů, inventarizace dřevin a stromů, štěpkování dřeva, likvidace dřevního odpadu. Technika kácení stromů od certifikovaných arboristů.',
     images: [
       {
         url: 'https://arbovert.cz/images/welcome.jpg',
