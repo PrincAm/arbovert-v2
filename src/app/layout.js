@@ -71,6 +71,11 @@ export default function RootLayout({ children }) {
     <html lang="cs">
       <head>
         <meta name="robots" content="index, follow" />
+        {/* Preconnect to external domains for faster resource loading */}
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V7DRKB"

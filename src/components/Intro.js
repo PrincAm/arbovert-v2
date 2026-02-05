@@ -44,6 +44,7 @@ const Intro = () => {
                   width={600}
                   height={400}
                   alt="Arboristické služby"
+                  loading="lazy"
                   className="object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -58,6 +59,7 @@ const Intro = () => {
           src="/images/strom.jpg"
           fill
           alt="Výškové práce"
+          loading="lazy"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
@@ -90,6 +92,7 @@ const Intro = () => {
                   width={600}
                   height={400}
                   alt="Náš tým"
+                  loading="lazy"
                   className="object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-500"
                 />
               </div>

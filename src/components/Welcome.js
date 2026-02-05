@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+"use client";
+
 import { Button } from '@heroui/react';
 import Image from 'next/image';
-import { useIsMobile } from '../hooks/use-media-query';
 
 const getYearsSinceFounded = () => {
   const foundedYear = 2011;
@@ -19,15 +19,6 @@ const BackgroundContainer = ({ children, className = '', ...props }) => (
 );
 
 const Welcome = () => {
-  const isMobile = useIsMobile();
-  const [imageSrc, setImageSrc] = useState('background-small_fx4luw.webp');
-
-  useEffect(() => {
-    if (!isMobile) {
-      setImageSrc('background_ehubfy.webp');
-    }
-  }, [isMobile]);
-
   const handleScrollToElement = (elementName) => {
     const element = document.getElementById(elementName);
     const offset = 80;
@@ -42,40 +33,43 @@ const Welcome = () => {
     });
   };
 
-  const textSize = isMobile ? 50 : 60;
-  const subTextSize = isMobile ? 28 : 36;
-
   return (
     <BackgroundContainer>
+      {/* Mobile background image */}
       <Image
-        src={`https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/${imageSrc}`}
+        src="https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/background-small_fx4luw.webp"
         alt="Background"
         fill
         priority={true}
+        fetchPriority="high"
         quality={75}
-        className="object-cover"
+        className="object-cover md:hidden"
+      />
+      {/* Desktop background image */}
+      <Image
+        src="https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/background_ehubfy.webp"
+        alt="Background"
+        fill
+        priority={true}
+        fetchPriority="high"
+        quality={75}
+        className="object-cover hidden md:block"
       />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/50" />
       <div
-        className={`flex flex-col items-center justify-center ${isMobile ? 'max-w-full p-8' : 'max-w-[900px] p-16'} m-0 z-[1] gap-6`}
+        className="flex flex-col items-center justify-center max-w-full p-8 md:max-w-[900px] md:p-16 m-0 z-[1] gap-6"
       >
         <div className="flex flex-col items-center text-center gap-4">
           <p className="text-emerald-400 text-lg md:text-xl font-medium tracking-wide uppercase">
             Certifikovaní arboristé
           </p>
-          <h1
-            className="leading-tight font-bold text-white drop-shadow-lg"
-            style={{ fontSize: `${textSize}px` }}
-          >
+          <h1 className="leading-tight font-bold text-white drop-shadow-lg text-[50px] md:text-[60px]">
             Kácení stromů
             <br />
             <span className="text-emerald-400">Praha a jižní Čechy</span>
           </h1>
-          <p
-            className="text-white/90 leading-relaxed max-w-lg"
-            style={{ fontSize: `${isMobile ? 18 : 22}px` }}
-          >
+          <p className="text-white/90 leading-relaxed max-w-lg text-lg md:text-[22px]">
             Pokácíme, ošetříme, poradíme. Přes {getYearsSinceFounded()} let zkušeností.
           </p>
         </div>
