@@ -125,27 +125,27 @@ export const realizations = [
   // Uncomment one realization per month to keep the site fresh for SEO
 
   // --- MONTH 1 ---
-  // {
-  //   id: 2,
-  //   slug: 'osetreni-pamatneho-dubu-dolany-u-kladna',
-  //   title: 'Ošetření památného dubu - Dolany u Kladna',
-  //   location: 'Dolany u Kladna',
-  //   date: '2024-06-05',
-  //   excerpt: 'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
-  //   content: `
-  //     <p>V červnu 2024 jsme provedli komplexní ošetření památného dubu v Dolanech u Kladna. Tento majestátní strom je cenným přírodním dědictvím a vyžadoval odbornou péči certifikovaných arboristů.</p>
-  //     <p>Realizovali jsme zdravotní řez, při kterém jsme odstranili suché a poškozené větve a prosvětlili korunu pro lepší proudění vzduchu. Veškeré práce byly provedeny šetrně s ohledem na zachování přirozeného tvaru stromu.</p>
-  //     <p>Ošetření památných stromů vyžaduje zvláštní přístup a respekt k jejich věku a historické hodnotě. Náš tým má bohaté zkušenosti s péčí o tyto vzácné dřeviny.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/dub-dolany/IMG_4227.jpg',
-  //   gallery: [
-  //     '/images/realizace/dub-dolany/IMG_4227.jpg',
-  //     '/images/realizace/dub-dolany/IMG_4228.jpg',
-  //     '/images/realizace/dub-dolany/IMG_4229.jpg',
-  //     '/images/realizace/dub-dolany/IMG_4232.jpg',
-  //     '/images/realizace/dub-dolany/IMG_4233.jpg',
-  //   ],
-  // },
+  {
+    id: 2,
+    slug: 'osetreni-pamatneho-dubu-dolany-u-kladna',
+    title: 'Ošetření památného dubu - Dolany u Kladna',
+    location: 'Dolany u Kladna',
+    date: '2024-06-05',
+    excerpt: 'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
+    content: `
+      <p>V červnu 2024 jsme provedli komplexní ošetření památného dubu v Dolanech u Kladna. Tento majestátní strom je cenným přírodním dědictvím a vyžadoval odbornou péči certifikovaných arboristů.</p>
+      <p>Realizovali jsme zdravotní řez, při kterém jsme odstranili suché a poškozené větve a prosvětlili korunu pro lepší proudění vzduchu. Veškeré práce byly provedeny šetrně s ohledem na zachování přirozeného tvaru stromu.</p>
+      <p>Ošetření památných stromů vyžaduje zvláštní přístup a respekt k jejich věku a historické hodnotě. Náš tým má bohaté zkušenosti s péčí o tyto vzácné dřeviny.</p>
+    `,
+    imageSrc: '/images/realizace/dub-dolany/IMG_4227.jpg',
+    gallery: [
+      '/images/realizace/dub-dolany/IMG_4227.jpg',
+      '/images/realizace/dub-dolany/IMG_4228.jpg',
+      '/images/realizace/dub-dolany/IMG_4229.jpg',
+      '/images/realizace/dub-dolany/IMG_4232.jpg',
+      '/images/realizace/dub-dolany/IMG_4233.jpg',
+    ],
+  },
 
   // --- MONTH 2 ---
   // {
