@@ -130,7 +130,7 @@ export const realizations = [
     slug: 'osetreni-pamatneho-dubu-dolany-u-kladna',
     title: 'Ošetření památného dubu - Dolany u Kladna',
     location: 'Dolany u Kladna',
-    date: '2024-06-05',
+    date: '2024-03-04',
     excerpt: 'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
     content: `
       <p>V červnu 2024 jsme provedli komplexní ošetření památného dubu v Dolanech u Kladna. Tento majestátní strom je cenným přírodním dědictvím a vyžadoval odbornou péči certifikovaných arboristů.</p>
