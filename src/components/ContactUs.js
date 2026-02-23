@@ -17,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import NextLink from "next/link";
 import { useIsMobile } from "../hooks/use-media-query";
+import FadeIn from "./FadeIn";
 
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -43,14 +44,16 @@ const ContactUs = () => {
   return (
     <div className="bg-white py-16 md:py-24" id="contact">
       <div className="max-w-screen-md mx-auto w-full px-6">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Nezávazná nabídka zdarma
-          </h2>
-          <p className="text-lg text-gray-600">
-            Ozveme se vám do příštího pracovního dne
-          </p>
-        </div>
+        <FadeIn>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Nezávazná nabídka zdarma
+            </h2>
+            <p className="text-lg text-gray-600">
+              Ozveme se vám do příštího pracovního dne
+            </p>
+          </div>
+        </FadeIn>
 
         {/* Quick contact */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 pb-12 border-b border-gray-200">

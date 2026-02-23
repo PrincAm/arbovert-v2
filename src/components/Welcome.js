@@ -58,7 +58,7 @@ const Welcome = () => {
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/50" />
       <div
-        className="flex flex-col items-center justify-center max-w-full p-8 md:max-w-[900px] md:p-16 m-0 z-[1] gap-6"
+        className="flex flex-col items-center justify-center max-w-full p-8 md:max-w-[900px] md:p-16 m-0 z-[1] gap-6 animate-fade-up"
       >
         <div className="flex flex-col items-center text-center gap-4">
           <p className="text-emerald-400 text-lg md:text-xl font-medium tracking-wide uppercase">

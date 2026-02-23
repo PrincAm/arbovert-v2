@@ -2,11 +2,13 @@
 
 import { Link } from "@heroui/react";
 import Image from "next/image";
+import FadeIn from "./FadeIn";
 
 const TrustSection = () => (
   <div className="bg-gray-50 py-16 md:py-20">
     <div className="max-w-screen-lg mx-auto w-full px-6">
       {/* Certifications row */}
+      <FadeIn>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-16">
         <Link href="https://www.eac-arboriculture.com/eac-intro.aspx" target="_blank" className="flex flex-col items-center gap-3 group">
           <div className="bg-white p-4 rounded-xl border-2 border-transparent hover:border-success-500 transition-colors">
@@ -37,11 +39,13 @@ const TrustSection = () => (
           </span>
         </Link>
       </div>
+      </FadeIn>
 
       {/* Divider */}
       <div className="border-t border-gray-200 mb-16" />
 
       {/* Client logos */}
+      <FadeIn delay={100}>
       <div className="text-center mb-10">
         <h3 className="text-xl md:text-2xl font-semibold text-gray-700">
           Pracujeme pro města, firmy i soukromníky
@@ -91,6 +95,7 @@ const TrustSection = () => (
           className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
         />
       </div>
+      </FadeIn>
     </div>
   </div>
 );
