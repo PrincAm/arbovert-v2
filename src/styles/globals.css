@@ -54,3 +54,16 @@ a:hover {
 .animate-fade-up {
   animation: fade-up 0.8s ease-out both;
 }
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}

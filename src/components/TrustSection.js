@@ -4,8 +4,18 @@ import { Link } from "@heroui/react";
 import Image from "next/image";
 import FadeIn from "./FadeIn";
 
+const clients = [
+  { src: "/images/reference/logos/cez-logo.png", alt: "ČEZ" },
+  { src: "/images/reference/logos/lisno-logo.png", alt: "Zámeček Lišno" },
+  { src: "/images/reference/logos/mnisek-pod-brdy-logo.png", alt: "Město Mníšek pod Brdy" },
+  { src: "/images/reference/logos/povodi-vltavy-logo.png", alt: "Povodí Vltavy" },
+  { src: "/images/reference/logos/ttp-invest-logo.png", alt: "TTP Invest" },
+  { src: "/images/reference/logos/vimperk-logo.jpeg", alt: "Město Vimperk" },
+  { src: "/images/reference/logos/vsem-logo.jpeg", alt: "VŠEM" },
+];
+
 const TrustSection = () => (
-  <div className="bg-gray-50 py-16 md:py-20">
+  <div className="bg-white py-16 md:py-20">
     <div className="max-w-screen-lg mx-auto w-full px-6">
       {/* Certifications row */}
       <FadeIn>
@@ -51,49 +61,18 @@ const TrustSection = () => (
           Pracujeme pro města, firmy i soukromníky
         </h3>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center">
-        <Image
-          src="/images/reference/lisno.png"
-          width={80}
-          height={80}
-          alt="Zámeček Lišno"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
-        <Image
-          src="/images/reference/mnisek.png"
-          width={80}
-          height={80}
-          alt="Město Mníšek pod Brdy"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
-        <Image
-          src="/images/reference/povodni.png"
-          width={80}
-          height={80}
-          alt="Povodí Labe"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
-        <Image
-          src="/images/reference/ttp-logo.png"
-          width={80}
-          height={80}
-          alt="TTP"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
-        <Image
-          src="/images/reference/vimperk.png"
-          width={80}
-          height={80}
-          alt="Město Vimperk"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
-        <Image
-          src="/images/reference/vsem.png"
-          width={80}
-          height={80}
-          alt="VŠEM"
-          className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-        />
+      <div className="marquee-container overflow-hidden">
+        <div className="marquee-track flex items-center">
+          {[...clients, ...clients].map((client, i) => (
+            <div key={i} className="flex-shrink-0 px-6 md:px-10 h-20 md:h-28 flex items-center">
+              <img
+                src={client.src}
+                alt={client.alt}
+                className="h-full w-auto object-contain grayscale opacity-90"
+              />
+            </div>
+          ))}
+        </div>
       </div>
       </FadeIn>
     </div>
