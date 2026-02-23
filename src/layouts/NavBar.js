@@ -64,9 +64,7 @@ const NavBar = () => {
     <>
       {isMobile ? (
         <StyledMobileNavBar>
-          {isExpanded && (
-            <MobileMenu navItems={navItems} onExpand={setIsExpanded} />
-          )}
+          <MobileMenu navItems={navItems} onExpand={setIsExpanded} isExpanded={isExpanded} />
           <NextLink href="/" onClick={handleLogoClick}>
             <Image
               src="/images/arbovert-logo.svg"
