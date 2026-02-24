@@ -60,5 +60,31 @@ export default async function ServicePage({ params }) {
     );
   }
 
-  return <ServicePageClient service={service} slug={slug} />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.seoDescription,
+    image: `https://arbovert.cz${service.imageSrc}`,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Arbovert s.r.o.",
+      url: "https://arbovert.cz",
+      telephone: "+420-739-969-933",
+    },
+    areaServed: [
+      { "@type": "City", name: "Praha" },
+      { "@type": "City", name: "Vimperk" },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ServicePageClient service={service} slug={slug} />
+    </>
+  );
 }

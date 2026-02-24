@@ -42,45 +42,45 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-white py-16 md:py-24" id="contact">
+    <div className="bg-gray-900 py-16 md:py-24" id="contact">
       <div className="max-w-screen-md mx-auto w-full px-6">
         <FadeIn>
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Nezávazná nabídka zdarma
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-400">
               Ozveme se vám do příštího pracovního dne
             </p>
           </div>
         </FadeIn>
 
         {/* Quick contact */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 pb-12 border-b border-gray-200">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 pb-12 border-b border-gray-700">
           <a
             href="tel:+420739969933"
-            className="flex items-center gap-3 text-lg md:text-xl font-semibold text-foreground hover:text-success-600 transition-colors"
+            className="flex items-center gap-3 text-lg md:text-xl font-semibold !text-emerald-400 hover:!text-emerald-300 transition-colors"
           >
-            <FontAwesomeIcon icon={faPhone} className="text-xl text-success-500" />
+            <FontAwesomeIcon icon={faPhone} className="text-xl text-emerald-400" />
             +420 739 969 933
           </a>
-          <span className="hidden sm:block text-gray-300">|</span>
+          <span className="hidden sm:block text-gray-600">|</span>
           <a
             href="mailto:info@arbovert.cz"
-            className="flex items-center gap-3 text-lg md:text-xl font-semibold text-foreground hover:text-success-600 transition-colors"
+            className="flex items-center gap-3 text-lg md:text-xl font-semibold !text-emerald-400 hover:!text-emerald-300 transition-colors"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="text-xl text-success-500" />
+            <FontAwesomeIcon icon={faEnvelope} className="text-xl text-emerald-400" />
             info@arbovert.cz
           </a>
         </div>
 
         {isSubmitted ? (
-          <div className="text-center py-12 bg-success-50 rounded-2xl">
+          <div className="text-center py-12 bg-gray-800 rounded-2xl">
             <div className="text-5xl mb-4">✓</div>
-            <p className="text-xl font-semibold text-success-700 mb-2">
+            <p className="text-xl font-semibold text-emerald-400 mb-2">
               Děkujeme za odeslání dotazu
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-400">
               Byl Vám zaslán potvrzující email. Ozveme se vám do příštího pracovního dne.
             </p>
           </div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                 }}
                 className="w-full"
               >
-                <Label className="font-medium text-gray-700 mb-2">Jméno</Label>
+                <Label className="font-medium text-gray-300 mb-2">Jméno</Label>
                 <Input
                   placeholder="Vaše jméno"
                   className="border-2 border-gray-200 bg-white rounded-xl h-12 px-4 hover:border-gray-300 focus:border-success-500"
@@ -121,7 +121,7 @@ const ContactUs = () => {
                 }}
                 className="w-full"
               >
-                <Label className="font-medium text-gray-700 mb-2">Email</Label>
+                <Label className="font-medium text-gray-300 mb-2">Email</Label>
                 <Input
                   placeholder="vas@email.cz"
                   className="border-2 border-gray-200 bg-white rounded-xl h-12 px-4 hover:border-gray-300 focus:border-success-500"
@@ -131,7 +131,7 @@ const ContactUs = () => {
             </div>
 
             <TextField name="telefon" type="tel" className="w-full">
-              <Label className="font-medium text-gray-700 mb-2">Telefon</Label>
+              <Label className="font-medium text-gray-300 mb-2">Telefon</Label>
               <Input
                 placeholder="+420"
                 className="border-2 border-gray-200 bg-white rounded-xl h-12 px-4 hover:border-gray-300 focus:border-success-500"
@@ -149,7 +149,7 @@ const ContactUs = () => {
               }}
               className="w-full"
             >
-              <Label className="font-medium text-gray-700 mb-2">
+              <Label className="font-medium text-gray-300 mb-2">
                 Popište váš problém
               </Label>
               <TextArea
@@ -176,12 +176,12 @@ const ContactUs = () => {
                   <Checkbox.Indicator />
                 </Checkbox.Control>
                 <Checkbox.Content>
-                  <Label className="text-sm text-gray-600">
+                  <Label className="text-sm text-gray-400">
                     Souhlasím se{" "}
                     <Link
                       as={NextLink}
                       href="/gdpr"
-                      className="text-success-600 underline hover:text-success-700"
+                      className="text-emerald-400 underline hover:text-emerald-300"
                       target="_blank"
                     >
                       zpracováním osobních údajů

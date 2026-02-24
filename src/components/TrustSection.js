@@ -15,7 +15,7 @@ const clients = [
 ];
 
 const TrustSection = () => (
-  <div className="bg-white py-16 md:py-20">
+  <div className="bg-gray-50 py-16 md:py-20">
     <div className="max-w-screen-lg mx-auto w-full px-6">
       {/* Certifications row */}
       <FadeIn>

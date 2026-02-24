@@ -4,9 +4,24 @@ import Script from 'next/script';
 import Welcome from '../components/Welcome';
 import Intro from '../components/Intro';
 import TrustSection from '../components/TrustSection';
+import FAQ from '../components/FAQ';
 import ContactUs from '../components/ContactUs';
+import { faqItems } from '../data/faq';
 
 export default function Home() {
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer,
+      },
+    })),
+  };
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -94,6 +109,10 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8GZ2HM5LBZ"
         strategy="afterInteractive"
@@ -110,6 +129,7 @@ export default function Home() {
       <Welcome />
       <Intro />
       <TrustSection />
+      <FAQ />
       <ContactUs />
     </>
   );
