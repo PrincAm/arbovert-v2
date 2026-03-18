@@ -264,7 +264,28 @@ export const realizations = [
   //   ],
   // },
 
-  // --- MONTH 8 ---
+  // --- MONTH 8 (briza-lhenice) ---
+  // {
+  //   id: 15,
+  //   slug: 'kaceni-brizy-a-douglesky-lhenice',
+  //   title: 'Rizikové kácení břízy a douglasky - Lhenice',
+  //   location: 'Lhenice',
+  //   date: '2026-03-03',
+  //   excerpt: 'Rizikové kácení vzrostlé břízy a douglasky ve Lhenicích. Stromolezecká technika a precizní spouštění větví v blízkosti elektrického vedení a zástavby.',
+  //   content: `
+  //     <p>V březnu 2026 jsme ve Lhenicích realizovali náročné kácení dvou vzrostlých stromů – břízy a douglasky. Vzhledem k jejich umístění a výšce nebylo možné klasické kácení ze země.</p>
+  //     <p>Bříza rostla v bezprostřední blízkosti elektrického vedení, což vyžadovalo maximální preciznost při spouštění větví. Vzrostlá douglaska vyžadovala nasazení stromolezecké techniky pro postupné odřezávání částí kmene.</p>
+  //     <p>Celý proces probíhal v blízkosti obytných domů a komunikace, kde byla prioritou bezpečnost osob a majetku. Stromy byly postupně a kontrolovaně odstraněny bez jakéhokoliv poškození okolní infrastruktury.</p>
+  //   `,
+  //   imageSrc: '/images/realizace/briza - lhenice/lhenice-1.jpeg',
+  //   gallery: [
+  //     '/images/realizace/briza - lhenice/lhenice-1.jpeg',
+  //     '/images/realizace/briza - lhenice/lhenice-2.jpeg',
+  //     '/images/realizace/briza - lhenice/lhenice-3.jpeg',
+  //   ],
+  // },
+
+  // --- MONTH 9 ---
   // {
   //   id: 14,
   //   slug: 'osetreni-lipy-vacov',
