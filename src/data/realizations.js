@@ -1,83 +1,24 @@
 export const realizations = [
-  // === ACTIVE REALIZATIONS ===
+  // === ACTIVE REALIZATIONS (sorted newest first) ===
 
-  // PRAGUE (3)
   {
-    id: 1,
-    slug: 'osetreni-jasanu-praha-vysehrad',
-    title: 'Ošetření jasanů - Praha, Vyšehrad',
-    location: 'Praha, Vyšehrad',
-    date: '2024-02-10',
-    excerpt: 'Odborné ošetření jasanů v historickém areálu Vyšehradu. Zdravotní řez a zajištění bezpečnosti stromů v blízkosti památek.',
+    id: 9,
+    slug: 'kaceni-topolu-jerabem-labe',
+    title: 'Kácení topolů v havarijním stavu - Praha, Labe',
+    location: 'Praha, Labe',
+    date: '2025-07-19',
+    excerpt: 'Havarijní kácení topolů v kritickém stavu podél Labe. Použití jeřábu pro bezpečné odstranění nebezpečných stromů.',
     content: `
-      <p>V únoru 2024 jsme realizovali odborné ošetření jasanů v historickém areálu Vyšehradu v Praze. Jasany v této lokalitě vyžadovaly péči kvůli své velikosti a umístění v blízkosti historických památek.</p>
-      <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a zajistili stabilitu korun. Práce probíhala za použití lanové techniky s maximální opatrností k okolním památkám a návštěvníkům areálu.</p>
-      <p>Ošetření jasanů na Vyšehradě je důležité nejen z hlediska bezpečnosti, ale také pro zachování charakteristického rázu tohoto významného historického místa.</p>
+      <p>V červenci 2025 jsme realizovali havarijní kácení topolů v kritickém stavu podél řeky Labe v Praze. Topoly vykazovaly známky pokročilého rozpadu a představovaly bezprostřední nebezpečí.</p>
+      <p>Pro bezpečné kácení jsme nasadili jeřábovou techniku, která umožnila kontrolované snášení částí stromů bez rizika poškození okolí. Kombinace jeřábu a lanové techniky zajistila maximální bezpečnost celé operace.</p>
+      <p>Havarijní kácení vyžaduje rychlou reakci a profesionální přístup. Náš tým je připraven zasáhnout v případě potřeby a zajistit bezpečné odstranění nebezpečných stromů.</p>
     `,
-    imageSrc: '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
+    imageSrc: '/images/realizace/topoly-labe/IMG_7415.jpg',
     gallery: [
-      '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
-      '/images/realizace/jasany-vysehrad/IMG_4203.jpg',
-      '/images/realizace/jasany-vysehrad/IMG_4205.jpg',
-    ],
-  },
-  {
-    id: 4,
-    slug: 'mikro-injektaz-stromu-praha-vinohrady',
-    title: 'Mikro injektáž stromů - Praha, Vinohrady',
-    location: 'Praha, Vinohrady',
-    date: '2024-07-20',
-    excerpt: 'Aplikace mikro injektáže pro posílení zdraví stromů v Praze na Vinohradech. Moderní metoda ochrany a léčby dřevin.',
-    content: `
-      <p>V červenci 2024 jsme provedli mikro injektáž stromů v Praze na Vinohradech. Tato moderní arboristická metoda umožňuje cílené dodání živin a ochranných látek přímo do cévního systému stromu.</p>
-      <p>Mikro injektáž je šetrná metoda, která minimalizuje stres pro strom a zajišťuje rychlé a efektivní vstřebání aplikovaných látek. Používá se pro posílení vitality oslabených stromů nebo jako prevence proti škůdcům a chorobám.</p>
-      <p>Tato technika je ideální pro stromy v městském prostředí, kde je důležité zachovat jejich zdraví a dlouhověkost i v náročných podmínkách.</p>
-    `,
-    imageSrc: '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
-    gallery: [
-      '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7432.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7434.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7435.jpg',
-    ],
-  },
-  {
-    id: 6,
-    slug: 'osetreni-jirovce-tynsky-chram-praha',
-    title: 'Ošetření jírovce u Týnského chrámu - Praha 1, Celetná',
-    location: 'Praha 1, Celetná',
-    date: '2024-09-25',
-    excerpt: 'Profesionální ošetření jírovce v historickém centru Prahy u Týnského chrámu. Zakázka pro Magistrát hlavního města Prahy.',
-    content: `
-      <p>V září 2024 jsme realizovali zakázku pro Magistrát hlavního města Prahy - ošetření jírovce v bezprostřední blízkosti Týnského chrámu v ulici Celetná.</p>
-      <p>Práce v samém srdci historické Prahy vyžadovala maximální opatrnost a koordinaci. Provedli jsme zdravotní řez, odstranili suché větve a zajistili bezpečnost stromu pro kolemjdoucí i okolní památky.</p>
-      <p>Ošetření stromů v památkových zónách vyžaduje nejen arboristické znalosti, ale také respekt k historickému prostředí a schopnost pracovat v náročných podmínkách městského centra.</p>
-    `,
-    imageSrc: '/images/realizace/jirovec-celetna/IMG_5685.jpg',
-    gallery: [
-      '/images/realizace/jirovec-celetna/IMG_5685.jpg',
-      '/images/realizace/jirovec-celetna/IMG_5687.jpg',
-      '/images/realizace/jirovec-celetna/IMG_5690.jpg',
-    ],
-  },
-
-  // OTHER REGIONS (3)
-  {
-    id: 3,
-    slug: 'osetreni-dubu-zamek-nebilovi',
-    title: 'Ošetření dubu - Zámek Nebílovy',
-    location: 'Zámek Nebílovy',
-    date: '2024-06-09',
-    excerpt: 'Profesionální ošetření dubu v areálu zámku Nebílovy. Dokumentace stavu před a po ošetření pro majitele památky.',
-    content: `
-      <p>V červnu 2024 jsme realizovali profesionální ošetření dubu v areálu historického zámku Nebílovy. Strom se nacházel v zámeckém parku a jeho stav vyžadoval odborný zásah.</p>
-      <p>Provedli jsme komplexní zdravotní řez, odstranili odumřelé větve a upravili korunu pro lepší stabilitu. Celý proces byl důkladně zdokumentován fotografiemi před a po ošetření.</p>
-      <p>Práce v areálech historických památek vyžaduje zvláštní ohled na okolní prostředí a zachování charakteru zámeckého parku. Náš tým má s těmito zakázkami bohaté zkušenosti.</p>
-    `,
-    imageSrc: '/images/realizace/dub-nebilovi/IMG_8322.jpg',
-    gallery: [
-      '/images/realizace/dub-nebilovi/IMG_8322.jpg',
-      '/images/realizace/dub-nebilovi/IMG_8326.jpg',
+      '/images/realizace/topoly-labe/IMG_7415.jpg',
+      '/images/realizace/topoly-labe/IMG_7416.jpg',
+      '/images/realizace/topoly-labe/IMG_7418.jpg',
+      '/images/realizace/topoly-labe/IMG_7419(1).jpg',
     ],
   },
   {
@@ -101,30 +42,80 @@ export const realizations = [
     ],
   },
   {
-    id: 9,
-    slug: 'kaceni-topolu-jerabem-labe',
-    title: 'Kácení topolů v havarijním stavu - Praha, Labe',
-    location: 'Praha, Labe',
-    date: '2025-07-19',
-    excerpt: 'Havarijní kácení topolů v kritickém stavu podél Labe. Použití jeřábu pro bezpečné odstranění nebezpečných stromů.',
+    id: 6,
+    slug: 'osetreni-jirovce-tynsky-chram-praha',
+    title: 'Ošetření jírovce u Týnského chrámu - Praha 1, Celetná',
+    location: 'Praha 1, Celetná',
+    date: '2024-09-25',
+    excerpt: 'Profesionální ošetření jírovce v historickém centru Prahy u Týnského chrámu. Zakázka pro Magistrát hlavního města Prahy.',
     content: `
-      <p>V červenci 2025 jsme realizovali havarijní kácení topolů v kritickém stavu podél řeky Labe v Praze. Topoly vykazovaly známky pokročilého rozpadu a představovaly bezprostřední nebezpečí.</p>
-      <p>Pro bezpečné kácení jsme nasadili jeřábovou techniku, která umožnila kontrolované snášení částí stromů bez rizika poškození okolí. Kombinace jeřábu a lanové techniky zajistila maximální bezpečnost celé operace.</p>
-      <p>Havarijní kácení vyžaduje rychlou reakci a profesionální přístup. Náš tým je připraven zasáhnout v případě potřeby a zajistit bezpečné odstranění nebezpečných stromů.</p>
+      <p>V září 2024 jsme realizovali zakázku pro Magistrát hlavního města Prahy - ošetření jírovce v bezprostřední blízkosti Týnského chrámu v ulici Celetná.</p>
+      <p>Práce v samém srdci historické Prahy vyžadovala maximální opatrnost a koordinaci. Provedli jsme zdravotní řez, odstranili suché větve a zajistili bezpečnost stromu pro kolemjdoucí i okolní památky.</p>
+      <p>Ošetření stromů v památkových zónách vyžaduje nejen arboristické znalosti, ale také respekt k historickému prostředí a schopnost pracovat v náročných podmínkách městského centra.</p>
     `,
-    imageSrc: '/images/realizace/topoly-labe/IMG_7415.jpg',
+    imageSrc: '/images/realizace/jirovec-celetna/IMG_5685.jpg',
     gallery: [
-      '/images/realizace/topoly-labe/IMG_7415.jpg',
-      '/images/realizace/topoly-labe/IMG_7416.jpg',
-      '/images/realizace/topoly-labe/IMG_7418.jpg',
-      '/images/realizace/topoly-labe/IMG_7419(1).jpg',
+      '/images/realizace/jirovec-celetna/IMG_5685.jpg',
+      '/images/realizace/jirovec-celetna/IMG_5687.jpg',
+      '/images/realizace/jirovec-celetna/IMG_5690.jpg',
     ],
   },
-
-  // === SCHEDULED FOR FUTURE PUBLICATION ===
-  // Uncomment one realization per month to keep the site fresh for SEO
-
-  // --- MONTH 1 ---
+  {
+    id: 5,
+    slug: 'osetreni-javoru-kladno-cez',
+    title: 'Ošetření javorů - Kladno, ČEZ',
+    location: 'Kladno',
+    date: '2024-09-18',
+    excerpt: 'Odborné ošetření javorů pro společnost ČEZ v Kladně. Zajištění bezpečnosti stromů v blízkosti energetické infrastruktury.',
+    content: `
+      <p>V září 2024 jsme realizovali zakázku pro společnost ČEZ v Kladně, kde jsme provedli odborné ošetření javorů v blízkosti energetické infrastruktury.</p>
+      <p>Práce zahrnovaly zdravotní řez a redukci korun s ohledem na bezpečné vzdálenosti od elektrických vedení. Veškeré zásahy byly provedeny v souladu s bezpečnostními předpisy pro práci v blízkosti energetických zařízení.</p>
+      <p>Spolupráce s energetickými společnostmi vyžaduje specifické znalosti a certifikace. Náš tým je plně vybaven pro tyto náročné zakázky.</p>
+    `,
+    imageSrc: '/images/realizace/javor-kladno/IMG_5436.jpg',
+    gallery: [
+      '/images/realizace/javor-kladno/IMG_5436.jpg',
+      '/images/realizace/javor-kladno/IMG_5444.jpg',
+    ],
+  },
+  {
+    id: 4,
+    slug: 'mikro-injektaz-stromu-praha-vinohrady',
+    title: 'Mikro injektáž stromů - Praha, Vinohrady',
+    location: 'Praha, Vinohrady',
+    date: '2024-07-20',
+    excerpt: 'Aplikace mikro injektáže pro posílení zdraví stromů v Praze na Vinohradech. Moderní metoda ochrany a léčby dřevin.',
+    content: `
+      <p>V červenci 2024 jsme provedli mikro injektáž stromů v Praze na Vinohradech. Tato moderní arboristická metoda umožňuje cílené dodání živin a ochranných látek přímo do cévního systému stromu.</p>
+      <p>Mikro injektáž je šetrná metoda, která minimalizuje stres pro strom a zajišťuje rychlé a efektivní vstřebání aplikovaných látek. Používá se pro posílení vitality oslabených stromů nebo jako prevence proti škůdcům a chorobám.</p>
+      <p>Tato technika je ideální pro stromy v městském prostředí, kde je důležité zachovat jejich zdraví a dlouhověkost i v náročných podmínkách.</p>
+    `,
+    imageSrc: '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
+    gallery: [
+      '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
+      '/images/realizace/injektaz-vinohrady/IMG_7432.jpg',
+      '/images/realizace/injektaz-vinohrady/IMG_7434.jpg',
+      '/images/realizace/injektaz-vinohrady/IMG_7435.jpg',
+    ],
+  },
+  {
+    id: 3,
+    slug: 'osetreni-dubu-zamek-nebilovi',
+    title: 'Ošetření dubu - Zámek Nebílovy',
+    location: 'Zámek Nebílovy',
+    date: '2024-06-09',
+    excerpt: 'Profesionální ošetření dubu v areálu zámku Nebílovy. Dokumentace stavu před a po ošetření pro majitele památky.',
+    content: `
+      <p>V červnu 2024 jsme realizovali profesionální ošetření dubu v areálu historického zámku Nebílovy. Strom se nacházel v zámeckém parku a jeho stav vyžadoval odborný zásah.</p>
+      <p>Provedli jsme komplexní zdravotní řez, odstranili odumřelé větve a upravili korunu pro lepší stabilitu. Celý proces byl důkladně zdokumentován fotografiemi před a po ošetření.</p>
+      <p>Práce v areálech historických památek vyžaduje zvláštní ohled na okolní prostředí a zachování charakteru zámeckého parku. Náš tým má s těmito zakázkami bohaté zkušenosti.</p>
+    `,
+    imageSrc: '/images/realizace/dub-nebilovi/IMG_8322.jpg',
+    gallery: [
+      '/images/realizace/dub-nebilovi/IMG_8322.jpg',
+      '/images/realizace/dub-nebilovi/IMG_8326.jpg',
+    ],
+  },
   {
     id: 2,
     slug: 'osetreni-pamatneho-dubu-dolany-u-kladna',
@@ -146,26 +137,28 @@ export const realizations = [
       '/images/realizace/dub-dolany/IMG_4233.jpg',
     ],
   },
+  {
+    id: 1,
+    slug: 'osetreni-jasanu-praha-vysehrad',
+    title: 'Ošetření jasanů - Praha, Vyšehrad',
+    location: 'Praha, Vyšehrad',
+    date: '2024-02-10',
+    excerpt: 'Odborné ošetření jasanů v historickém areálu Vyšehradu. Zdravotní řez a zajištění bezpečnosti stromů v blízkosti památek.',
+    content: `
+      <p>V únoru 2024 jsme realizovali odborné ošetření jasanů v historickém areálu Vyšehradu v Praze. Jasany v této lokalitě vyžadovaly péči kvůli své velikosti a umístění v blízkosti historických památek.</p>
+      <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a zajistili stabilitu korun. Práce probíhala za použití lanové techniky s maximální opatrností k okolním památkám a návštěvníkům areálu.</p>
+      <p>Ošetření jasanů na Vyšehradě je důležité nejen z hlediska bezpečnosti, ale také pro zachování charakteristického rázu tohoto významného historického místa.</p>
+    `,
+    imageSrc: '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
+    gallery: [
+      '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
+      '/images/realizace/jasany-vysehrad/IMG_4203.jpg',
+      '/images/realizace/jasany-vysehrad/IMG_4205.jpg',
+    ],
+  },
 
-  // --- MONTH 2 ---
-  // {
-  //   id: 5,
-  //   slug: 'osetreni-javoru-kladno-cez',
-  //   title: 'Ošetření javorů - Kladno, ČEZ',
-  //   location: 'Kladno',
-  //   date: '2024-09-18',
-  //   excerpt: 'Odborné ošetření javorů pro společnost ČEZ v Kladně. Zajištění bezpečnosti stromů v blízkosti energetické infrastruktury.',
-  //   content: `
-  //     <p>V září 2024 jsme realizovali zakázku pro společnost ČEZ v Kladně, kde jsme provedli odborné ošetření javorů v blízkosti energetické infrastruktury.</p>
-  //     <p>Práce zahrnovaly zdravotní řez a redukci korun s ohledem na bezpečné vzdálenosti od elektrických vedení. Veškeré zásahy byly provedeny v souladu s bezpečnostními předpisy pro práci v blízkosti energetických zařízení.</p>
-  //     <p>Spolupráce s energetickými společnostmi vyžaduje specifické znalosti a certifikace. Náš tým je plně vybaven pro tyto náročné zakázky.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/javor-kladno/IMG_5436.jpg',
-  //   gallery: [
-  //     '/images/realizace/javor-kladno/IMG_5436.jpg',
-  //     '/images/realizace/javor-kladno/IMG_5444.jpg',
-  //   ],
-  // },
+  // === SCHEDULED FOR FUTURE PUBLICATION ===
+  // Uncomment one realization per month to keep the site fresh for SEO
 
   // --- MONTH 3 ---
   // {
