@@ -42,6 +42,25 @@ export const realizations = [
     ],
   },
   {
+    id: 7,
+    slug: 'osetreni-lip-zamek-vlachovo-brezi',
+    title: 'Ošetření lip - Zámek Vlachovo Březí',
+    location: 'Zámek Vlachovo Březí',
+    date: '2025-06-04',
+    excerpt: 'Komplexní ošetření lipové aleje v areálu zámku Vlachovo Březí. Péče o historické stromy v zámeckém parku.',
+    content: `
+      <p>V červnu 2025 jsme provedli komplexní ošetření lip v areálu zámku Vlachovo Březí. Lipová alej je nedílnou součástí historického zámeckého parku a vyžadovala odbornou péči.</p>
+      <p>Realizovali jsme zdravotní řezy všech stromů, odstranili suché a poškozené větve a provedli úpravy korun pro zajištění dlouhodobé stability. Práce probíhala s maximálním ohledem na zachování historického charakteru aleje.</p>
+      <p>Zámecké parky jsou cenným kulturním dědictvím a péče o jejich stromy vyžaduje citlivý přístup a respekt k historickému kontextu místa.</p>
+    `,
+    imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
+    gallery: [
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7077.jpg',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7079.jpg',
+    ],
+  },
+  {
     id: 6,
     slug: 'osetreni-jirovce-tynsky-chram-praha',
     title: 'Ošetření jírovce u Týnského chrámu - Praha 1, Celetná',
@@ -159,27 +178,6 @@ export const realizations = [
 
   // === SCHEDULED FOR FUTURE PUBLICATION ===
   // Uncomment one realization per month to keep the site fresh for SEO
-
-  // --- MONTH 3 ---
-  // {
-  //   id: 7,
-  //   slug: 'osetreni-lip-zamek-vlachovo-brezi',
-  //   title: 'Ošetření lip - Zámek Vlachovo Březí',
-  //   location: 'Zámek Vlachovo Březí',
-  //   date: '2025-06-04',
-  //   excerpt: 'Komplexní ošetření lipové aleje v areálu zámku Vlachovo Březí. Péče o historické stromy v zámeckém parku.',
-  //   content: `
-  //     <p>V červnu 2025 jsme provedli komplexní ošetření lip v areálu zámku Vlachovo Březí. Lipová alej je nedílnou součástí historického zámeckého parku a vyžadovala odbornou péči.</p>
-  //     <p>Realizovali jsme zdravotní řezy všech stromů, odstranili suché a poškozené větve a provedli úpravy korun pro zajištění dlouhodobé stability. Práce probíhala s maximálním ohledem na zachování historického charakteru aleje.</p>
-  //     <p>Zámecké parky jsou cenným kulturním dědictvím a péče o jejich stromy vyžaduje citlivý přístup a respekt k historickému kontextu místa.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
-  //     '/images/realizace/lipy-vlachovo-brezi/IMG_7077.jpg',
-  //     '/images/realizace/lipy-vlachovo-brezi/IMG_7079.jpg',
-  //   ],
-  // },
 
   // --- MONTH 4 ---
   // {
