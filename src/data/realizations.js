@@ -262,9 +262,9 @@ export const realizations = [
   //   ],
   // },
 
-  // --- MONTH 8 (briza-lhenice) ---
+  // --- MONTH 8 ---
   // {
-  //   id: 15,
+  //   id: 14,
   //   slug: 'kaceni-brizy-a-douglesky-lhenice',
   //   title: 'Rizikové kácení břízy a douglasky - Lhenice',
   //   location: 'Lhenice',
@@ -285,7 +285,7 @@ export const realizations = [
 
   // --- MONTH 9 ---
   // {
-  //   id: 14,
+  //   id: 15,
   //   slug: 'osetreni-lipy-vacov',
   //   title: 'Ošetření lípy - Vacov',
   //   location: 'Vacov',
@@ -300,6 +300,30 @@ export const realizations = [
   //   gallery: [
   //     '/images/realizace/lipa-vacov/IMG_5420.jpg',
   //     '/images/realizace/lipa-vacov/IMG_5423.jpg',
+  //   ],
+  // },
+
+  // --- MONTH 10 (lipa-lazne-tousen) ---
+  // {
+  //   id: 16,
+  //   slug: 'osetreni-lip-lazne-tousen',
+  //   title: 'Péče o vzrostlé lípy - Lázně Toušeň',
+  //   location: 'Lázně Toušeň',
+  //   date: '2026-03-11',
+  //   excerpt: 'Odborné arboristické zásahy na dvou vzrostlých lípách v Lázních Toušeň. Ošetření památné lípy u kostela sv. Floriána a údržba lípy u příjezdové cesty.',
+  //   content: `
+  //     <p>V březnu 2026 jsme v Lázních Toušeň realizovali odborné arboristické zásahy na dvou významných stromech.</p>
+  //     <p>Prvním z nich byla památná lípa u kostela svatého Floriána. Práce na takto chráněném stromě vyžadovala maximální opatrnost a specifický přístup. Naším cílem bylo zajistit provozní bezpečnost stromu a zároveň zachovat jeho historickou hodnotu a zdravotní stav. Nasazení stromolezecké techniky nám umožnilo bezpečný pohyb v koruně.</p>
+  //     <p>Druhou zakázkou byla údržba vzrostlé lípy u příjezdové cesty. Zde bylo nutné provést ošetření koruny tak, aby strom neohrožoval okolní provoz ani pěší komunikaci.</p>
+  //     <p>Obě lípy byly odborně ošetřeny a zajištěny pro další roky. Děkujeme za důvěru při péči o tyto zelené dominanty obce.</p>
+  //   `,
+  //   imageSrc: '/images/realizace/lipa - lazne tousen/tousen-1.webp',
+  //   gallery: [
+  //     '/images/realizace/lipa - lazne tousen/tousen-1.webp',
+  //     '/images/realizace/lipa - lazne tousen/tousen-2.webp',
+  //     '/images/realizace/lipa - lazne tousen/tousen-3.webp',
+  //     '/images/realizace/lipa - lazne tousen/tousen-4.webp',
+  //     '/images/realizace/lipa - lazne tousen/tousen-5.webp',
   //   ],
   // },
 ];
