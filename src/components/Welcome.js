@@ -37,22 +37,24 @@ const Welcome = () => {
     <BackgroundContainer>
       {/* Mobile background image */}
       <Image
-        src="https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/background-small_fx4luw.webp"
+        src="https://res.cloudinary.com/dznxs2k2a/image/upload/w_828,f_auto,q_auto/v1727335383/arbovert/background-small_fx4luw.webp"
         alt="Background"
         fill
         priority={true}
         fetchPriority="high"
         quality={75}
+        sizes="100vw"
         className="object-cover md:hidden"
       />
       {/* Desktop background image */}
       <Image
-        src="https://res.cloudinary.com/dznxs2k2a/image/upload/v1727335383/arbovert/background_ehubfy.webp"
+        src="https://res.cloudinary.com/dznxs2k2a/image/upload/w_1920,f_auto,q_auto/v1727335383/arbovert/background_ehubfy.webp"
         alt="Background"
         fill
         priority={true}
         fetchPriority="high"
         quality={75}
+        sizes="100vw"
         className="object-cover hidden md:block"
       />
       {/* Dark overlay for text readability */}
@@ -76,7 +78,7 @@ const Welcome = () => {
         <div className="flex flex-col items-center justify-center gap-6 mt-4">
           <Button
             size="lg"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors shadow-lg"
+            className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors shadow-lg"
             radius="full"
             onClick={() => handleScrollToElement('contact')}
           >

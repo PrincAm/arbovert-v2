@@ -105,6 +105,7 @@ const NavBar = () => {
                 <Link
                   href="https://www.facebook.com/arbovertcz/"
                   target="_blank"
+                  aria-label="Facebook"
                   className="text-blue-600 text-xl no-underline hover:no-underline"
                 >
                   <StyledIcon icon={faFacebook} title="facebook" />

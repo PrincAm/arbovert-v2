@@ -74,6 +74,19 @@ export default function RootLayout({ children }) {
         {/* Preconnect to external domains for faster resource loading */}
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        {/* Preload hero LCP images for faster Largest Contentful Paint */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dznxs2k2a/image/upload/w_828,f_auto,q_auto/v1727335383/arbovert/background-small_fx4luw.webp"
+          media="(max-width: 649px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dznxs2k2a/image/upload/w_1920,f_auto,q_auto/v1727335383/arbovert/background_ehubfy.webp"
+          media="(min-width: 650px)"
+        />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <noscript

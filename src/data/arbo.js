@@ -104,7 +104,7 @@ export const serviceContent = {
     title: 'Inventarizace dřevin',
     description: 'Komplexní analýza stromového porostu pro udržitelné hospodaření a ochranu přírody.',
     longDescription: 'Zanalyzujeme vaše stromy, abyste z nich měli maximum. Uděláme evidenci vašich stromů, a to komplexně. Můžete tak efektivně a udržitelně využívat zdroje dřeva. Při inventarizaci dřevin analyzujeme informace o stromovém porostu na různých místech, nejen v lesích, ale i v městských parcích a jiných zelených plochách. Což je zásadní pro udržitelné využívání dřevní hmoty a ochranu přírody.',
-    imageSrc: '/images/strom.jpg',
+    imageSrc: '/images/strom.webp',
     benefits: [
       { title: 'Udržitelné hospodaření', description: 'Zajišťuje, že těžba probíhá v souladu s obnovou porostů.' },
       { title: 'Ochrana přírody', description: 'Chrání vzácné a ohrožené druhy dřevin.' },

@@ -42,9 +42,9 @@ const Intro = () => {
               <NextLink href="/sluzby" className="block">
                 <div className="overflow-hidden rounded-2xl hover:shadow-xl transition-shadow duration-300">
                   <Image
-                    src="/images/arbo.jpg"
-                    width={600}
-                    height={400}
+                    src="/images/arbo.webp"
+                    width={800}
+                    height={800}
                     alt="Arboristické služby"
                     loading="lazy"
                     className="object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-500"
@@ -59,8 +59,9 @@ const Intro = () => {
       {/* Full-width image strip with stats */}
       <div className="relative w-full h-64 md:h-80 overflow-hidden">
         <Image
-          src="/images/strom.jpg"
+          src="/images/strom.webp"
           fill
+          sizes="100vw"
           alt="Výškové práce"
           loading="lazy"
           className="object-cover"
@@ -92,9 +93,9 @@ const Intro = () => {
               <NextLink href="/realizace" className="block">
                 <div className="overflow-hidden rounded-2xl hover:shadow-xl transition-shadow duration-300">
                   <Image
-                    src="/images/we.jpg"
-                    width={600}
-                    height={400}
+                    src="/images/we.webp"
+                    width={800}
+                    height={800}
                     alt="Náš tým"
                     loading="lazy"
                     className="object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-500"

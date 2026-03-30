@@ -181,7 +181,7 @@ const ContactUs = () => {
                     <Link
                       as={NextLink}
                       href="/gdpr"
-                      className="text-emerald-400 underline hover:text-emerald-300"
+                      className="!text-emerald-300 underline hover:!text-emerald-200"
                       target="_blank"
                     >
                       zpracováním osobních údajů
@@ -196,7 +196,7 @@ const ContactUs = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-12 py-6 rounded-full transition-colors w-full sm:w-auto"
+                className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-lg px-12 py-6 rounded-full transition-colors w-full sm:w-auto"
                 radius="full"
               >
                 Odeslat poptávku

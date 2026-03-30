@@ -5,13 +5,13 @@ import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const clients = [
-  { src: "/images/reference/logos/cez-logo.png", alt: "ČEZ" },
-  { src: "/images/reference/logos/lisno-logo.png", alt: "Zámeček Lišno" },
-  { src: "/images/reference/logos/mnisek-pod-brdy-logo.png", alt: "Město Mníšek pod Brdy" },
-  { src: "/images/reference/logos/povodi-vltavy-logo.png", alt: "Povodí Vltavy" },
-  { src: "/images/reference/logos/ttp-invest-logo.png", alt: "TTP Invest" },
-  { src: "/images/reference/logos/vimperk-logo.jpeg", alt: "Město Vimperk" },
-  { src: "/images/reference/logos/vsem-logo.jpeg", alt: "VŠEM" },
+  { src: "/images/reference/logos/cez-logo.png", alt: "ČEZ", width: 224, height: 224 },
+  { src: "/images/reference/logos/lisno-logo.png", alt: "Zámeček Lišno", width: 558, height: 778 },
+  { src: "/images/reference/logos/mnisek-pod-brdy-logo.png", alt: "Město Mníšek pod Brdy", width: 177, height: 285 },
+  { src: "/images/reference/logos/povodi-vltavy-logo.png", alt: "Povodí Vltavy", width: 325, height: 155 },
+  { src: "/images/reference/logos/ttp-invest-logo.png", alt: "TTP Invest", width: 305, height: 165 },
+  { src: "/images/reference/logos/vimperk-logo.jpeg", alt: "Město Vimperk", width: 300, height: 271 },
+  { src: "/images/reference/logos/vsem-logo.jpeg", alt: "VŠEM", width: 224, height: 225 },
 ];
 
 const TrustSection = () => (
@@ -68,6 +68,8 @@ const TrustSection = () => (
               <img
                 src={client.src}
                 alt={client.alt}
+                width={client.width}
+                height={client.height}
                 className="h-full w-auto object-contain grayscale opacity-90"
               />
             </div>

@@ -138,7 +138,7 @@ export default async function RealizaceDetailPage({ params }) {
             <NextLink href="/kontakt">
               <Button
                 size="lg"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors shadow-md"
+                className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-lg px-10 py-6 rounded-full transition-colors shadow-md"
                 radius="full"
               >
                 Kontaktujte nás
