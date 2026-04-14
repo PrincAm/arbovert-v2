@@ -11,6 +11,12 @@ const nextConfig = {
   generateBuildId: async () => {
     return 'build-' + Date.now();
   },
+  // Přidání konfigurace pro Turbopack
+  experimental: {
+    turbopack: {
+      root: __dirname, // nebo process.cwd()
+    },
+  },
 };
 
 module.exports = nextConfig;
