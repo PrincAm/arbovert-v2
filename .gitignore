@@ -44,3 +44,8 @@ temp/
 
 # data
 /data/
+
+.yarn/unplugged
+.yarn/cache
+.yarn/build-state.yml
+.yarn/install-state.gz
