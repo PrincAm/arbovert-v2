@@ -79,10 +79,13 @@ export const realizations = [
       <p>Realizovali jsme důkladné zdravotní ošetření všech lip, odstranili suché a poškozené větve a provedli redukce tam, kde to bylo potřeba. Práce probíhala systematicky s důrazem na kvalitu provedení.</p>
       <p>Pravidelná péče o stromy v obcích je klíčová pro prevenci havarijních stavů a zachování zdravé a bezpečné zeleně pro obyvatele.</p>
     `,
-    imageSrc: '/images/realizace/lipy-hostka/IMG_5392.jpg',
+    imageSrc: '/images/realizace/dub-dolany/IMG_4227.jpg',
     gallery: [
-      '/images/realizace/lipy-hostka/IMG_5392.jpg',
-      '/images/realizace/lipy-hostka/IMG_5411.jpg',
+      '/images/realizace/dub-dolany/IMG_4227.jpg',
+      '/images/realizace/dub-dolany/IMG_4228.jpg',
+      '/images/realizace/dub-dolany/IMG_4229.jpg',
+      '/images/realizace/dub-dolany/IMG_4232.jpg',
+      '/images/realizace/dub-dolany/IMG_4233.jpg',
     ],
   },
   {
@@ -98,11 +101,12 @@ export const realizations = [
       <p>Statická vazba je moderní arboristická metoda, která zajišťuje stabilitu stromu bez nutnosti radikálních řezů. Ocelová lana spojují hlavní větve a snižují riziko jejich odlomení při nepříznivém počasí.</p>
       <p>Tato technika umožňuje zachovat přirozený vzhled stromu a prodloužit jeho životnost. Je ideální pro vzrostlé stromy s historickou nebo estetickou hodnotou.</p>
     `,
-    imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
+    imageSrc: '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
     gallery: [
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.jpg',
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.jpg',
+      '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
+      '/images/realizace/liliovnik-prachatice/IMG_8293.jpg',
+      '/images/realizace/liliovnik-prachatice/IMG_8295.jpg',
+      '/images/realizace/liliovnik-prachatice/IMG_8297.jpg',
     ],
   },
   {
@@ -139,10 +143,10 @@ export const realizations = [
       <p>Realizovali jsme kompletní zdravotní ošetření včetně odstranění suchých větví, prosvětlení korun a zajištění stability. Práce probíhala s ohledem na okolní zástavbu a bezpečnost obyvatel.</p>
       <p>Péče o obecní zeleň je důležitá pro kvalitu života v obcích. Zdravé a bezpečné stromy přispívají k příjemnému prostředí a zvyšují hodnotu veřejného prostoru.</p>
     `,
-    imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.jpg',
+    imageSrc: '/images/realizace/javor-kladno/IMG_5436.jpg',
     gallery: [
-      '/images/realizace/lipa-lcovice/IMG_4908.jpg',
-      '/images/realizace/lipa-lcovice/IMG_4909.jpg',
+      '/images/realizace/javor-kladno/IMG_5436.jpg',
+      '/images/realizace/javor-kladno/IMG_5444.jpg',
     ],
   },
   {
@@ -218,12 +222,11 @@ export const realizations = [
       <p>Provedli jsme šetrný zdravotní řez s důrazem na zachování přirozeného habitu stromu. Odstranili jsme suché a poškozené větve a zajistili optimální podmínky pro další růst.</p>
       <p>Péče o památné stromy vyžaduje zvláštní znalosti a citlivý přístup. Liliovník tulipánokvětý je obzvláště cenný pro svou estetickou hodnotu a vzácnost v našich podmínkách.</p>
     `,
-    imageSrc: '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
+    imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
     gallery: [
-      '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8293.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8295.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8297.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.jpg',
     ],
   },
   {
@@ -259,10 +262,10 @@ export const realizations = [
       <p>Práce zahrnovaly zdravotní řez a redukci korun s ohledem na bezpečné vzdálenosti od elektrických vedení. Veškeré zásahy byly provedeny v souladu s bezpečnostními předpisy pro práci v blízkosti energetických zařízení.</p>
       <p>Spolupráce s energetickými společnostmi vyžaduje specifické znalosti a certifikace. Náš tým je plně vybaven pro tyto náročné zakázky.</p>
     `,
-    imageSrc: '/images/realizace/javor-kladno/IMG_5436.jpg',
+    imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.jpg',
     gallery: [
-      '/images/realizace/javor-kladno/IMG_5436.jpg',
-      '/images/realizace/javor-kladno/IMG_5444.jpg',
+      '/images/realizace/lipa-lcovice/IMG_4908.jpg',
+      '/images/realizace/lipa-lcovice/IMG_4909.jpg',
     ],
   },
   {
@@ -318,13 +321,10 @@ export const realizations = [
       <p>Realizovali jsme zdravotní řez, při kterém jsme odstranili suché a poškozené větve a prosvětlili korunu pro lepší proudění vzduchu. Veškeré práce byly provedeny šetrně s ohledem na zachování přirozeného tvaru stromu.</p>
       <p>Ošetření památných stromů vyžaduje zvláštní přístup a respekt k jejich věku a historické hodnotě. Náš tým má bohaté zkušenosti s péčí o tyto vzácné dřeviny.</p>
     `,
-    imageSrc: '/images/realizace/dub-dolany/IMG_4227.jpg',
+    imageSrc: '/images/realizace/lipy-hostka/IMG_5392.jpg',
     gallery: [
-      '/images/realizace/dub-dolany/IMG_4227.jpg',
-      '/images/realizace/dub-dolany/IMG_4228.jpg',
-      '/images/realizace/dub-dolany/IMG_4229.jpg',
-      '/images/realizace/dub-dolany/IMG_4232.jpg',
-      '/images/realizace/dub-dolany/IMG_4233.jpg',
+      '/images/realizace/lipy-hostka/IMG_5392.jpg',
+      '/images/realizace/lipy-hostka/IMG_5411.jpg',
     ],
   },
   {
