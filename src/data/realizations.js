@@ -2,12 +2,176 @@ export const realizations = [
   // === ACTIVE REALIZATIONS (sorted newest first) ===
 
   {
+    id: 17,
+    slug: 'osetreni-lipy-zamek-kozel',
+    title: 'Ošetření lípy - Zámek Kozel',
+    location: 'Zámek Kozel',
+    date: '2026-06-09',
+    excerpt:
+      'Obvodová redukce koruny vzrostlé lípy v areálu zámku Kozel. Demontáž staré statické vazby a její nahrazení sedmi dynamickými vazbami.',
+    content: `
+      <p>V červnu 2026 jsme ošetřili vzrostlou lípu v areálu zámku Kozel. Strom s mohutnou, široce rozloženou korunou patří k dominantám zámeckého parku a jeho stav vyžadoval jak zásah v koruně, tak úpravu stávajícího zajištění.</p>
+      <p>Provedli jsme obvodovou redukci koruny, která snížila zatížení okrajových částí větví a zmenšila plochu vystavenou náporu větru. Redukce byla vedena tak, aby zůstal zachován přirozený habitus stromu.</p>
+      <p>Druhou částí zakázky byla demontáž staré statické vazby. Statická vazba korunu pevně fixuje, čímž strom připravuje o schopnost přirozeně pracovat a postupně zpevňovat namáhaná místa. Nahradili jsme ji sedmi dynamickými vazbami, které nechávají větvím volnost pohybu a zachytí je až v okamžiku, kdy hrozí přetížení.</p>
+      <p>Kombinace obvodové redukce a dynamického zajištění výrazně snížila riziko rozlomení koruny a zároveň dala stromu prostor pro další zdravý růst. Péče o stromy v historických zámeckých areálech vyžaduje citlivý přístup a respekt k jejich hodnotě pro celé místo.</p>
+    `,
+    imageSrc: '/images/realizace/lipy-zamek-kozel/kozel-1.webp',
+    gallery: [
+      '/images/realizace/lipy-zamek-kozel/kozel-1.webp',
+      '/images/realizace/lipy-zamek-kozel/kozel-2.webp',
+      '/images/realizace/lipy-zamek-kozel/kozel-3.webp',
+      '/images/realizace/lipy-zamek-kozel/kozel-4.webp',
+    ],
+  },
+  {
+    id: 16,
+    slug: 'osetreni-lip-lazne-tousen',
+    title: 'Péče o vzrostlé lípy - Lázně Toušeň',
+    location: 'Lázně Toušeň',
+    date: '2026-03-11',
+    excerpt:
+      'Odborné arboristické zásahy na dvou vzrostlých lípách v Lázních Toušeň. Ošetření památné lípy u kostela sv. Floriána a údržba lípy u příjezdové cesty.',
+    content: `
+      <p>V březnu 2026 jsme v Lázních Toušeň realizovali odborné arboristické zásahy na dvou významných stromech.</p>
+      <p>Prvním z nich byla památná lípa u kostela svatého Floriána. Práce na takto chráněném stromě vyžadovala maximální opatrnost a specifický přístup. Naším cílem bylo zajistit provozní bezpečnost stromu a zároveň zachovat jeho historickou hodnotu a zdravotní stav. Nasazení stromolezecké techniky nám umožnilo bezpečný pohyb v koruně.</p>
+      <p>Druhou zakázkou byla údržba vzrostlé lípy u příjezdové cesty. Zde bylo nutné provést ošetření koruny tak, aby strom neohrožoval okolní provoz ani pěší komunikaci.</p>
+      <p>Obě lípy byly odborně ošetřeny a zajištěny pro další roky. Děkujeme za důvěru při péči o tyto zelené dominanty obce.</p>
+    `,
+    imageSrc: '/images/realizace/lipa - lazne tousen/tousen-1.webp',
+    gallery: [
+      '/images/realizace/lipa - lazne tousen/tousen-1.webp',
+      '/images/realizace/lipa - lazne tousen/tousen-2.webp',
+      '/images/realizace/lipa - lazne tousen/tousen-3.webp',
+      '/images/realizace/lipa - lazne tousen/tousen-4.webp',
+      '/images/realizace/lipa - lazne tousen/tousen-5.webp',
+    ],
+  },
+  {
+    id: 14,
+    slug: 'kaceni-brizy-a-douglesky-lhenice',
+    title: 'Rizikové kácení břízy a douglasky - Lhenice',
+    location: 'Lhenice',
+    date: '2026-03-03',
+    excerpt:
+      'Rizikové kácení vzrostlé břízy a douglasky ve Lhenicích. Stromolezecká technika a precizní spouštění větví v blízkosti elektrického vedení a zástavby.',
+    content: `
+      <p>V březnu 2026 jsme ve Lhenicích realizovali náročné kácení dvou vzrostlých stromů – břízy a douglasky. Vzhledem k jejich umístění a výšce nebylo možné klasické kácení ze země.</p>
+      <p>Bříza rostla v bezprostřední blízkosti elektrického vedení, což vyžadovalo maximální preciznost při spouštění větví. Vzrostlá douglaska vyžadovala nasazení stromolezecké techniky pro postupné odřezávání částí kmene.</p>
+      <p>Celý proces probíhal v blízkosti obytných domů a komunikace, kde byla prioritou bezpečnost osob a majetku. Stromy byly postupně a kontrolovaně odstraněny bez jakéhokoliv poškození okolní infrastruktury.</p>
+    `,
+    imageSrc: '/images/realizace/briza - lhenice/lhenice-1.jpeg',
+    gallery: [
+      '/images/realizace/briza - lhenice/lhenice-1.jpeg',
+      '/images/realizace/briza - lhenice/lhenice-2.jpeg',
+      '/images/realizace/briza - lhenice/lhenice-3.jpeg',
+    ],
+  },
+  {
+    id: 13,
+    slug: 'osetreni-lip-hostka',
+    title: 'Ošetření lip - Hoštka',
+    location: 'Hoštka',
+    date: '2025-10-17',
+    excerpt:
+      'Komplexní ošetření lip v obci Hoštka. Zdravotní řezy a úprava korun pro zajištění bezpečnosti a vitality stromů.',
+    content: `
+      <p>V říjnu 2025 jsme provedli komplexní ošetření lip v obci Hoštka. Stromy vyžadovaly zdravotní řez a úpravu korun pro zajištění bezpečnosti v okolí.</p>
+      <p>Realizovali jsme důkladné zdravotní ošetření všech lip, odstranili suché a poškozené větve a provedli redukce tam, kde to bylo potřeba. Práce probíhala systematicky s důrazem na kvalitu provedení.</p>
+      <p>Pravidelná péče o stromy v obcích je klíčová pro prevenci havarijních stavů a zachování zdravé a bezpečné zeleně pro obyvatele.</p>
+    `,
+    imageSrc: '/images/realizace/lipy-hostka/IMG_5392.jpg',
+    gallery: [
+      '/images/realizace/lipy-hostka/IMG_5392.jpg',
+      '/images/realizace/lipy-hostka/IMG_5411.jpg',
+    ],
+  },
+  {
+    id: 12,
+    slug: 'staticka-vazba-lipy-cerna-v-posumavi',
+    title: 'Instalace statické vazby lípy - Černá v Pošumaví',
+    location: 'Černá v Pošumaví',
+    date: '2025-10-10',
+    excerpt:
+      'Instalace statické vazby pro stabilizaci lípy v Černé v Pošumaví. Moderní metoda zajištění bezpečnosti rozrostlého stromu.',
+    content: `
+      <p>V říjnu 2025 jsme realizovali instalaci statické vazby na lípě v Černé v Pošumaví. Strom s rozrostlou korunou vykazoval známky oslabení v místech větvení a vyžadoval stabilizaci.</p>
+      <p>Statická vazba je moderní arboristická metoda, která zajišťuje stabilitu stromu bez nutnosti radikálních řezů. Ocelová lana spojují hlavní větve a snižují riziko jejich odlomení při nepříznivém počasí.</p>
+      <p>Tato technika umožňuje zachovat přirozený vzhled stromu a prodloužit jeho životnost. Je ideální pro vzrostlé stromy s historickou nebo estetickou hodnotou.</p>
+    `,
+    imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
+    gallery: [
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.jpg',
+    ],
+  },
+  {
+    id: 11,
+    slug: 'osetreni-lipy-prachatice',
+    title: 'Ošetření lípy - Prachatice',
+    location: 'Prachatice',
+    date: '2025-09-28',
+    excerpt:
+      'Odborné ošetření lípy v Prachaticích. Zdravotní řez a péče o vzrostlý strom v městském prostředí.',
+    content: `
+      <p>V září 2025 jsme realizovali odborné ošetření lípy v Prachaticích. Vzrostlá lípa vyžadovala zdravotní řez a úpravu koruny pro zajištění bezpečnosti a vitality.</p>
+      <p>Provedli jsme kompletní zdravotní ošetření, odstranili jsme suché a poškozené větve a upravili tvar koruny. Práce probíhala za použití lanové techniky s maximální opatrností.</p>
+      <p>Lípy jsou tradičními stromy českého venkova i měst. Jejich péče vyžaduje znalost specifik tohoto druhu a citlivý přístup k jejich přirozenému růstu.</p>
+    `,
+    imageSrc: '/images/realizace/lipa-prachatice/IMG_7915.jpg',
+    gallery: [
+      '/images/realizace/lipa-prachatice/IMG_7915.jpg',
+      '/images/realizace/lipa-prachatice/IMG_7916.jpg',
+      '/images/realizace/lipa-prachatice/IMG_7918.jpg',
+      '/images/realizace/lipa-prachatice/IMG_7919.jpg',
+    ],
+  },
+  {
+    id: 10,
+    slug: 'osetreni-lip-a-jirovce-lcovice',
+    title: 'Ošetření lip a jírovce - Lčovice',
+    location: 'Lčovice',
+    date: '2025-08-19',
+    excerpt:
+      'Profesionální ošetření lip a jírovce v obci Lčovice. Komplexní péče o obecní zeleň.',
+    content: `
+      <p>V srpnu 2025 jsme provedli profesionální ošetření lip a jírovce v obci Lčovice. Stromy tvořící součást obecní zeleně vyžadovaly zdravotní řez a úpravu korun.</p>
+      <p>Realizovali jsme kompletní zdravotní ošetření včetně odstranění suchých větví, prosvětlení korun a zajištění stability. Práce probíhala s ohledem na okolní zástavbu a bezpečnost obyvatel.</p>
+      <p>Péče o obecní zeleň je důležitá pro kvalitu života v obcích. Zdravé a bezpečné stromy přispívají k příjemnému prostředí a zvyšují hodnotu veřejného prostoru.</p>
+    `,
+    imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.jpg',
+    gallery: [
+      '/images/realizace/lipa-lcovice/IMG_4908.jpg',
+      '/images/realizace/lipa-lcovice/IMG_4909.jpg',
+    ],
+  },
+  {
+    id: 15,
+    slug: 'osetreni-lipy-vacov',
+    title: 'Ošetření lípy - Vacov',
+    location: 'Vacov',
+    date: '2025-08-15',
+    excerpt:
+      'Profesionální ošetření lípy v obci Vacov na Šumavě. Péče o vzrostlý strom v srdci Pošumaví.',
+    content: `
+      <p>V srpnu 2025 jsme realizovali profesionální ošetření lípy v obci Vacov na Šumavě. Vzrostlá lípa je dominantou místního veřejného prostoru a vyžadovala odbornou péči.</p>
+      <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a upravili korunu pro lepší stabilitu. Práce probíhala s maximální opatrností a respektem k významu stromu pro místní komunitu.</p>
+      <p>Šumava a Pošumaví jsou regiony, kde působíme pravidelně. Máme zde řadu spokojených zákazníků a důvěrně známe místní podmínky.</p>
+    `,
+    imageSrc: '/images/realizace/lipa-vacov/IMG_5420.jpg',
+    gallery: [
+      '/images/realizace/lipa-vacov/IMG_5420.jpg',
+      '/images/realizace/lipa-vacov/IMG_5423.jpg',
+    ],
+  },
+  {
     id: 9,
     slug: 'kaceni-topolu-jerabem-labe',
     title: 'Kácení topolů v havarijním stavu - Praha, Labe',
     location: 'Praha, Labe',
     date: '2025-07-19',
-    excerpt: 'Havarijní kácení topolů v kritickém stavu podél Labe. Použití jeřábu pro bezpečné odstranění nebezpečných stromů.',
+    excerpt:
+      'Havarijní kácení topolů v kritickém stavu podél Labe. Použití jeřábu pro bezpečné odstranění nebezpečných stromů.',
     content: `
       <p>V červenci 2025 jsme realizovali havarijní kácení topolů v kritickém stavu podél řeky Labe v Praze. Topoly vykazovaly známky pokročilého rozpadu a představovaly bezprostřední nebezpečí.</p>
       <p>Pro bezpečné kácení jsme nasadili jeřábovou techniku, která umožnila kontrolované snášení částí stromů bez rizika poškození okolí. Kombinace jeřábu a lanové techniky zajistila maximální bezpečnost celé operace.</p>
@@ -22,12 +186,33 @@ export const realizations = [
     ],
   },
   {
+    id: 7,
+    slug: 'osetreni-lip-zamek-vlachovo-brezi',
+    title: 'Ošetření lip - Zámek Vlachovo Březí',
+    location: 'Zámek Vlachovo Březí',
+    date: '2025-06-04',
+    excerpt:
+      'Komplexní ošetření lipové aleje v areálu zámku Vlachovo Březí. Péče o historické stromy v zámeckém parku.',
+    content: `
+      <p>V červnu 2025 jsme provedli komplexní ošetření lip v areálu zámku Vlachovo Březí. Lipová alej je nedílnou součástí historického zámeckého parku a vyžadovala odbornou péči.</p>
+      <p>Realizovali jsme zdravotní řezy všech stromů, odstranili suché a poškozené větve a provedli úpravy korun pro zajištění dlouhodobé stability. Práce probíhala s maximálním ohledem na zachování historického charakteru aleje.</p>
+      <p>Zámecké parky jsou cenným kulturním dědictvím a péče o jejich stromy vyžaduje citlivý přístup a respekt k historickému kontextu místa.</p>
+    `,
+    imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
+    gallery: [
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7077.jpg',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7079.jpg',
+    ],
+  },
+  {
     id: 8,
     slug: 'osetreni-pamatneho-liliovniku-prachatice',
     title: 'Ošetření památného liliovníku tulipánokvětého - Prachatice',
     location: 'Prachatice',
     date: '2025-05-30',
-    excerpt: 'Odborné ošetření vzácného památného liliovníku tulipánokvětého v Prachaticích. Péče o unikátní dřevinu vyžadující specializovaný přístup.',
+    excerpt:
+      'Odborné ošetření vzácného památného liliovníku tulipánokvětého v Prachaticích. Péče o unikátní dřevinu vyžadující specializovaný přístup.',
     content: `
       <p>V květnu 2025 jsme realizovali ošetření památného liliovníku tulipánokvětého v Prachaticích. Liliovník tulipánokvětý je vzácná okrasná dřevina původem ze Severní Ameriky a tento konkrétní exemplář je chráněn jako památný strom.</p>
       <p>Provedli jsme šetrný zdravotní řez s důrazem na zachování přirozeného habitu stromu. Odstranili jsme suché a poškozené větve a zajistili optimální podmínky pro další růst.</p>
@@ -42,31 +227,13 @@ export const realizations = [
     ],
   },
   {
-    id: 7,
-    slug: 'osetreni-lip-zamek-vlachovo-brezi',
-    title: 'Ošetření lip - Zámek Vlachovo Březí',
-    location: 'Zámek Vlachovo Březí',
-    date: '2025-06-04',
-    excerpt: 'Komplexní ošetření lipové aleje v areálu zámku Vlachovo Březí. Péče o historické stromy v zámeckém parku.',
-    content: `
-      <p>V červnu 2025 jsme provedli komplexní ošetření lip v areálu zámku Vlachovo Březí. Lipová alej je nedílnou součástí historického zámeckého parku a vyžadovala odbornou péči.</p>
-      <p>Realizovali jsme zdravotní řezy všech stromů, odstranili suché a poškozené větve a provedli úpravy korun pro zajištění dlouhodobé stability. Práce probíhala s maximálním ohledem na zachování historického charakteru aleje.</p>
-      <p>Zámecké parky jsou cenným kulturním dědictvím a péče o jejich stromy vyžaduje citlivý přístup a respekt k historickému kontextu místa.</p>
-    `,
-    imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
-    gallery: [
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7077.jpg',
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7079.jpg',
-    ],
-  },
-  {
     id: 6,
     slug: 'osetreni-jirovce-tynsky-chram-praha',
     title: 'Ošetření jírovce u Týnského chrámu - Praha 1, Celetná',
     location: 'Praha 1, Celetná',
     date: '2024-09-25',
-    excerpt: 'Profesionální ošetření jírovce v historickém centru Prahy u Týnského chrámu. Zakázka pro Magistrát hlavního města Prahy.',
+    excerpt:
+      'Profesionální ošetření jírovce v historickém centru Prahy u Týnského chrámu. Zakázka pro Magistrát hlavního města Prahy.',
     content: `
       <p>V září 2024 jsme realizovali zakázku pro Magistrát hlavního města Prahy - ošetření jírovce v bezprostřední blízkosti Týnského chrámu v ulici Celetná.</p>
       <p>Práce v samém srdci historické Prahy vyžadovala maximální opatrnost a koordinaci. Provedli jsme zdravotní řez, odstranili suché větve a zajistili bezpečnost stromu pro kolemjdoucí i okolní památky.</p>
@@ -85,7 +252,8 @@ export const realizations = [
     title: 'Ošetření javorů - Kladno, ČEZ',
     location: 'Kladno',
     date: '2024-09-18',
-    excerpt: 'Odborné ošetření javorů pro společnost ČEZ v Kladně. Zajištění bezpečnosti stromů v blízkosti energetické infrastruktury.',
+    excerpt:
+      'Odborné ošetření javorů pro společnost ČEZ v Kladně. Zajištění bezpečnosti stromů v blízkosti energetické infrastruktury.',
     content: `
       <p>V září 2024 jsme realizovali zakázku pro společnost ČEZ v Kladně, kde jsme provedli odborné ošetření javorů v blízkosti energetické infrastruktury.</p>
       <p>Práce zahrnovaly zdravotní řez a redukci korun s ohledem na bezpečné vzdálenosti od elektrických vedení. Veškeré zásahy byly provedeny v souladu s bezpečnostními předpisy pro práci v blízkosti energetických zařízení.</p>
@@ -103,7 +271,8 @@ export const realizations = [
     title: 'Mikro injektáž stromů - Praha, Vinohrady',
     location: 'Praha, Vinohrady',
     date: '2024-07-20',
-    excerpt: 'Aplikace mikro injektáže pro posílení zdraví stromů v Praze na Vinohradech. Moderní metoda ochrany a léčby dřevin.',
+    excerpt:
+      'Aplikace mikro injektáže pro posílení zdraví stromů v Praze na Vinohradech. Moderní metoda ochrany a léčby dřevin.',
     content: `
       <p>V červenci 2024 jsme provedli mikro injektáž stromů v Praze na Vinohradech. Tato moderní arboristická metoda umožňuje cílené dodání živin a ochranných látek přímo do cévního systému stromu.</p>
       <p>Mikro injektáž je šetrná metoda, která minimalizuje stres pro strom a zajišťuje rychlé a efektivní vstřebání aplikovaných látek. Používá se pro posílení vitality oslabených stromů nebo jako prevence proti škůdcům a chorobám.</p>
@@ -123,7 +292,8 @@ export const realizations = [
     title: 'Ošetření dubu - Zámek Nebílovy',
     location: 'Zámek Nebílovy',
     date: '2024-06-09',
-    excerpt: 'Profesionální ošetření dubu v areálu zámku Nebílovy. Dokumentace stavu před a po ošetření pro majitele památky.',
+    excerpt:
+      'Profesionální ošetření dubu v areálu zámku Nebílovy. Dokumentace stavu před a po ošetření pro majitele památky.',
     content: `
       <p>V červnu 2024 jsme realizovali profesionální ošetření dubu v areálu historického zámku Nebílovy. Strom se nacházel v zámeckém parku a jeho stav vyžadoval odborný zásah.</p>
       <p>Provedli jsme komplexní zdravotní řez, odstranili odumřelé větve a upravili korunu pro lepší stabilitu. Celý proces byl důkladně zdokumentován fotografiemi před a po ošetření.</p>
@@ -141,7 +311,8 @@ export const realizations = [
     title: 'Ošetření památného dubu - Dolany u Kladna',
     location: 'Dolany u Kladna',
     date: '2024-03-04',
-    excerpt: 'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
+    excerpt:
+      'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
     content: `
       <p>V červnu 2024 jsme provedli komplexní ošetření památného dubu v Dolanech u Kladna. Tento majestátní strom je cenným přírodním dědictvím a vyžadoval odbornou péči certifikovaných arboristů.</p>
       <p>Realizovali jsme zdravotní řez, při kterém jsme odstranili suché a poškozené větve a prosvětlili korunu pro lepší proudění vzduchu. Veškeré práce byly provedeny šetrně s ohledem na zachování přirozeného tvaru stromu.</p>
@@ -162,7 +333,8 @@ export const realizations = [
     title: 'Ošetření jasanů - Praha, Vyšehrad',
     location: 'Praha, Vyšehrad',
     date: '2024-02-10',
-    excerpt: 'Odborné ošetření jasanů v historickém areálu Vyšehradu. Zdravotní řez a zajištění bezpečnosti stromů v blízkosti památek.',
+    excerpt:
+      'Odborné ošetření jasanů v historickém areálu Vyšehradu. Zdravotní řez a zajištění bezpečnosti stromů v blízkosti památek.',
     content: `
       <p>V únoru 2024 jsme realizovali odborné ošetření jasanů v historickém areálu Vyšehradu v Praze. Jasany v této lokalitě vyžadovaly péči kvůli své velikosti a umístění v blízkosti historických památek.</p>
       <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a zajistili stabilitu korun. Práce probíhala za použití lanové techniky s maximální opatrností k okolním památkám a návštěvníkům areálu.</p>
@@ -175,155 +347,4 @@ export const realizations = [
       '/images/realizace/jasany-vysehrad/IMG_4205.jpg',
     ],
   },
-
-  // === SCHEDULED FOR FUTURE PUBLICATION ===
-  // Uncomment one realization per month to keep the site fresh for SEO
-
-  // --- MONTH 4 ---
-  // {
-  //   id: 10,
-  //   slug: 'osetreni-lip-a-jirovce-lcovice',
-  //   title: 'Ošetření lip a jírovce - Lčovice',
-  //   location: 'Lčovice',
-  //   date: '2025-08-19',
-  //   excerpt: 'Profesionální ošetření lip a jírovce v obci Lčovice. Komplexní péče o obecní zeleň.',
-  //   content: `
-  //     <p>V srpnu 2025 jsme provedli profesionální ošetření lip a jírovce v obci Lčovice. Stromy tvořící součást obecní zeleně vyžadovaly zdravotní řez a úpravu korun.</p>
-  //     <p>Realizovali jsme kompletní zdravotní ošetření včetně odstranění suchých větví, prosvětlení korun a zajištění stability. Práce probíhala s ohledem na okolní zástavbu a bezpečnost obyvatel.</p>
-  //     <p>Péče o obecní zeleň je důležitá pro kvalitu života v obcích. Zdravé a bezpečné stromy přispívají k příjemnému prostředí a zvyšují hodnotu veřejného prostoru.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipa-lcovice/IMG_4908.jpg',
-  //     '/images/realizace/lipa-lcovice/IMG_4909.jpg',
-  //   ],
-  // },
-
-  // --- MONTH 5 ---
-  // {
-  //   id: 11,
-  //   slug: 'osetreni-lipy-prachatice',
-  //   title: 'Ošetření lípy - Prachatice',
-  //   location: 'Prachatice',
-  //   date: '2025-09-28',
-  //   excerpt: 'Odborné ošetření lípy v Prachaticích. Zdravotní řez a péče o vzrostlý strom v městském prostředí.',
-  //   content: `
-  //     <p>V září 2025 jsme realizovali odborné ošetření lípy v Prachaticích. Vzrostlá lípa vyžadovala zdravotní řez a úpravu koruny pro zajištění bezpečnosti a vitality.</p>
-  //     <p>Provedli jsme kompletní zdravotní ošetření, odstranili jsme suché a poškozené větve a upravili tvar koruny. Práce probíhala za použití lanové techniky s maximální opatrností.</p>
-  //     <p>Lípy jsou tradičními stromy českého venkova i měst. Jejich péče vyžaduje znalost specifik tohoto druhu a citlivý přístup k jejich přirozenému růstu.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipa-prachatice/IMG_7915.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipa-prachatice/IMG_7915.jpg',
-  //     '/images/realizace/lipa-prachatice/IMG_7916.jpg',
-  //     '/images/realizace/lipa-prachatice/IMG_7918.jpg',
-  //     '/images/realizace/lipa-prachatice/IMG_7919.jpg',
-  //   ],
-  // },
-
-  // --- MONTH 6 ---
-  // {
-  //   id: 12,
-  //   slug: 'staticka-vazba-lipy-cerna-v-posumavi',
-  //   title: 'Instalace statické vazby lípy - Černá v Pošumaví',
-  //   location: 'Černá v Pošumaví',
-  //   date: '2025-10-10',
-  //   excerpt: 'Instalace statické vazby pro stabilizaci lípy v Černé v Pošumaví. Moderní metoda zajištění bezpečnosti rozrostlého stromu.',
-  //   content: `
-  //     <p>V říjnu 2025 jsme realizovali instalaci statické vazby na lípě v Černé v Pošumaví. Strom s rozrostlou korunou vykazoval známky oslabení v místech větvení a vyžadoval stabilizaci.</p>
-  //     <p>Statická vazba je moderní arboristická metoda, která zajišťuje stabilitu stromu bez nutnosti radikálních řezů. Ocelová lana spojují hlavní větve a snižují riziko jejich odlomení při nepříznivém počasí.</p>
-  //     <p>Tato technika umožňuje zachovat přirozený vzhled stromu a prodloužit jeho životnost. Je ideální pro vzrostlé stromy s historickou nebo estetickou hodnotou.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
-  //     '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.jpg',
-  //     '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.jpg',
-  //   ],
-  // },
-
-  // --- MONTH 7 ---
-  // {
-  //   id: 13,
-  //   slug: 'osetreni-lip-hostka',
-  //   title: 'Ošetření lip - Hoštka',
-  //   location: 'Hoštka',
-  //   date: '2025-10-17',
-  //   excerpt: 'Komplexní ošetření lip v obci Hoštka. Zdravotní řezy a úprava korun pro zajištění bezpečnosti a vitality stromů.',
-  //   content: `
-  //     <p>V říjnu 2025 jsme provedli komplexní ošetření lip v obci Hoštka. Stromy vyžadovaly zdravotní řez a úpravu korun pro zajištění bezpečnosti v okolí.</p>
-  //     <p>Realizovali jsme důkladné zdravotní ošetření všech lip, odstranili suché a poškozené větve a provedli redukce tam, kde to bylo potřeba. Práce probíhala systematicky s důrazem na kvalitu provedení.</p>
-  //     <p>Pravidelná péče o stromy v obcích je klíčová pro prevenci havarijních stavů a zachování zdravé a bezpečné zeleně pro obyvatele.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipy-hostka/IMG_5392.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipy-hostka/IMG_5392.jpg',
-  //     '/images/realizace/lipy-hostka/IMG_5411.jpg',
-  //   ],
-  // },
-
-  // --- MONTH 8 ---
-  // {
-  //   id: 14,
-  //   slug: 'kaceni-brizy-a-douglesky-lhenice',
-  //   title: 'Rizikové kácení břízy a douglasky - Lhenice',
-  //   location: 'Lhenice',
-  //   date: '2026-03-03',
-  //   excerpt: 'Rizikové kácení vzrostlé břízy a douglasky ve Lhenicích. Stromolezecká technika a precizní spouštění větví v blízkosti elektrického vedení a zástavby.',
-  //   content: `
-  //     <p>V březnu 2026 jsme ve Lhenicích realizovali náročné kácení dvou vzrostlých stromů – břízy a douglasky. Vzhledem k jejich umístění a výšce nebylo možné klasické kácení ze země.</p>
-  //     <p>Bříza rostla v bezprostřední blízkosti elektrického vedení, což vyžadovalo maximální preciznost při spouštění větví. Vzrostlá douglaska vyžadovala nasazení stromolezecké techniky pro postupné odřezávání částí kmene.</p>
-  //     <p>Celý proces probíhal v blízkosti obytných domů a komunikace, kde byla prioritou bezpečnost osob a majetku. Stromy byly postupně a kontrolovaně odstraněny bez jakéhokoliv poškození okolní infrastruktury.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/briza - lhenice/lhenice-1.jpeg',
-  //   gallery: [
-  //     '/images/realizace/briza - lhenice/lhenice-1.jpeg',
-  //     '/images/realizace/briza - lhenice/lhenice-2.jpeg',
-  //     '/images/realizace/briza - lhenice/lhenice-3.jpeg',
-  //   ],
-  // },
-
-  // --- MONTH 9 ---
-  // {
-  //   id: 15,
-  //   slug: 'osetreni-lipy-vacov',
-  //   title: 'Ošetření lípy - Vacov',
-  //   location: 'Vacov',
-  //   date: '2025-08-15',
-  //   excerpt: 'Profesionální ošetření lípy v obci Vacov na Šumavě. Péče o vzrostlý strom v srdci Pošumaví.',
-  //   content: `
-  //     <p>V srpnu 2025 jsme realizovali profesionální ošetření lípy v obci Vacov na Šumavě. Vzrostlá lípa je dominantou místního veřejného prostoru a vyžadovala odbornou péči.</p>
-  //     <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a upravili korunu pro lepší stabilitu. Práce probíhala s maximální opatrností a respektem k významu stromu pro místní komunitu.</p>
-  //     <p>Šumava a Pošumaví jsou regiony, kde působíme pravidelně. Máme zde řadu spokojených zákazníků a důvěrně známe místní podmínky.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipa-vacov/IMG_5420.jpg',
-  //   gallery: [
-  //     '/images/realizace/lipa-vacov/IMG_5420.jpg',
-  //     '/images/realizace/lipa-vacov/IMG_5423.jpg',
-  //   ],
-  // },
-
-  // --- MONTH 10 (lipa-lazne-tousen) ---
-  // {
-  //   id: 16,
-  //   slug: 'osetreni-lip-lazne-tousen',
-  //   title: 'Péče o vzrostlé lípy - Lázně Toušeň',
-  //   location: 'Lázně Toušeň',
-  //   date: '2026-03-11',
-  //   excerpt: 'Odborné arboristické zásahy na dvou vzrostlých lípách v Lázních Toušeň. Ošetření památné lípy u kostela sv. Floriána a údržba lípy u příjezdové cesty.',
-  //   content: `
-  //     <p>V březnu 2026 jsme v Lázních Toušeň realizovali odborné arboristické zásahy na dvou významných stromech.</p>
-  //     <p>Prvním z nich byla památná lípa u kostela svatého Floriána. Práce na takto chráněném stromě vyžadovala maximální opatrnost a specifický přístup. Naším cílem bylo zajistit provozní bezpečnost stromu a zároveň zachovat jeho historickou hodnotu a zdravotní stav. Nasazení stromolezecké techniky nám umožnilo bezpečný pohyb v koruně.</p>
-  //     <p>Druhou zakázkou byla údržba vzrostlé lípy u příjezdové cesty. Zde bylo nutné provést ošetření koruny tak, aby strom neohrožoval okolní provoz ani pěší komunikaci.</p>
-  //     <p>Obě lípy byly odborně ošetřeny a zajištěny pro další roky. Děkujeme za důvěru při péči o tyto zelené dominanty obce.</p>
-  //   `,
-  //   imageSrc: '/images/realizace/lipa - lazne tousen/tousen-1.webp',
-  //   gallery: [
-  //     '/images/realizace/lipa - lazne tousen/tousen-1.webp',
-  //     '/images/realizace/lipa - lazne tousen/tousen-2.webp',
-  //     '/images/realizace/lipa - lazne tousen/tousen-3.webp',
-  //     '/images/realizace/lipa - lazne tousen/tousen-4.webp',
-  //     '/images/realizace/lipa - lazne tousen/tousen-5.webp',
-  //   ],
-  // },
 ];

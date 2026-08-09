@@ -70,9 +70,57 @@
   <!-- Realizace pages -->
   <url>
     <loc>https://arbovert.cz/realizace</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lipy-zamek-kozel</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lip-lazne-tousen</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/kaceni-brizy-a-douglesky-lhenice</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lip-hostka</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/staticka-vazba-lipy-cerna-v-posumavi</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lipy-prachatice</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lip-a-jirovce-lcovice</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arbovert.cz/realizace/osetreni-lipy-vacov</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://arbovert.cz/realizace/osetreni-jasanu-praha-vysehrad</loc>
