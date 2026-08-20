@@ -84,6 +84,9 @@ const Footer = () => (
             <FooterLink href="/sluzby/inventarizace-drevin">
               Inventarizace dřevin
             </FooterLink>
+            <FooterLink href="/sluzby/prorezavani-ovocnych-stromu">
+              Prořezávání ovocných stromů
+            </FooterLink>
           </nav>
         </div>
 

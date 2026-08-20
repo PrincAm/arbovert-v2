@@ -1,4 +1,5 @@
 import { serviceContent } from "../../../data/arbo";
+import { realizations } from "../../../data/realizations";
 import ServicePageClient from "./ServicePageClient";
 
 const StyledContainer = ({ children, className = "", ...props }) => (
@@ -63,6 +64,16 @@ export default async function ServicePage({ params }) {
     );
   }
 
+  const related = realizations
+    .filter((r) => r.services && r.services.includes(slug))
+    .slice(0, 3)
+    .map(({ slug: realizationSlug, title, location, imageSrc }) => ({
+      slug: realizationSlug,
+      title,
+      location,
+      imageSrc,
+    }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -87,7 +98,7 @@ export default async function ServicePage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ServicePageClient service={service} slug={slug} />
+      <ServicePageClient service={service} slug={slug} related={related} />
     </>
   );
 }

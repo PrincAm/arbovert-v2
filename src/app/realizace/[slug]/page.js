@@ -2,6 +2,7 @@ import { Button, Card } from "@heroui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { realizations } from "../../../data/realizations";
+import { serviceContent } from "../../../data/arbo";
 
 const StyledContainer = ({ children, className = "", ...props }) => (
   <div className={`flex bg-gray-50 ${className}`} {...props}>
@@ -133,6 +134,28 @@ export default async function RealizaceDetailPage({ params }) {
                     </div>
                   </Card>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {realization.services && realization.services.length > 0 && (
+            <div className="flex flex-col items-center gap-3">
+              <p className="text-lg md:text-xl font-semibold text-foreground">
+                Související služby
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                {realization.services.map(
+                  (serviceSlug) =>
+                    serviceContent[serviceSlug] && (
+                      <NextLink
+                        key={serviceSlug}
+                        href={`/sluzby/${serviceSlug}`}
+                        className="text-success-600 hover:text-success-700 font-semibold underline text-base md:text-lg"
+                      >
+                        {serviceContent[serviceSlug].title}
+                      </NextLink>
+                    ),
+                )}
               </div>
             </div>
           )}

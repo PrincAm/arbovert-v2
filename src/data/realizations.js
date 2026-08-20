@@ -7,6 +7,7 @@ export const realizations = [
     title: 'Ošetření lípy - Zámek Kozel',
     location: 'Zámek Kozel',
     date: '2026-06-09',
+    services: ['odborne-osetrovani-stromu', 'zajistovani-stromu'],
     excerpt:
       'Obvodová redukce koruny vzrostlé lípy v areálu zámku Kozel. Demontáž staré statické vazby a její nahrazení sedmi dynamickými vazbami.',
     content: `
@@ -29,6 +30,7 @@ export const realizations = [
     title: 'Péče o vzrostlé lípy - Lázně Toušeň',
     location: 'Lázně Toušeň',
     date: '2026-03-11',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Odborné arboristické zásahy na dvou vzrostlých lípách v Lázních Toušeň. Ošetření památné lípy u kostela sv. Floriána a údržba lípy u příjezdové cesty.',
     content: `
@@ -52,6 +54,7 @@ export const realizations = [
     title: 'Rizikové kácení břízy a douglasky - Lhenice',
     location: 'Lhenice',
     date: '2026-03-03',
+    services: ['rizikove-kaceni-stromu'],
     excerpt:
       'Rizikové kácení vzrostlé břízy a douglasky ve Lhenicích. Stromolezecká technika a precizní spouštění větví v blízkosti elektrického vedení a zástavby.',
     content: `
@@ -72,6 +75,7 @@ export const realizations = [
     title: 'Ošetření lip - Hoštka',
     location: 'Hoštka',
     date: '2025-10-17',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Komplexní ošetření lip v obci Hoštka. Zdravotní řezy a úprava korun pro zajištění bezpečnosti a vitality stromů.',
     content: `
@@ -94,6 +98,7 @@ export const realizations = [
     title: 'Instalace statické vazby lípy - Černá v Pošumaví',
     location: 'Černá v Pošumaví',
     date: '2025-10-10',
+    services: ['zajistovani-stromu'],
     excerpt:
       'Instalace statické vazby pro stabilizaci lípy v Černé v Pošumaví. Moderní metoda zajištění bezpečnosti rozrostlého stromu.',
     content: `
@@ -115,6 +120,7 @@ export const realizations = [
     title: 'Ošetření lípy - Prachatice',
     location: 'Prachatice',
     date: '2025-09-28',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Odborné ošetření lípy v Prachaticích. Zdravotní řez a péče o vzrostlý strom v městském prostředí.',
     content: `
@@ -136,6 +142,7 @@ export const realizations = [
     title: 'Ošetření lip a jírovce - Lčovice',
     location: 'Lčovice',
     date: '2025-08-19',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Profesionální ošetření lip a jírovce v obci Lčovice. Komplexní péče o obecní zeleň.',
     content: `
@@ -155,6 +162,7 @@ export const realizations = [
     title: 'Ošetření lípy - Vacov',
     location: 'Vacov',
     date: '2025-08-15',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Profesionální ošetření lípy v obci Vacov na Šumavě. Péče o vzrostlý strom v srdci Pošumaví.',
     content: `
@@ -174,6 +182,7 @@ export const realizations = [
     title: 'Kácení topolů v havarijním stavu - Praha, Labe',
     location: 'Praha, Labe',
     date: '2025-07-19',
+    services: ['rizikove-kaceni-stromu', 'likvidace-drevni-hmoty'],
     excerpt:
       'Havarijní kácení topolů v kritickém stavu podél Labe. Použití jeřábu pro bezpečné odstranění nebezpečných stromů.',
     content: `
@@ -195,6 +204,7 @@ export const realizations = [
     title: 'Ošetření lip - Zámek Vlachovo Březí',
     location: 'Zámek Vlachovo Březí',
     date: '2025-06-04',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Komplexní ošetření lipové aleje v areálu zámku Vlachovo Březí. Péče o historické stromy v zámeckém parku.',
     content: `
@@ -215,6 +225,7 @@ export const realizations = [
     title: 'Ošetření památného liliovníku tulipánokvětého - Prachatice',
     location: 'Prachatice',
     date: '2025-05-30',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Odborné ošetření vzácného památného liliovníku tulipánokvětého v Prachaticích. Péče o unikátní dřevinu vyžadující specializovaný přístup.',
     content: `
@@ -235,6 +246,7 @@ export const realizations = [
     title: 'Ošetření jírovce u Týnského chrámu - Praha 1, Celetná',
     location: 'Praha 1, Celetná',
     date: '2024-09-25',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Profesionální ošetření jírovce v historickém centru Prahy u Týnského chrámu. Zakázka pro Magistrát hlavního města Prahy.',
     content: `
@@ -255,6 +267,7 @@ export const realizations = [
     title: 'Ošetření javorů - Kladno, ČEZ',
     location: 'Kladno',
     date: '2024-09-18',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Odborné ošetření javorů pro společnost ČEZ v Kladně. Zajištění bezpečnosti stromů v blízkosti energetické infrastruktury.',
     content: `
@@ -274,6 +287,7 @@ export const realizations = [
     title: 'Mikro injektáž stromů - Praha, Vinohrady',
     location: 'Praha, Vinohrady',
     date: '2024-07-20',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Aplikace mikro injektáže pro posílení zdraví stromů v Praze na Vinohradech. Moderní metoda ochrany a léčby dřevin.',
     content: `
@@ -295,6 +309,7 @@ export const realizations = [
     title: 'Ošetření dubu - Zámek Nebílovy',
     location: 'Zámek Nebílovy',
     date: '2024-06-09',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Profesionální ošetření dubu v areálu zámku Nebílovy. Dokumentace stavu před a po ošetření pro majitele památky.',
     content: `
@@ -314,6 +329,7 @@ export const realizations = [
     title: 'Ošetření památného dubu - Dolany u Kladna',
     location: 'Dolany u Kladna',
     date: '2024-03-04',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Komplexní ošetření památného dubu v Dolanech u Kladna. Zdravotní řez a péče o vzácný strom s důrazem na zachování jeho vitality.',
     content: `
@@ -333,6 +349,7 @@ export const realizations = [
     title: 'Ošetření jasanů - Praha, Vyšehrad',
     location: 'Praha, Vyšehrad',
     date: '2024-02-10',
+    services: ['odborne-osetrovani-stromu'],
     excerpt:
       'Odborné ošetření jasanů v historickém areálu Vyšehradu. Zdravotní řez a zajištění bezpečnosti stromů v blízkosti památek.',
     content: `
