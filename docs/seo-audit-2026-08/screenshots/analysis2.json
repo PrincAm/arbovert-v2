@@ -1,0 +1,1823 @@
+{
+  "realizace": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Realizace",
+        "top": 156,
+        "bottom": 231,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 5756.75,
+          "bottom": 5776.75,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 32,
+          "top": 1032
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 32,
+          "top": 1032
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "tousen-1.webp",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "lhenice-1.jpeg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 1536,
+          "naturalH": 2048,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4227.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_8291.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7915.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5436.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5420.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 4032,
+          "naturalH": 3024,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7415.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7073.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7615.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5685.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4908.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7431.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_8322.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5392.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4201.jpg",
+          "displayW": 464,
+          "displayH": 256,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Realizace",
+        "top": 150.21875,
+        "bottom": 187.71875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 9029.71875,
+          "bottom": 9049.71875,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "tousen-1.webp",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "lhenice-1.jpeg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4227.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_8291.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7915.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5436.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 3024,
+          "naturalH": 4032,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5420.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7415.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7073.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7615.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5685.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4908.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_7431.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_8322.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_5392.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "IMG_4201.jpg",
+          "displayW": 339,
+          "displayH": 192,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  },
+  "realizace-detail": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Ošetření lípy - Zámek Kozel",
+        "top": 256,
+        "bottom": 316,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1604.5,
+          "bottom": 1652.5,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1604.5,
+          "bottom": 1652.5,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 1904.5,
+          "bottom": 1924.5,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "← Zpět na realizace",
+          "width": 158,
+          "height": 28,
+          "top": 156
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 151,
+          "height": 20,
+          "top": 1868
+        },
+        {
+          "tag": "A",
+          "text": "info@arbovert.cz",
+          "width": 138,
+          "height": 20,
+          "top": 1896
+        },
+        {
+          "tag": "A",
+          "text": "Rizikové kácení stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1821
+        },
+        {
+          "tag": "A",
+          "text": "Ošetřování stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1849
+        },
+        {
+          "tag": "A",
+          "text": "Frézování pařezů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1877
+        },
+        {
+          "tag": "A",
+          "text": "Stabilizace stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1905
+        },
+        {
+          "tag": "A",
+          "text": "Kácení stromů Šumava",
+          "width": 224,
+          "height": 20,
+          "top": 1821
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 972,
+          "displayH": 384,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 228,
+          "displayH": 228,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-2.webp",
+          "displayW": 228,
+          "displayH": 228,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-3.webp",
+          "displayW": 228,
+          "displayH": 228,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-4.webp",
+          "displayW": 228,
+          "displayH": 228,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Ošetření lípy - Zámek Kozel",
+        "top": 242.21875,
+        "bottom": 317.21875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1848.21875,
+          "bottom": 1896.21875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1848.21875,
+          "bottom": 1896.21875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 2636.15625,
+          "bottom": 2656.15625,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "← Zpět na realizace",
+          "width": 143,
+          "height": 24,
+          "top": 150
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 339,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 162,
+          "displayH": 162,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-2.webp",
+          "displayW": 162,
+          "displayH": 162,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-3.webp",
+          "displayW": 162,
+          "displayH": 162,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-4.webp",
+          "displayW": 162,
+          "displayH": 162,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "bp360": {
+      "overflow": {
+        "docWidth": 360,
+        "winWidth": 360,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 600,
+          "bottom": 740,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 636,
+          "left": 400,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Ošetření lípy - Zámek Kozel",
+        "top": 242.21875,
+        "bottom": 317.21875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 208,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1885.21875,
+          "bottom": 1933.21875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1885.21875,
+          "bottom": 1933.21875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 2673.15625,
+          "bottom": 2693.15625,
+          "width": 328,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 208,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 636
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 672
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "← Zpět na realizace",
+          "width": 143,
+          "height": 24,
+          "top": 150
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 688
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 688
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 324,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 154,
+          "displayH": 154,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-2.webp",
+          "displayW": 154,
+          "displayH": 154,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-3.webp",
+          "displayW": 154,
+          "displayH": 154,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-4.webp",
+          "displayW": 154,
+          "displayH": 154,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "bp650": {
+      "overflow": {
+        "docWidth": 650,
+        "winWidth": 650,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 784,
+          "bottom": 900,
+          "height": 116
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 796,
+          "left": 690,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Ošetření lípy - Zámek Kozel",
+        "top": 242.21875,
+        "bottom": 279.71875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 304,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1825.71875,
+          "bottom": 1873.71875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1825.71875,
+          "bottom": 1873.71875,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 2613.65625,
+          "bottom": 2633.65625,
+          "width": 618,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 304,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 796
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 832
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "← Zpět na realizace",
+          "width": 143,
+          "height": 24,
+          "top": 150
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 848
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 848
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 614,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 299,
+          "displayH": 299,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-2.webp",
+          "displayW": 299,
+          "displayH": 299,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-3.webp",
+          "displayW": 299,
+          "displayH": 299,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-4.webp",
+          "displayW": 299,
+          "displayH": 299,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "bp651": {
+      "overflow": {
+        "docWidth": 651,
+        "winWidth": 651,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 784,
+          "bottom": 900,
+          "height": 116
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 25.984375,
+          "left": 465.8125,
+          "width": 169.1875,
+          "height": 24
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Ošetření lípy - Zámek Kozel",
+        "top": 200,
+        "bottom": 237.5,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 25.984375,
+          "bottom": 49.984375,
+          "width": 57.3125,
+          "height": 24,
+          "inViewport": true
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1784.5,
+          "bottom": 1832.5,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontaktujte nás",
+          "top": 1784.5,
+          "bottom": 1832.5,
+          "width": 214.75,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 2572.4375,
+          "bottom": 2592.4375,
+          "width": 619,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 50,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 71,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 42,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 57,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 108,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 169,
+          "height": 24,
+          "top": 26
+        },
+        {
+          "tag": "A",
+          "text": "← Zpět na realizace",
+          "width": 143,
+          "height": 24,
+          "top": 108
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 848
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 848
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 615,
+          "displayH": 256,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-1.webp",
+          "displayW": 300,
+          "displayH": 300,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-2.webp",
+          "displayW": 300,
+          "displayH": 300,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-3.webp",
+          "displayW": 300,
+          "displayH": 300,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kozel-4.webp",
+          "displayW": 300,
+          "displayH": 300,
+          "naturalW": 900,
+          "naturalH": 1200,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  },
+  "kontakt": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 3,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Kontakt",
+        "top": 156,
+        "bottom": 231,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Odeslat poptávku",
+          "top": 1460.5,
+          "bottom": 1508.5,
+          "width": 248.015625,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 1962.5,
+          "bottom": 1982.5,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 213,
+          "height": 28,
+          "top": 876
+        },
+        {
+          "tag": "A",
+          "text": "info@arbovert.cz",
+          "width": 194,
+          "height": 28,
+          "top": 876
+        },
+        {
+          "tag": "INPUT",
+          "text": "INPUT",
+          "width": 13,
+          "height": 13,
+          "top": 1415
+        },
+        {
+          "tag": "A",
+          "text": "zpracováním osobních údajů",
+          "width": 188,
+          "height": 20,
+          "top": 1401
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 151,
+          "height": 20,
+          "top": 1926
+        },
+        {
+          "tag": "A",
+          "text": "info@arbovert.cz",
+          "width": 138,
+          "height": 20,
+          "top": 1954
+        },
+        {
+          "tag": "A",
+          "text": "Rizikové kácení stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1879
+        },
+        {
+          "tag": "A",
+          "text": "Ošetřování stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1907
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 3,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Kontakt",
+        "top": 150.21875,
+        "bottom": 195.21875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Odeslat poptávku",
+          "top": 2006.96875,
+          "bottom": 2054.96875,
+          "width": 195,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 2948.90625,
+          "bottom": 2968.90625,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "info@arbovert.cz",
+          "width": 181,
+          "height": 28,
+          "top": 1246
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  }
+}
