@@ -59,11 +59,11 @@ export const realizations = [
       <p>Bříza rostla v bezprostřední blízkosti elektrického vedení, což vyžadovalo maximální preciznost při spouštění větví. Vzrostlá douglaska vyžadovala nasazení stromolezecké techniky pro postupné odřezávání částí kmene.</p>
       <p>Celý proces probíhal v blízkosti obytných domů a komunikace, kde byla prioritou bezpečnost osob a majetku. Stromy byly postupně a kontrolovaně odstraněny bez jakéhokoliv poškození okolní infrastruktury.</p>
     `,
-    imageSrc: '/images/realizace/briza - lhenice/lhenice-1.jpeg',
+    imageSrc: '/images/realizace/briza - lhenice/lhenice-1.webp',
     gallery: [
-      '/images/realizace/briza - lhenice/lhenice-1.jpeg',
-      '/images/realizace/briza - lhenice/lhenice-2.jpeg',
-      '/images/realizace/briza - lhenice/lhenice-3.jpeg',
+      '/images/realizace/briza - lhenice/lhenice-1.webp',
+      '/images/realizace/briza - lhenice/lhenice-2.webp',
+      '/images/realizace/briza - lhenice/lhenice-3.webp',
     ],
   },
   {
@@ -79,13 +79,13 @@ export const realizations = [
       <p>Realizovali jsme důkladné zdravotní ošetření všech lip, odstranili suché a poškozené větve a provedli redukce tam, kde to bylo potřeba. Práce probíhala systematicky s důrazem na kvalitu provedení.</p>
       <p>Pravidelná péče o stromy v obcích je klíčová pro prevenci havarijních stavů a zachování zdravé a bezpečné zeleně pro obyvatele.</p>
     `,
-    imageSrc: '/images/realizace/dub-dolany/IMG_4227.jpg',
+    imageSrc: '/images/realizace/dub-dolany/IMG_4227.webp',
     gallery: [
-      '/images/realizace/dub-dolany/IMG_4227.jpg',
-      '/images/realizace/dub-dolany/IMG_4228.jpg',
-      '/images/realizace/dub-dolany/IMG_4229.jpg',
-      '/images/realizace/dub-dolany/IMG_4232.jpg',
-      '/images/realizace/dub-dolany/IMG_4233.jpg',
+      '/images/realizace/dub-dolany/IMG_4227.webp',
+      '/images/realizace/dub-dolany/IMG_4228.webp',
+      '/images/realizace/dub-dolany/IMG_4229.webp',
+      '/images/realizace/dub-dolany/IMG_4232.webp',
+      '/images/realizace/dub-dolany/IMG_4233.webp',
     ],
   },
   {
@@ -101,12 +101,12 @@ export const realizations = [
       <p>Statická vazba je moderní arboristická metoda, která zajišťuje stabilitu stromu bez nutnosti radikálních řezů. Ocelová lana spojují hlavní větve a snižují riziko jejich odlomení při nepříznivém počasí.</p>
       <p>Tato technika umožňuje zachovat přirozený vzhled stromu a prodloužit jeho životnost. Je ideální pro vzrostlé stromy s historickou nebo estetickou hodnotou.</p>
     `,
-    imageSrc: '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
+    imageSrc: '/images/realizace/liliovnik-prachatice/IMG_8291.webp',
     gallery: [
-      '/images/realizace/liliovnik-prachatice/IMG_8291.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8293.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8295.jpg',
-      '/images/realizace/liliovnik-prachatice/IMG_8297.jpg',
+      '/images/realizace/liliovnik-prachatice/IMG_8291.webp',
+      '/images/realizace/liliovnik-prachatice/IMG_8293.webp',
+      '/images/realizace/liliovnik-prachatice/IMG_8295.webp',
+      '/images/realizace/liliovnik-prachatice/IMG_8297.webp',
     ],
   },
   {
@@ -122,12 +122,12 @@ export const realizations = [
       <p>Provedli jsme kompletní zdravotní ošetření, odstranili jsme suché a poškozené větve a upravili tvar koruny. Práce probíhala za použití lanové techniky s maximální opatrností.</p>
       <p>Lípy jsou tradičními stromy českého venkova i měst. Jejich péče vyžaduje znalost specifik tohoto druhu a citlivý přístup k jejich přirozenému růstu.</p>
     `,
-    imageSrc: '/images/realizace/lipa-prachatice/IMG_7915.jpg',
+    imageSrc: '/images/realizace/lipa-prachatice/IMG_7915.webp',
     gallery: [
-      '/images/realizace/lipa-prachatice/IMG_7915.jpg',
-      '/images/realizace/lipa-prachatice/IMG_7916.jpg',
-      '/images/realizace/lipa-prachatice/IMG_7918.jpg',
-      '/images/realizace/lipa-prachatice/IMG_7919.jpg',
+      '/images/realizace/lipa-prachatice/IMG_7915.webp',
+      '/images/realizace/lipa-prachatice/IMG_7916.webp',
+      '/images/realizace/lipa-prachatice/IMG_7918.webp',
+      '/images/realizace/lipa-prachatice/IMG_7919.webp',
     ],
   },
   {
@@ -143,10 +143,10 @@ export const realizations = [
       <p>Realizovali jsme kompletní zdravotní ošetření včetně odstranění suchých větví, prosvětlení korun a zajištění stability. Práce probíhala s ohledem na okolní zástavbu a bezpečnost obyvatel.</p>
       <p>Péče o obecní zeleň je důležitá pro kvalitu života v obcích. Zdravé a bezpečné stromy přispívají k příjemnému prostředí a zvyšují hodnotu veřejného prostoru.</p>
     `,
-    imageSrc: '/images/realizace/javor-kladno/IMG_5436.jpg',
+    imageSrc: '/images/realizace/javor-kladno/IMG_5436.webp',
     gallery: [
-      '/images/realizace/javor-kladno/IMG_5436.jpg',
-      '/images/realizace/javor-kladno/IMG_5444.jpg',
+      '/images/realizace/javor-kladno/IMG_5436.webp',
+      '/images/realizace/javor-kladno/IMG_5444.webp',
     ],
   },
   {
@@ -162,10 +162,10 @@ export const realizations = [
       <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a upravili korunu pro lepší stabilitu. Práce probíhala s maximální opatrností a respektem k významu stromu pro místní komunitu.</p>
       <p>Šumava a Pošumaví jsou regiony, kde působíme pravidelně. Máme zde řadu spokojených zákazníků a důvěrně známe místní podmínky.</p>
     `,
-    imageSrc: '/images/realizace/lipa-vacov/IMG_5420.jpg',
+    imageSrc: '/images/realizace/lipa-vacov/IMG_5420.webp',
     gallery: [
-      '/images/realizace/lipa-vacov/IMG_5420.jpg',
-      '/images/realizace/lipa-vacov/IMG_5423.jpg',
+      '/images/realizace/lipa-vacov/IMG_5420.webp',
+      '/images/realizace/lipa-vacov/IMG_5423.webp',
     ],
   },
   {
@@ -181,12 +181,12 @@ export const realizations = [
       <p>Pro bezpečné kácení jsme nasadili jeřábovou techniku, která umožnila kontrolované snášení částí stromů bez rizika poškození okolí. Kombinace jeřábu a lanové techniky zajistila maximální bezpečnost celé operace.</p>
       <p>Havarijní kácení vyžaduje rychlou reakci a profesionální přístup. Náš tým je připraven zasáhnout v případě potřeby a zajistit bezpečné odstranění nebezpečných stromů.</p>
     `,
-    imageSrc: '/images/realizace/topoly-labe/IMG_7415.jpg',
+    imageSrc: '/images/realizace/topoly-labe/IMG_7415.webp',
     gallery: [
-      '/images/realizace/topoly-labe/IMG_7415.jpg',
-      '/images/realizace/topoly-labe/IMG_7416.jpg',
-      '/images/realizace/topoly-labe/IMG_7418.jpg',
-      '/images/realizace/topoly-labe/IMG_7419(1).jpg',
+      '/images/realizace/topoly-labe/IMG_7415.webp',
+      '/images/realizace/topoly-labe/IMG_7416.webp',
+      '/images/realizace/topoly-labe/IMG_7418.webp',
+      '/images/realizace/topoly-labe/IMG_7419(1).webp',
     ],
   },
   {
@@ -202,11 +202,11 @@ export const realizations = [
       <p>Realizovali jsme zdravotní řezy všech stromů, odstranili suché a poškozené větve a provedli úpravy korun pro zajištění dlouhodobé stability. Práce probíhala s maximálním ohledem na zachování historického charakteru aleje.</p>
       <p>Zámecké parky jsou cenným kulturním dědictvím a péče o jejich stromy vyžaduje citlivý přístup a respekt k historickému kontextu místa.</p>
     `,
-    imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
+    imageSrc: '/images/realizace/lipy-vlachovo-brezi/IMG_7073.webp',
     gallery: [
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7073.jpg',
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7077.jpg',
-      '/images/realizace/lipy-vlachovo-brezi/IMG_7079.jpg',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7073.webp',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7077.webp',
+      '/images/realizace/lipy-vlachovo-brezi/IMG_7079.webp',
     ],
   },
   {
@@ -222,11 +222,11 @@ export const realizations = [
       <p>Provedli jsme šetrný zdravotní řez s důrazem na zachování přirozeného habitu stromu. Odstranili jsme suché a poškozené větve a zajistili optimální podmínky pro další růst.</p>
       <p>Péče o památné stromy vyžaduje zvláštní znalosti a citlivý přístup. Liliovník tulipánokvětý je obzvláště cenný pro svou estetickou hodnotu a vzácnost v našich podmínkách.</p>
     `,
-    imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
+    imageSrc: '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.webp',
     gallery: [
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.jpg',
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.jpg',
-      '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.jpg',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7615.webp',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7618.webp',
+      '/images/realizace/lipa-cerna-v-posumavi/IMG_7621.webp',
     ],
   },
   {
@@ -242,11 +242,11 @@ export const realizations = [
       <p>Práce v samém srdci historické Prahy vyžadovala maximální opatrnost a koordinaci. Provedli jsme zdravotní řez, odstranili suché větve a zajistili bezpečnost stromu pro kolemjdoucí i okolní památky.</p>
       <p>Ošetření stromů v památkových zónách vyžaduje nejen arboristické znalosti, ale také respekt k historickému prostředí a schopnost pracovat v náročných podmínkách městského centra.</p>
     `,
-    imageSrc: '/images/realizace/jirovec-celetna/IMG_5685.jpg',
+    imageSrc: '/images/realizace/jirovec-celetna/IMG_5685.webp',
     gallery: [
-      '/images/realizace/jirovec-celetna/IMG_5685.jpg',
-      '/images/realizace/jirovec-celetna/IMG_5687.jpg',
-      '/images/realizace/jirovec-celetna/IMG_5690.jpg',
+      '/images/realizace/jirovec-celetna/IMG_5685.webp',
+      '/images/realizace/jirovec-celetna/IMG_5687.webp',
+      '/images/realizace/jirovec-celetna/IMG_5690.webp',
     ],
   },
   {
@@ -262,10 +262,10 @@ export const realizations = [
       <p>Práce zahrnovaly zdravotní řez a redukci korun s ohledem na bezpečné vzdálenosti od elektrických vedení. Veškeré zásahy byly provedeny v souladu s bezpečnostními předpisy pro práci v blízkosti energetických zařízení.</p>
       <p>Spolupráce s energetickými společnostmi vyžaduje specifické znalosti a certifikace. Náš tým je plně vybaven pro tyto náročné zakázky.</p>
     `,
-    imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.jpg',
+    imageSrc: '/images/realizace/lipa-lcovice/IMG_4908.webp',
     gallery: [
-      '/images/realizace/lipa-lcovice/IMG_4908.jpg',
-      '/images/realizace/lipa-lcovice/IMG_4909.jpg',
+      '/images/realizace/lipa-lcovice/IMG_4908.webp',
+      '/images/realizace/lipa-lcovice/IMG_4909.webp',
     ],
   },
   {
@@ -281,12 +281,12 @@ export const realizations = [
       <p>Mikro injektáž je šetrná metoda, která minimalizuje stres pro strom a zajišťuje rychlé a efektivní vstřebání aplikovaných látek. Používá se pro posílení vitality oslabených stromů nebo jako prevence proti škůdcům a chorobám.</p>
       <p>Tato technika je ideální pro stromy v městském prostředí, kde je důležité zachovat jejich zdraví a dlouhověkost i v náročných podmínkách.</p>
     `,
-    imageSrc: '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
+    imageSrc: '/images/realizace/injektaz-vinohrady/IMG_7431.webp',
     gallery: [
-      '/images/realizace/injektaz-vinohrady/IMG_7431.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7432.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7434.jpg',
-      '/images/realizace/injektaz-vinohrady/IMG_7435.jpg',
+      '/images/realizace/injektaz-vinohrady/IMG_7431.webp',
+      '/images/realizace/injektaz-vinohrady/IMG_7432.webp',
+      '/images/realizace/injektaz-vinohrady/IMG_7434.webp',
+      '/images/realizace/injektaz-vinohrady/IMG_7435.webp',
     ],
   },
   {
@@ -302,10 +302,10 @@ export const realizations = [
       <p>Provedli jsme komplexní zdravotní řez, odstranili odumřelé větve a upravili korunu pro lepší stabilitu. Celý proces byl důkladně zdokumentován fotografiemi před a po ošetření.</p>
       <p>Práce v areálech historických památek vyžaduje zvláštní ohled na okolní prostředí a zachování charakteru zámeckého parku. Náš tým má s těmito zakázkami bohaté zkušenosti.</p>
     `,
-    imageSrc: '/images/realizace/dub-nebilovi/IMG_8322.jpg',
+    imageSrc: '/images/realizace/dub-nebilovi/IMG_8322.webp',
     gallery: [
-      '/images/realizace/dub-nebilovi/IMG_8322.jpg',
-      '/images/realizace/dub-nebilovi/IMG_8326.jpg',
+      '/images/realizace/dub-nebilovi/IMG_8322.webp',
+      '/images/realizace/dub-nebilovi/IMG_8326.webp',
     ],
   },
   {
@@ -321,10 +321,10 @@ export const realizations = [
       <p>Realizovali jsme zdravotní řez, při kterém jsme odstranili suché a poškozené větve a prosvětlili korunu pro lepší proudění vzduchu. Veškeré práce byly provedeny šetrně s ohledem na zachování přirozeného tvaru stromu.</p>
       <p>Ošetření památných stromů vyžaduje zvláštní přístup a respekt k jejich věku a historické hodnotě. Náš tým má bohaté zkušenosti s péčí o tyto vzácné dřeviny.</p>
     `,
-    imageSrc: '/images/realizace/lipy-hostka/IMG_5392.jpg',
+    imageSrc: '/images/realizace/lipy-hostka/IMG_5392.webp',
     gallery: [
-      '/images/realizace/lipy-hostka/IMG_5392.jpg',
-      '/images/realizace/lipy-hostka/IMG_5411.jpg',
+      '/images/realizace/lipy-hostka/IMG_5392.webp',
+      '/images/realizace/lipy-hostka/IMG_5411.webp',
     ],
   },
   {
@@ -340,11 +340,11 @@ export const realizations = [
       <p>Provedli jsme zdravotní řez, odstranili suché a poškozené větve a zajistili stabilitu korun. Práce probíhala za použití lanové techniky s maximální opatrností k okolním památkám a návštěvníkům areálu.</p>
       <p>Ošetření jasanů na Vyšehradě je důležité nejen z hlediska bezpečnosti, ale také pro zachování charakteristického rázu tohoto významného historického místa.</p>
     `,
-    imageSrc: '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
+    imageSrc: '/images/realizace/jasany-vysehrad/IMG_4201.webp',
     gallery: [
-      '/images/realizace/jasany-vysehrad/IMG_4201.jpg',
-      '/images/realizace/jasany-vysehrad/IMG_4203.jpg',
-      '/images/realizace/jasany-vysehrad/IMG_4205.jpg',
+      '/images/realizace/jasany-vysehrad/IMG_4201.webp',
+      '/images/realizace/jasany-vysehrad/IMG_4203.webp',
+      '/images/realizace/jasany-vysehrad/IMG_4205.webp',
     ],
   },
 ];

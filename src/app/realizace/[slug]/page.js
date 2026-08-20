@@ -98,6 +98,9 @@ export default async function RealizaceDetailPage({ params }) {
                 src={realization.imageSrc}
                 alt={realization.title}
                 fill
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 1024px"
                 className="object-cover"
               />
             </div>
