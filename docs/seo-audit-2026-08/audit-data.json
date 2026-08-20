@@ -1,0 +1,494 @@
+{
+  "summary": {
+    "health_score": 55,
+    "business_type": "Local Service (hybrid: two street addresses + wide service area) — Czech arborist, Praha + Vimperk/Šumava",
+    "top_findings": [
+      "Google Business Profile status unverifiable from outside; Firmy.cz/Mapy.cz listings use a generic landscaping category",
+      "No pricing content anywhere (0 'Kč' across 30 pages) against a SERP made up entirely of ceník pages",
+      "public/images/realizace is 193MB/60 files; 16 of 17 realization pages use a raw camera JPEG as LCP image",
+      "0 of 30 pages emit <link rel=\"canonical\">; src/hooks/use-canonical-url.js is dead code",
+      "Three contradictory experience claims (14+ / 12+ / computed 15) plus foundingDate 2011 vs ARES 2020-09-17"
+    ],
+    "quick_wins": [
+      "Add alternates.canonical to every metadata export",
+      "Add the missing footer link for /sluzby/prorezavani-ovocnych-stromu (1 inlink vs ~30 for siblings)",
+      "Add /gdpr to sitemap.xml and fix stale lastmod on 9 URLs",
+      "Fix missing space in homepage H1 (src/components/Welcome.js:69-72)",
+      "Reconcile the experience number to one computed source"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 74,
+      "what_works": [
+        "http→https and www→apex are single-hop 301s",
+        "Trailing slashes 308 to canonical form",
+        "Real 404 on unknown paths",
+        "Content fully server-rendered (static export)",
+        "robots.txt valid, sitemap declared"
+      ],
+      "findings": [
+        {
+          "title": "No canonical tags on any page",
+          "severity": "High",
+          "description": "0 of 30 pages emit <link rel=\"canonical\">. src/hooks/use-canonical-url.js has zero call sites and no page sets alternates.canonical.",
+          "recommendation": "Add alternates.canonical to every metadata/generateMetadata export; delete the dead hook."
+        },
+        {
+          "title": "No HSTS or CSP headers",
+          "severity": "High",
+          "description": "Confirmed absent via live curl on /, /robots.txt and a 404.",
+          "recommendation": "Add at the Cloudflare edge — a static export has no server runtime."
+        },
+        {
+          "title": "Duplicate/conflicting robots meta",
+          "severity": "Medium",
+          "description": "src/app/layout.js:73 hardcodes a robots tag duplicating the metadata API output; on the 404 page this yields index,follow→noindex→index,follow.",
+          "recommendation": "Delete the hardcoded tag at src/app/layout.js:73."
+        },
+        {
+          "title": "Service page orphaned from footer nav",
+          "severity": "Medium",
+          "description": "/sluzby/prorezavani-ovocnych-stromu has 1 inlink vs ~30 for its six siblings; src/layouts/Footer.js:48-88 hardcodes only 6 of 7 services.",
+          "recommendation": "Add the missing FooterLink."
+        },
+        {
+          "title": "No BreadcrumbList anywhere",
+          "severity": "Medium",
+          "description": "Confirmed across all 30 pages.",
+          "recommendation": "Add to both [slug] routes."
+        },
+        {
+          "title": "Legacy URL returns 404",
+          "severity": "Low",
+          "description": "/inventarizace-drevin.html appears in search results and returns a genuine 404.",
+          "recommendation": "301 to /sluzby/inventarizace-drevin."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 44,
+      "what_works": [
+        "All 30 titles and descriptions unique and keyword-targeted in Czech",
+        "Exactly one H1 per page",
+        "Real credentials (ETW, SZKT) and real named clients (ČEZ, Povodí Vltavy)",
+        "Readable prose — avg 13.5 words/sentence"
+      ],
+      "findings": [
+        {
+          "title": "Zero cross-links between services and realizations",
+          "severity": "High",
+          "description": "Confirmed by grep of both index pages and both [slug] pages. Claim and proof live on pages with no path between them.",
+          "recommendation": "Add services:[] tags to src/data/realizations.js; render related blocks both directions."
+        },
+        {
+          "title": "Service pages far below topical depth",
+          "severity": "High",
+          "description": "142-200 words; site median 157. /sluzby/inventarizace-drevin at 169 words competes against long-form tender documentation.",
+          "recommendation": "Expand longDescription in src/data/arbo.js."
+        },
+        {
+          "title": "Three unreconciled experience claims",
+          "severity": "High",
+          "description": "src/app/layout.js:9 and src/data/arbo.js:16 say 14+; src/app/kontakt/page.js:25 and o-nas/page.js:12,15 say 12+; src/components/Welcome.js:74 computes 15.",
+          "recommendation": "Derive all from one computed source."
+        },
+        {
+          "title": "Trust signals homepage-only",
+          "severity": "Medium",
+          "description": "TrustSection imported only in src/app/page.js — not /o-nas or /kontakt.",
+          "recommendation": "Add credentials and a named practitioner bio to both."
+        },
+        {
+          "title": "Realization pages structurally templated",
+          "severity": "Medium",
+          "description": "All 17 follow an identical 3-paragraph shape; measured word-level Jaccard 0.13 — structural repetition, not duplicate content.",
+          "recommendation": "Vary structure; add per-job measurements and quotes."
+        },
+        {
+          "title": "Service CTA is not a crawlable link",
+          "severity": "Medium",
+          "description": "ServicePageClient.js:19-24,62-70 uses router.push; realizace/[slug]/page.js:138-146 already does it correctly.",
+          "recommendation": "Wrap in <NextLink href=\"/kontakt\">."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 62,
+      "what_works": [
+        "Zero duplicate titles or descriptions across 30 pages",
+        "Exactly one H1 everywhere",
+        "Czech keyword targeting is deliberate and well written"
+      ],
+      "findings": [
+        {
+          "title": "Nine titles exceed 60 characters",
+          "severity": "Medium",
+          "description": "Homepage title is 74 chars; also o-nas 62, realizace 64, sluzby 61, likvidace 68, rizikove-kaceni 65, zajistovani 61, and two realization pages.",
+          "recommendation": "Trim to ~60 to avoid SERP truncation."
+        },
+        {
+          "title": "Service page H2 is the brand name",
+          "severity": "Low",
+          "description": "ServicePageClient.js:34 renders H2 = \"Arbovert\" on all 7 service pages.",
+          "recommendation": "Replace with a topical heading."
+        },
+        {
+          "title": "Meta description lengths inconsistent",
+          "severity": "Low",
+          "description": "8 descriptions under 120 chars, 6 over 160.",
+          "recommendation": "Normalize to 140-155."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 55,
+      "what_works": [
+        "Valid JSON-LD, correct @context, no deprecated types",
+        "Server-rendered, not client-injected",
+        "LocalBusiness @type is the correct choice — schema.org has no arborist subtype"
+      ],
+      "findings": [
+        {
+          "title": "Praha address missing required postalCode",
+          "severity": "High",
+          "description": "src/app/page.js:38-44 has no postalCode/addressRegion; /kontakt shows Jirsíkova 484/6, Praha 8, 180 00.",
+          "recommendation": "Add postalCode, correct addressLocality, add addressRegion."
+        },
+        {
+          "title": "Business entity duplicated 8x with no @id",
+          "severity": "High",
+          "description": "Homepage LocalBusiness has no @id; src/app/sluzby/[slug]/page.js:70-75 re-declares a stub provider on all 7 service pages.",
+          "recommendation": "Add @id on the homepage entity; reference it from provider."
+        },
+        {
+          "title": "sameAs links a different company",
+          "severity": "Medium",
+          "description": "src/app/page.js:100-103 links vyskoveprace-arbovert.cz, a separate facade/roof-work business sharing the brand.",
+          "recommendation": "Remove, or model as a sibling Organization."
+        },
+        {
+          "title": "17 case studies carry no structured data",
+          "severity": "Medium",
+          "description": "src/app/realizace/[slug]/page.js emits no JSON-LD despite ISO-8601 dated editorial content.",
+          "recommendation": "Add Article — template in findings/schema.md."
+        },
+        {
+          "title": "geo coordinates are strings",
+          "severity": "Medium",
+          "description": "src/app/page.js:69-70,75-76 use \"50.0755\" rather than numbers, at 4-decimal precision.",
+          "recommendation": "Convert to numeric, extend to 5 decimals."
+        },
+        {
+          "title": "No WebSite or BreadcrumbList schema",
+          "severity": "Medium",
+          "description": "Absent across all 30 pages.",
+          "recommendation": "Add both — templates in findings/schema.md."
+        },
+        {
+          "title": "FAQPage no longer earns rich results",
+          "severity": "Info",
+          "description": "Google retired FAQ rich results for all sites on 7 May 2026.",
+          "recommendation": "Keep as-is. Do not remove, do not extend."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 45,
+      "what_works": [
+        "Homepage hero is well optimized — Cloudinary f_auto/q_auto, preloaded, fetchpriority",
+        "System font stack, so no web-font loading risk",
+        "No missing image dimensions found"
+      ],
+      "findings": [
+        {
+          "title": "Raw camera JPEGs as LCP images",
+          "severity": "Critical",
+          "description": "IMG_8291.jpg is 4032x3024 and 6.28MB (confirmed live via content-length), rendered into a 256-384px container, on 16 of 17 realization pages.",
+          "recommendation": "Re-encode public/images/realizace/* to ~1200-1600px WebP q75-80."
+        },
+        {
+          "title": "Realization hero lacks priority and sizes",
+          "severity": "High",
+          "description": "src/app/realizace/[slug]/page.js:94-99, against Welcome.js:39-56 which does it correctly.",
+          "recommendation": "Add both attributes."
+        },
+        {
+          "title": "Duplicate analytics",
+          "severity": "Medium",
+          "description": "GTM-5V7DRKB in providers.js:19-20 plus a separate GA4 gtag.js in page.js:117-129 both execute on the homepage.",
+          "recommendation": "Remove the redundant one."
+        },
+        {
+          "title": "Weak image cache-control",
+          "severity": "Medium",
+          "description": "4h max-age; cf-cache-status REVALIDATED rather than HIT.",
+          "recommendation": "Cloudflare cache rule for /images/*, 1 year immutable."
+        },
+        {
+          "title": "No field data available",
+          "severity": "Info",
+          "description": "No Google API credentials — no CrUX, no PageSpeed, no Lighthouse trace. No measured LCP/INP/CLS exists in this audit.",
+          "recommendation": "Connect Search Console and re-measure."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 46,
+      "what_works": [
+        "Homepage FAQ is genuinely citable — 5 self-contained answers of 67-95 words, one citing zákon č. 114/1992 Sb.",
+        "Content fully server-rendered, no JS dependency for crawlers",
+        "OAI-SearchBot and PerplexityBot are not blocked"
+      ],
+      "findings": [
+        {
+          "title": "Cloudflare robots.txt blocks major AI crawlers",
+          "severity": "High",
+          "description": "Live robots.txt disallows GPTBot, ClaudeBot, CCBot, Google-Extended, Bytespider, Amazonbot, Applebot-Extended, meta-externalagent — overriding public/robots.txt, which allows all. All tested UAs returned 200 with identical content, so the block is declarative, not edge-enforced.",
+          "recommendation": "A Cloudflare dashboard setting, not a repo change. Confirm it matches business intent."
+        },
+        {
+          "title": "Service pages are not citable",
+          "severity": "Medium",
+          "description": "Generic 140-200 word blurbs, no pricing, no named credentials, H2 is the brand name on all 7.",
+          "recommendation": "Add self-contained factual passages in the style of the homepage FAQ."
+        },
+        {
+          "title": "No external brand-authority presence found",
+          "severity": "Medium",
+          "description": "No YouTube link on any page or in sameAs; site: searches for reddit/youtube/linkedin/wikipedia returned nothing before rate-limiting. Not exhaustive.",
+          "recommendation": "Build citable off-site presence."
+        },
+        {
+          "title": "llms.txt absent",
+          "severity": "Info",
+          "description": "Returns 404. Optional; Google ignores it.",
+          "recommendation": "No action required."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 35,
+      "what_works": [
+        "Every img on all 30 pages has a non-empty alt attribute",
+        "Kozel realization already uses ~300KB WebP — the pattern to copy"
+      ],
+      "findings": [
+        {
+          "title": "201MB of images in the repo",
+          "severity": "Critical",
+          "description": "public/images totals 201MB; realizace/ alone is 193MB across 60 files averaging 3.2MB. 49 of 97 files exceed 1MB. next.config.js sets unoptimized:true, so committed size is shipped size.",
+          "recommendation": "Pre-resize before commit, or move to Cloudinary as the hero already does."
+        },
+        {
+          "title": "Portrait photos force-cropped into wide banners",
+          "severity": "Medium",
+          "description": "strom.webp is 1200x1800 displayed at 1920x320 with object-fit cover — roughly 85% of the frame discarded. Realization thumbnails are 3024x4032 shown at 464x256.",
+          "recommendation": "Crop deliberately at build time or set object-position."
+        }
+      ]
+    },
+    {
+      "name": "Local SEO (unweighted)",
+      "score": 34,
+      "what_works": [
+        "NAP identical across all 30 pages and the homepage JSON-LD",
+        "IČO 02059690 / DIČ CZ02059690 match ARES exactly",
+        "ETW certification displayed prominently",
+        "17 place-named realization pages do genuine geographic work"
+      ],
+      "findings": [
+        {
+          "title": "GBP existence and category unverified",
+          "severity": "Critical",
+          "description": "Google Maps/Search served consent-wall redirects. No rating found on-site or on Firmy.cz. This is an open question, not a negative finding.",
+          "recommendation": "Manual GBP login check; confirm a tree-care-specific primary category."
+        },
+        {
+          "title": "Firmy.cz/Mapy.cz category is generic",
+          "severity": "High",
+          "description": "Both listings filed under 'Údržba zeleně a rekultivace'.",
+          "recommendation": "Change to the most specific tree-care category available."
+        },
+        {
+          "title": "No review signal anywhere",
+          "severity": "High",
+          "description": "No aggregateRating and no visible rating or count on any of 30 pages.",
+          "recommendation": "Confirm the real review count, then prioritize acquisition."
+        },
+        {
+          "title": "Two addresses in one LocalBusiness node",
+          "severity": "High",
+          "description": "src/app/page.js:35-47 and :67-79 use arrays for address and geo.",
+          "recommendation": "Split into two nodes, or Organization + branchOf."
+        },
+        {
+          "title": "No insurance statement",
+          "severity": "Medium",
+          "description": "Searched all 30 pages for 'pojišt/pojist' — zero matches. A standard Czech trust signal for felling work.",
+          "recommendation": "Add near the ETW credential."
+        },
+        {
+          "title": "Founding date vs ARES",
+          "severity": "Info",
+          "description": "Schema says foundingDate 2011; ARES records the s.r.o. as founded 2020-09-17. Likely a predecessor OSVČ.",
+          "recommendation": "Add one clarifying sentence."
+        },
+        {
+          "title": "Do not build city landing pages",
+          "severity": "Info",
+          "description": "The 17 place-named realization pages already carry real content and photos; templated city pages would fail the doorway-page gate at this size.",
+          "recommendation": "No action — deliberate non-recommendation."
+        }
+      ]
+    },
+    {
+      "name": "Search Experience (unweighted)",
+      "score": 51,
+      "what_works": [
+        "Page-type fit is broadly correct for most arborist queries",
+        "Case studies name prestigious clients and carry a working per-case CTA"
+      ],
+      "findings": [
+        {
+          "title": "No pricing page at all",
+          "severity": "Critical",
+          "description": "Zero 'Kč' across 30 pages; every result for 'kácení stromů cena' is a dedicated ceník page. One qualitative line sits buried in a homepage FAQ accordion (src/data/faq.js:18-20).",
+          "recommendation": "Add /cenik or price-range content per service."
+        },
+        {
+          "title": "Response-time promise contradicts emergency positioning",
+          "severity": "High",
+          "description": "src/components/ContactUs.js:53,84 promises next business day.",
+          "recommendation": "Reconcile with the emergency-felling messaging."
+        },
+        {
+          "title": "Homepage cannibalizes a service page",
+          "severity": "High",
+          "description": "Both compete for 'štěpkování dřevní hmoty Praha'.",
+          "recommendation": "Differentiate targeting."
+        }
+      ]
+    },
+    {
+      "name": "Visual / Mobile (unweighted)",
+      "score": 58,
+      "what_works": [
+        "No horizontal overflow at 360, 375, 650, 651 or 1920",
+        "650px breakpoint switches cleanly",
+        "Hero contrast legible; H1 above the fold on every page type"
+      ],
+      "findings": [
+        {
+          "title": "Cookie banner covers the primary CTA on mobile",
+          "severity": "High",
+          "description": "Occupies y=672-812 in an 812px viewport, clipping 'Chci nabídku zdarma' mid-button on every page type.",
+          "recommendation": "Slim bar or bottom sheet that does not overlap content."
+        },
+        {
+          "title": "Phone number off-screen on mobile",
+          "severity": "High",
+          "description": "Header phone link measures left:415 at 375px width — inside the closed drawer. The first screen shows only a logo and a hamburger.",
+          "recommendation": "Persistent tap-to-call in src/layouts/NavBar.js."
+        },
+        {
+          "title": "Hamburger is a 24x24 tap target",
+          "severity": "Medium",
+          "description": "Against the 44x44 guidance.",
+          "recommendation": "Increase the hit area."
+        },
+        {
+          "title": "Service pages open as a wall of bold text",
+          "severity": "Medium",
+          "description": "No image, no CTA, no phone above the fold on mobile.",
+          "recommendation": "Add an intro visual and a visible CTA."
+        }
+      ]
+    },
+    {
+      "name": "Backlinks (insufficient data)",
+      "score": 0,
+      "what_works": [
+        "Domain is present in Common Crawl and in its rankings — no penalty signal"
+      ],
+      "findings": [
+        {
+          "title": "Free tier only — no link index",
+          "severity": "Info",
+          "description": "Moz, Bing Webmaster and DataForSEO all unconfigured. Common Crawl exposes no referring-domain list, so no inbound link could be named and no toxicity screen was possible. PageRank rank ~23.9M — normal sparsity for a small local site.",
+          "recommendation": "Sign up for the free Moz API to get a real referring-domain count."
+        },
+        {
+          "title": "Link-acquisition opening",
+          "severity": "Low",
+          "description": "src/data/realizations.js names Zámek Kozel, Zámek Nebílovy, Zámek Vlachovo Březí, Týnský chrám, ČEZ and nine municipalities.",
+          "recommendation": "Offer those organizations the already-published case-study photos and text."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 0: Settle the unknown",
+        "timeframe": "This week, before anything else",
+        "items": [
+          "Log in and check the Google Business Profile — existence, verification, primary category, review count",
+          "Decide deliberately whether the Cloudflare AI-crawler block matches business intent"
+        ]
+      },
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Re-encode public/images/realizace/* to ~1200-1600px WebP q75-80; add priority and sizes to the realization hero",
+          "Add tap-to-call to the mobile header; stop the cookie banner covering the primary CTA; enlarge the hamburger hit area",
+          "Add alternates.canonical to every metadata export; delete the dead canonical hook"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Publish pricing — a /cenik page or price ranges per service",
+          "Cross-link services and realizations; add the missing footer link; make the service CTA a real link",
+          "Move trust signals off the homepage to /o-nas and /kontakt; add an insurance statement",
+          "Reconcile the experience claim to one computed source; explain the 2011 vs 2020 ARES distinction",
+          "Fix the schema errors: postalCode, @id linking, numeric geo, the sameAs mis-link"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Deepen the service pages, starting with inventarizace-drevin; give each a topical H2",
+          "Add BreadcrumbList, WebSite and Article schema",
+          "Outreach to the named castles, ČEZ and municipalities using the existing case studies",
+          "Correct the Firmy.cz/Mapy.cz categories; claim zivefirmy.cz, najisto.cz, edb.cz"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Replace the hand-maintained sitemap with src/app/sitemap.js generated from the data files",
+          "Add HSTS and CSP at the Cloudflare edge; cache /images/* for 1 year immutable",
+          "Housekeeping: drop the hardcoded robots meta, remove duplicate GA4, 301 the legacy .html URL, fix the H1 spacing, translate the 404 page",
+          "Connect Search Console and a free Moz API key to close the measurement gap",
+          "Capture a drift baseline so future deploys can be diffed"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

@@ -1,0 +1,1340 @@
+{
+  "home": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 4,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Kácení stromů\nPraha a jižní Čechy",
+        "top": 425.125,
+        "bottom": 575.125,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Odeslat poptávku",
+          "top": 4386,
+          "bottom": 4434,
+          "width": 248.015625,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 4702,
+          "bottom": 4722,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "nebo volejte\n739 969 933",
+          "width": 298,
+          "height": 36,
+          "top": 739
+        },
+        {
+          "tag": "A",
+          "text": "Více o našich službách →",
+          "width": 211,
+          "height": 34,
+          "top": 1436
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 32,
+          "top": 1032
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 32,
+          "top": 1032
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "background-small_fx4luw.webp",
+          "displayW": 0,
+          "displayH": 0,
+          "naturalW": 828,
+          "naturalH": 1472,
+          "objectFit": "cover"
+        },
+        {
+          "src": "background_ehubfy.webp",
+          "displayW": 1920,
+          "displayH": 1004,
+          "naturalW": 1920,
+          "naturalH": 1097,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbo.webp",
+          "displayW": 464,
+          "displayH": 320,
+          "naturalW": 800,
+          "naturalH": 800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "strom.webp",
+          "displayW": 1920,
+          "displayH": 320,
+          "naturalW": 1200,
+          "naturalH": 1800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "we.webp",
+          "displayW": 464,
+          "displayH": 320,
+          "naturalW": 800,
+          "naturalH": 800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "etw.png",
+          "displayW": 140,
+          "displayH": 140,
+          "naturalW": 200,
+          "naturalH": 200,
+          "objectFit": "contain"
+        },
+        {
+          "src": "szkt.svg",
+          "displayW": 140,
+          "displayH": 55,
+          "naturalW": 300,
+          "naturalH": 118,
+          "objectFit": "contain"
+        },
+        {
+          "src": "cez-logo.png",
+          "displayW": 112,
+          "displayH": 112,
+          "naturalW": 224,
+          "naturalH": 224,
+          "objectFit": "contain"
+        },
+        {
+          "src": "lisno-logo.png",
+          "displayW": 80,
+          "displayH": 112,
+          "naturalW": 558,
+          "naturalH": 778,
+          "objectFit": "contain"
+        },
+        {
+          "src": "mnisek-pod-brdy-logo.png",
+          "displayW": 70,
+          "displayH": 112,
+          "naturalW": 177,
+          "naturalH": 285,
+          "objectFit": "contain"
+        },
+        {
+          "src": "povodi-vltavy-logo.png",
+          "displayW": 235,
+          "displayH": 112,
+          "naturalW": 325,
+          "naturalH": 155,
+          "objectFit": "contain"
+        },
+        {
+          "src": "ttp-invest-logo.png",
+          "displayW": 207,
+          "displayH": 112,
+          "naturalW": 305,
+          "naturalH": 165,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vimperk-logo.jpeg",
+          "displayW": 124,
+          "displayH": 112,
+          "naturalW": 300,
+          "naturalH": 271,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vsem-logo.jpeg",
+          "displayW": 112,
+          "displayH": 112,
+          "naturalW": 224,
+          "naturalH": 225,
+          "objectFit": "contain"
+        },
+        {
+          "src": "cez-logo.png",
+          "displayW": 112,
+          "displayH": 112,
+          "naturalW": 224,
+          "naturalH": 224,
+          "objectFit": "contain"
+        },
+        {
+          "src": "lisno-logo.png",
+          "displayW": 80,
+          "displayH": 112,
+          "naturalW": 558,
+          "naturalH": 778,
+          "objectFit": "contain"
+        },
+        {
+          "src": "mnisek-pod-brdy-logo.png",
+          "displayW": 70,
+          "displayH": 112,
+          "naturalW": 177,
+          "naturalH": 285,
+          "objectFit": "contain"
+        },
+        {
+          "src": "povodi-vltavy-logo.png",
+          "displayW": 235,
+          "displayH": 112,
+          "naturalW": 325,
+          "naturalH": 155,
+          "objectFit": "contain"
+        },
+        {
+          "src": "ttp-invest-logo.png",
+          "displayW": 207,
+          "displayH": 112,
+          "naturalW": 305,
+          "naturalH": 165,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vimperk-logo.jpeg",
+          "displayW": 124,
+          "displayH": 112,
+          "naturalW": 300,
+          "naturalH": 271,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vsem-logo.jpeg",
+          "displayW": 112,
+          "displayH": 112,
+          "naturalW": 224,
+          "naturalH": 225,
+          "objectFit": "contain"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 4,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Kácení stromů\nPraha a jižní Čechy",
+        "top": 273.96875,
+        "bottom": 523.96875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Odeslat poptávku",
+          "top": 4956.296875,
+          "bottom": 5004.296875,
+          "width": 327,
+          "height": 48,
+          "inViewport": false
+        },
+        {
+          "text": "Kontakt",
+          "top": 5768.296875,
+          "bottom": 5788.296875,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "nebo volejte\n739 969 933",
+          "width": 259,
+          "height": 32,
+          "top": 710
+        },
+        {
+          "tag": "A",
+          "text": "Více o našich službách →",
+          "width": 211,
+          "height": 34,
+          "top": 1182
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "background-small_fx4luw.webp",
+          "displayW": 375,
+          "displayH": 736,
+          "naturalW": 828,
+          "naturalH": 1472,
+          "objectFit": "cover"
+        },
+        {
+          "src": "background_ehubfy.webp",
+          "displayW": 0,
+          "displayH": 0,
+          "naturalW": 1920,
+          "naturalH": 1097,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbo.webp",
+          "displayW": 352,
+          "displayH": 256,
+          "naturalW": 800,
+          "naturalH": 800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "strom.webp",
+          "displayW": 375,
+          "displayH": 256,
+          "naturalW": 1200,
+          "naturalH": 1800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "we.webp",
+          "displayW": 352,
+          "displayH": 256,
+          "naturalW": 800,
+          "naturalH": 800,
+          "objectFit": "cover"
+        },
+        {
+          "src": "etw.png",
+          "displayW": 140,
+          "displayH": 140,
+          "naturalW": 200,
+          "naturalH": 200,
+          "objectFit": "contain"
+        },
+        {
+          "src": "szkt.svg",
+          "displayW": 140,
+          "displayH": 55,
+          "naturalW": 300,
+          "naturalH": 118,
+          "objectFit": "contain"
+        },
+        {
+          "src": "cez-logo.png",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 224,
+          "naturalH": 224,
+          "objectFit": "contain"
+        },
+        {
+          "src": "lisno-logo.png",
+          "displayW": 57,
+          "displayH": 80,
+          "naturalW": 558,
+          "naturalH": 778,
+          "objectFit": "contain"
+        },
+        {
+          "src": "mnisek-pod-brdy-logo.png",
+          "displayW": 50,
+          "displayH": 80,
+          "naturalW": 177,
+          "naturalH": 285,
+          "objectFit": "contain"
+        },
+        {
+          "src": "povodi-vltavy-logo.png",
+          "displayW": 168,
+          "displayH": 80,
+          "naturalW": 325,
+          "naturalH": 155,
+          "objectFit": "contain"
+        },
+        {
+          "src": "ttp-invest-logo.png",
+          "displayW": 148,
+          "displayH": 80,
+          "naturalW": 305,
+          "naturalH": 165,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vimperk-logo.jpeg",
+          "displayW": 89,
+          "displayH": 80,
+          "naturalW": 300,
+          "naturalH": 271,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vsem-logo.jpeg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 224,
+          "naturalH": 225,
+          "objectFit": "contain"
+        },
+        {
+          "src": "cez-logo.png",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 224,
+          "naturalH": 224,
+          "objectFit": "contain"
+        },
+        {
+          "src": "lisno-logo.png",
+          "displayW": 57,
+          "displayH": 80,
+          "naturalW": 558,
+          "naturalH": 778,
+          "objectFit": "contain"
+        },
+        {
+          "src": "mnisek-pod-brdy-logo.png",
+          "displayW": 50,
+          "displayH": 80,
+          "naturalW": 177,
+          "naturalH": 285,
+          "objectFit": "contain"
+        },
+        {
+          "src": "povodi-vltavy-logo.png",
+          "displayW": 168,
+          "displayH": 80,
+          "naturalW": 325,
+          "naturalH": 155,
+          "objectFit": "contain"
+        },
+        {
+          "src": "ttp-invest-logo.png",
+          "displayW": 148,
+          "displayH": 80,
+          "naturalW": 305,
+          "naturalH": 165,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vimperk-logo.jpeg",
+          "displayW": 89,
+          "displayH": 80,
+          "naturalW": 300,
+          "naturalH": 271,
+          "objectFit": "contain"
+        },
+        {
+          "src": "vsem-logo.jpeg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 224,
+          "naturalH": 225,
+          "objectFit": "contain"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  },
+  "sluzby": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Služby",
+        "top": 156,
+        "bottom": 231,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 3685.734375,
+          "bottom": 3705.734375,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 32,
+          "top": 1032
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 32,
+          "top": 1032
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "strom-cropped.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 3456,
+          "naturalH": 2592,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kaceni.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 576,
+          "naturalH": 431,
+          "objectFit": "cover"
+        },
+        {
+          "src": "osetreni.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 512,
+          "naturalH": 384,
+          "objectFit": "cover"
+        },
+        {
+          "src": "zajisteni.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "ovocne.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "frezovani.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "vysadba.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "vysky.webp",
+          "displayW": 342,
+          "displayH": 236,
+          "naturalW": 1280,
+          "naturalH": 883,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Služby",
+        "top": 150.21875,
+        "bottom": 187.71875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 4728.703125,
+          "bottom": 4748.703125,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "strom-cropped.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 3456,
+          "naturalH": 2592,
+          "objectFit": "cover"
+        },
+        {
+          "src": "kaceni.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 576,
+          "naturalH": 431,
+          "objectFit": "cover"
+        },
+        {
+          "src": "osetreni.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 512,
+          "naturalH": 384,
+          "objectFit": "cover"
+        },
+        {
+          "src": "zajisteni.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "ovocne.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "frezovani.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "vysadba.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 504,
+          "naturalH": 378,
+          "objectFit": "cover"
+        },
+        {
+          "src": "vysky.webp",
+          "displayW": 307,
+          "displayH": 212,
+          "naturalW": 1280,
+          "naturalH": 883,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 80,
+          "naturalW": 0,
+          "naturalH": 0,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  },
+  "sluzby-detail": {
+    "desktop": {
+      "overflow": {
+        "docWidth": 1920,
+        "winWidth": 1920,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 992,
+          "bottom": 1080,
+          "height": 88
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 23.984375,
+          "left": 1268.546875,
+          "width": 187.453125,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Rizikové kácení stromů",
+        "top": 156,
+        "bottom": 231,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 23.984375,
+          "bottom": 51.984375,
+          "width": 63.515625,
+          "height": 28,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 1601,
+          "bottom": 1621,
+          "width": 224,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Služby",
+          "width": 55,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Realizace",
+          "width": 78,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "O nás",
+          "width": 47,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Kontakt",
+          "width": 64,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Výškové práce",
+          "width": 120,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 33,
+          "height": 20,
+          "top": 28
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 187,
+          "height": 28,
+          "top": 24
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 151,
+          "height": 20,
+          "top": 1565
+        },
+        {
+          "tag": "A",
+          "text": "info@arbovert.cz",
+          "width": 138,
+          "height": 20,
+          "top": 1593
+        },
+        {
+          "tag": "A",
+          "text": "Rizikové kácení stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1517
+        },
+        {
+          "tag": "A",
+          "text": "Ošetřování stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1545
+        },
+        {
+          "tag": "A",
+          "text": "Frézování pařezů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1573
+        },
+        {
+          "tag": "A",
+          "text": "Stabilizace stromů Praha",
+          "width": 224,
+          "height": 20,
+          "top": 1601
+        },
+        {
+          "tag": "A",
+          "text": "Kácení stromů Šumava",
+          "width": 224,
+          "height": 20,
+          "top": 1517
+        },
+        {
+          "tag": "A",
+          "text": "Arboristika jižní Čechy",
+          "width": 224,
+          "height": 20,
+          "top": 1545
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 180,
+          "displayH": 57,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kaceni.jpg",
+          "displayW": 342,
+          "displayH": 256,
+          "naturalW": 576,
+          "naturalH": 431,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "docWidth": 375,
+        "winWidth": 375,
+        "overflow": false
+      },
+      "consent": {
+        "found": true,
+        "text": "Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v návštěvě tohoto webu souhlasíte s používáním cookies.\n",
+        "rect": {
+          "top": 672,
+          "bottom": 812,
+          "height": 140
+        }
+      },
+      "phone": {
+        "found": true,
+        "count": 2,
+        "text": "+420 739 969 933",
+        "rect": {
+          "top": 708,
+          "left": 415,
+          "width": 205.59375,
+          "height": 28
+        },
+        "visible": true,
+        "inViewport": true
+      },
+      "h1": {
+        "found": true,
+        "text": "Rizikové kácení stromů",
+        "top": 150.21875,
+        "bottom": 187.71875,
+        "inViewport": true
+      },
+      "cta": [
+        {
+          "text": "Kontakt",
+          "top": 279,
+          "bottom": 328,
+          "width": 220,
+          "height": 49,
+          "inViewport": true
+        },
+        {
+          "text": "Kontakt",
+          "top": 2171.359375,
+          "bottom": 2191.359375,
+          "width": 343,
+          "height": 20,
+          "inViewport": false
+        }
+      ],
+      "small_targets": [
+        {
+          "tag": "A",
+          "text": "Domů",
+          "width": 220,
+          "height": 32,
+          "top": 92
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 206,
+          "height": 28,
+          "top": 708
+        },
+        {
+          "tag": "A",
+          "text": "Facebook",
+          "width": 119,
+          "height": 28,
+          "top": 744
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Toggle menu",
+          "width": 24,
+          "height": 24,
+          "top": 47
+        },
+        {
+          "tag": "A",
+          "text": "+420 739 969 933",
+          "width": 151,
+          "height": 20,
+          "top": 1615
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Přijmout",
+          "width": 79,
+          "height": 36,
+          "top": 760
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Odmítnout",
+          "width": 94,
+          "height": 36,
+          "top": 760
+        }
+      ],
+      "gallery_images": [
+        {
+          "src": "arbovert-logo.svg",
+          "displayW": 220,
+          "displayH": 70,
+          "naturalW": 802,
+          "naturalH": 256,
+          "objectFit": "fill"
+        },
+        {
+          "src": "kaceni.jpg",
+          "displayW": 307,
+          "displayH": 230,
+          "naturalW": 576,
+          "naturalH": 431,
+          "objectFit": "cover"
+        },
+        {
+          "src": "arbovert-logo-cropped.svg",
+          "displayW": 80,
+          "displayH": 72,
+          "naturalW": 1868,
+          "naturalH": 1680,
+          "objectFit": "fill"
+        }
+      ]
+    }
+  }
+}
