@@ -50,8 +50,8 @@ const CookieBanner = () => {
       }}
       className="px-4 py-2"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-row items-center justify-center gap-3">
-        <p className="text-sm text-left m-0">
+      <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+        <p className="text-sm text-center sm:text-left m-0">
           Používáme cookies, abychom vylepšili vaše zážitky.
         </p>
         <div className="flex items-center gap-2 flex-shrink-0">
