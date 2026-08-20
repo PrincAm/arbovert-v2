@@ -5,12 +5,7 @@ import NextLink from "next/link";
 import Image from "next/image";
 import { useIsMobile } from "../hooks/use-media-query";
 import FadeIn from "./FadeIn";
-
-const getYearsSinceFounded = () => {
-  const foundedYear = 2011;
-  const currentYear = new Date().getFullYear();
-  return currentYear - foundedYear;
-};
+import { getYearsSinceFounded } from "../data/company";
 
 const Intro = () => {
   const isMobile = useIsMobile();

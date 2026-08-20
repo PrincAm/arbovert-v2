@@ -1,3 +1,5 @@
+import { getYearsSinceFounded } from './company';
+
 export const serviceContent = {
   'rizikove-kaceni-stromu': {
     title: 'Rizikové kácení stromů',
@@ -13,7 +15,7 @@ export const serviceContent = {
     ctaText: 'Chci rizikové kácení stromů',
     question: 'Potřebujete profesionální pomoc s rizikovým kácením?',
     seoTitle: 'Rizikové kácení stromů Praha, Šumava | Arborista Praha - Arbovert',
-    seoDescription: 'Rizikové kácení stromů Praha a Šumava. Profesionální technika kácení stromů v obtížně přístupných místech. Arborista Praha s 14+ lety zkušeností. Certifikovaní arboristé Arbovert.',
+    seoDescription: `Rizikové kácení stromů Praha a Šumava. Profesionální technika kácení stromů v obtížně přístupných místech. Arborista Praha s ${getYearsSinceFounded()}+ lety zkušeností. Certifikovaní arboristé Arbovert.`,
   },
   'odborne-osetrovani-stromu': {
     title: 'Odborné ošetřování stromů',

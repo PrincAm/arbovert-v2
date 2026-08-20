@@ -2,12 +2,7 @@
 
 import { Button } from '@heroui/react';
 import Image from 'next/image';
-
-const getYearsSinceFounded = () => {
-  const foundedYear = 2011;
-  const currentYear = new Date().getFullYear();
-  return currentYear - foundedYear;
-};
+import { getYearsSinceFounded } from '../data/company';
 
 const BackgroundContainer = ({ children, className = '', ...props }) => (
   <div

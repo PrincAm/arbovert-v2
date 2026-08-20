@@ -1,12 +1,12 @@
 import '../styles/globals.css';
+import { getYearsSinceFounded } from '../data/company';
 import { Providers } from './providers';
 import NavBar from '../layouts/NavBar';
 import Footer from '../layouts/Footer';
 
 export const metadata = {
   title: 'Arbovert - Arborista Praha | Rizikové kácení stromů a inventarizace dřevin',
-  description:
-    'Arbovert - profesionální arborista Praha a Šumava. Rizikové kácení stromů, inventarizace dřevin, štěpkování dřevní hmoty, likvidace dřevního odpadu. Certifikovaní arboristé s 14+ lety zkušeností.',
+  description: `Arbovert - profesionální arborista Praha a Šumava. Rizikové kácení stromů, inventarizace dřevin, štěpkování dřevní hmoty, likvidace dřevního odpadu. Certifikovaní arboristé s ${getYearsSinceFounded()}+ lety zkušeností.`,
   keywords: [
     'arbovert',
     'arborista praha',
