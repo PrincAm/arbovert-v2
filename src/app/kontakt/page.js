@@ -20,6 +20,9 @@ const ContactPerson = ({ children, className = "", ...props }) => (
 );
 
 export const metadata = {
+  alternates: {
+    canonical: "/kontakt",
+  },
   title: "Kontakt - Arbovert s.r.o. | Arboristické služby",
   description:
     "Kontaktujte nás pro arboristické služby. Sídlo ve Vimperku, pobočka v Praze. Lukáš Kačer - certifikovaný arborista s 12+ lety zkušeností.",

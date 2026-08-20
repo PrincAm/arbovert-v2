@@ -31,6 +31,9 @@ const services = Object.entries(serviceContent)
   .map(([slug, service]) => ({ ...service, slug }));
 
 export const metadata = {
+  alternates: {
+    canonical: "/sluzby",
+  },
   title: "Kácení stromů a arboristika Praha, Šumava - Služby | Arbovert",
   description:
     "Profesionální kácení stromů v Praze a na Šumavě. Rizikové kácení, ošetřování stromů, péče o památné stromy, inventarizace dřevin. Certifikovaní arboristé pro jižní Čechy.",

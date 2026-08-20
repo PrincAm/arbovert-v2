@@ -7,6 +7,9 @@ const StyledContainer = ({ children, className = "", ...props }) => (
 );
 
 export const metadata = {
+  alternates: {
+    canonical: "/o-nas",
+  },
   title: "O nás - Arbovert s.r.o. | Certifikovaní arboristé od roku 2011",
   description:
     "Arbovert s.r.o. - tým certifikovaných arboristů s 12+ lety zkušeností. Specializujeme se na rizikové kácení, ošetřování stromů, inventarizace dřevin a údržbu zahrad.",

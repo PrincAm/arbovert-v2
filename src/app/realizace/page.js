@@ -10,6 +10,9 @@ const StyledContainer = ({ children, className = "", ...props }) => (
 );
 
 export const metadata = {
+  alternates: {
+    canonical: "/realizace",
+  },
   title: "Realizace kácení stromů a arboristiky - Praha, Šumava | Arbovert",
   description:
     "Ukázky našich prací: kácení stromů v Praze, ošetřování stromů na Šumavě, péče o památné stromy v jižních Čechách. Rizikové kácení, havarijní zásahy, arboristika.",

@@ -28,6 +28,9 @@ export async function generateMetadata({ params }) {
   return {
     title: service.seoTitle,
     description: service.seoDescription,
+    alternates: {
+      canonical: `/sluzby/${slug}`,
+    },
     openGraph: {
       title: service.seoTitle,
       description: service.seoDescription,

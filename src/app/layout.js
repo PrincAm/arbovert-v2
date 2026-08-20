@@ -64,13 +64,15 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   metadataBase: new URL('https://arbovert.cz'),
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="cs">
       <head>
-        <meta name="robots" content="index, follow" />
         {/* Preconnect to external domains for faster resource loading */}
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />

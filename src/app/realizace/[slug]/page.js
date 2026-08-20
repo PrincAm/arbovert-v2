@@ -30,6 +30,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${realization.title} | Arbovert`,
     description: realization.excerpt,
+    alternates: {
+      canonical: `/realizace/${slug}`,
+    },
     openGraph: {
       title: realization.title,
       description: realization.excerpt,

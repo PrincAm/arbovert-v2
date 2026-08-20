@@ -5,6 +5,9 @@ const StyledContainer = ({ children, className = "", ...props }) => (
 );
 
 export const metadata = {
+  alternates: {
+    canonical: "/gdpr",
+  },
   title: "Ochrana osobních údajů (GDPR) - Arbovert s.r.o.",
   description:
     "Informace o zpracování osobních údajů podle GDPR. Zjistěte, jak Arbovert s.r.o. chrání vaše osobní údaje a jaká máte práva.",
