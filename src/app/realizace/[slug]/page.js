@@ -66,8 +66,39 @@ export default async function RealizaceDetailPage({ params }) {
     );
   }
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `https://arbovert.cz/realizace/${slug}#article`,
+    headline: realization.title,
+    description: realization.excerpt,
+    datePublished: realization.date,
+    image: [`https://arbovert.cz${realization.imageSrc}`],
+    author: { "@id": "https://arbovert.cz/#organization" },
+    publisher: { "@id": "https://arbovert.cz/#organization" },
+    mainEntityOfPage: `https://arbovert.cz/realizace/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Domů", item: "https://arbovert.cz" },
+      { "@type": "ListItem", position: 2, name: "Realizace", item: "https://arbovert.cz/realizace" },
+      { "@type": "ListItem", position: 3, name: realization.title, item: `https://arbovert.cz/realizace/${slug}` },
+    ],
+  };
+
   return (
     <StyledContainer>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <div className="max-w-screen-lg mx-auto w-full pt-8 md:pt-20 pb-12 md:pb-20 px-4 md:px-6">
         <NextLink
           href="/realizace"

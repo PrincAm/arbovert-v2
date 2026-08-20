@@ -77,18 +77,30 @@ export default async function ServicePage({ params }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `https://arbovert.cz/sluzby/${slug}#service`,
     name: service.title,
     description: service.seoDescription,
+    url: `https://arbovert.cz/sluzby/${slug}`,
     image: `https://arbovert.cz${service.imageSrc}`,
+    serviceType: service.title,
     provider: {
-      "@type": "LocalBusiness",
+      "@id": "https://arbovert.cz/#organization",
       name: "Arbovert s.r.o.",
       url: "https://arbovert.cz",
-      telephone: "+420-739-969-933",
     },
     areaServed: [
       { "@type": "City", name: "Praha" },
       { "@type": "City", name: "Vimperk" },
+    ],
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Domů", item: "https://arbovert.cz" },
+      { "@type": "ListItem", position: 2, name: "Služby", item: "https://arbovert.cz/sluzby" },
+      { "@type": "ListItem", position: 3, name: service.title, item: `https://arbovert.cz/sluzby/${slug}` },
     ],
   };
 
@@ -97,6 +109,10 @@ export default async function ServicePage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ServicePageClient service={service} slug={slug} related={related} />
     </>

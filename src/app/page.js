@@ -25,6 +25,7 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://arbovert.cz/#organization",
     "name": "Arbovert s.r.o.",
     "alternateName": "Arbovert",
     "description": "Arbovert - profesionální arborista Praha. Rizikové kácení stromů, inventarizace dřevin a stromů, štěpkování dřevní hmoty, likvidace dřevního odpadu. Technika kácení stromů v Praze a na Šumavě.",
@@ -36,13 +37,16 @@ export default function Home() {
         "@type": "PostalAddress",
         "streetAddress": "Pasovská 84/37",
         "addressLocality": "Vimperk",
+        "addressRegion": "Jihočeský kraj",
         "postalCode": "38501",
         "addressCountry": "CZ"
       },
       {
         "@type": "PostalAddress",
         "streetAddress": "Jirsíkova 484/6",
-        "addressLocality": "Praha",
+        "addressLocality": "Praha 8",
+        "addressRegion": "Hlavní město Praha",
+        "postalCode": "18000",
         "addressCountry": "CZ"
       }
     ],
@@ -67,14 +71,14 @@ export default function Home() {
     "geo": [
       {
         "@type": "GeoCoordinates",
-        "latitude": "50.0755",
-        "longitude": "14.4378",
+        "latitude": 50.0755,
+        "longitude": 14.4378,
         "name": "Praha"
       },
       {
-        "@type": "GeoCoordinates", 
-        "latitude": "49.0556",
-        "longitude": "13.7733",
+        "@type": "GeoCoordinates",
+        "latitude": 49.0556,
+        "longitude": 13.7733,
         "name": "Vimperk"
       }
     ],
@@ -98,9 +102,18 @@ export default function Home() {
     "image": "https://arbovert.cz/images/welcome.jpg",
     "logo": "https://arbovert.cz/images/arbovert-logo.svg",
     "sameAs": [
-      "https://vyskoveprace-arbovert.cz/",
       "https://www.facebook.com/arbovertcz/"
     ]
+  };
+
+  const websiteStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://arbovert.cz/#website",
+    "name": "Arbovert",
+    "url": "https://arbovert.cz",
+    "inLanguage": "cs-CZ",
+    "publisher": { "@id": "https://arbovert.cz/#organization" },
   };
 
   return (
@@ -108,6 +121,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
       />
       <script
         type="application/ld+json"

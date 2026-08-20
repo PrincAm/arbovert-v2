@@ -51,9 +51,22 @@ export const metadata = {
   },
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Domů", item: "https://arbovert.cz" },
+    { "@type": "ListItem", position: 2, name: "Služby", item: "https://arbovert.cz/sluzby" },
+  ],
+};
+
 export default function Service() {
   return (
     <StyledContainer>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <div className="max-w-screen-lg mx-auto w-full pt-8 md:pt-20 pb-12 md:pb-20 px-4 md:px-6">
         <h1 className="leading-tight text-3xl md:text-6xl font-bold text-foreground mb-8 md:mb-12">
           Služby
