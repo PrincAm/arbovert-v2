@@ -25,10 +25,12 @@ export default function ServicePageClient({ service, slug, related = [] }) {
         </h1>
         <div className="grid grid-cols-12 gap-4 md:gap-10 mb-10 bg-white rounded-2xl p-4 md:p-12 border-2 border-default-200">
           <div className="col-span-12 md:col-span-7 flex flex-col gap-3 md:gap-6">
-            <h2 className="text-2xl md:text-4xl font-semibold text-foreground">Arbovert</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
+              {service.subtitle || service.title}
+            </h2>
             <div className="space-y-4">
               <p className="block font-bold text-base md:text-xl text-foreground">{service.description}</p>
-              <p className="block font-bold text-base md:text-xl text-foreground">{service.longDescription}</p>
+              <p className="block text-base md:text-lg text-default-600 leading-relaxed">{service.longDescription}</p>
               <p className="block font-bold text-base md:text-xl text-foreground mt-6">
                 Jaké služby nabízíme?
               </p>
@@ -39,8 +41,24 @@ export default function ServicePageClient({ service, slug, related = [] }) {
                   </StyledItem>
                 ))}
               </ol>
-              <p className="block mt-6 font-bold text-base md:text-xl text-foreground">{service.question}</p>
             </div>
+            {service.sections && (
+              <div className="space-y-8 mt-6">
+                {service.sections.map((section) => (
+                  <section key={section.heading} className="space-y-3">
+                    <h3 className="text-xl md:text-2xl font-semibold text-foreground">
+                      {section.heading}
+                    </h3>
+                    {section.paragraphs.map((paragraph, index) => (
+                      <p key={index} className="text-base md:text-lg text-default-600 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </section>
+                ))}
+              </div>
+            )}
+            <p className="block mt-6 font-bold text-base md:text-xl text-foreground">{service.question}</p>
           </div>
           <div className="col-span-12 md:col-span-5">
             <Image
