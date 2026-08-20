@@ -1,4 +1,5 @@
 import { serviceContent } from "../../../data/arbo";
+import { realizations } from "../../../data/realizations";
 import ServicePageClient from "./ServicePageClient";
 
 const StyledContainer = ({ children, className = "", ...props }) => (
@@ -28,6 +29,9 @@ export async function generateMetadata({ params }) {
   return {
     title: service.seoTitle,
     description: service.seoDescription,
+    alternates: {
+      canonical: `/sluzby/${slug}`,
+    },
     openGraph: {
       title: service.seoTitle,
       description: service.seoDescription,
@@ -60,21 +64,43 @@ export default async function ServicePage({ params }) {
     );
   }
 
+  const related = realizations
+    .filter((r) => r.services && r.services.includes(slug))
+    .slice(0, 3)
+    .map(({ slug: realizationSlug, title, location, imageSrc }) => ({
+      slug: realizationSlug,
+      title,
+      location,
+      imageSrc,
+    }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `https://arbovert.cz/sluzby/${slug}#service`,
     name: service.title,
     description: service.seoDescription,
+    url: `https://arbovert.cz/sluzby/${slug}`,
     image: `https://arbovert.cz${service.imageSrc}`,
+    serviceType: service.title,
     provider: {
-      "@type": "LocalBusiness",
+      "@id": "https://arbovert.cz/#organization",
       name: "Arbovert s.r.o.",
       url: "https://arbovert.cz",
-      telephone: "+420-739-969-933",
     },
     areaServed: [
       { "@type": "City", name: "Praha" },
       { "@type": "City", name: "Vimperk" },
+    ],
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Domů", item: "https://arbovert.cz" },
+      { "@type": "ListItem", position: 2, name: "Služby", item: "https://arbovert.cz/sluzby" },
+      { "@type": "ListItem", position: 3, name: service.title, item: `https://arbovert.cz/sluzby/${slug}` },
     ],
   };
 
@@ -84,7 +110,11 @@ export default async function ServicePage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ServicePageClient service={service} slug={slug} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ServicePageClient service={service} slug={slug} related={related} />
     </>
   );
 }

@@ -2,12 +2,7 @@
 
 import { Button } from '@heroui/react';
 import Image from 'next/image';
-
-const getYearsSinceFounded = () => {
-  const foundedYear = 2011;
-  const currentYear = new Date().getFullYear();
-  return currentYear - foundedYear;
-};
+import { getYearsSinceFounded } from '../data/company';
 
 const BackgroundContainer = ({ children, className = '', ...props }) => (
   <div
@@ -67,7 +62,7 @@ const Welcome = () => {
             Certifikovaní arboristé
           </p>
           <h1 className="leading-tight font-bold text-white drop-shadow-lg text-[50px] md:text-[60px]">
-            Kácení stromů
+            Kácení stromů{' '}
             <br />
             <span className="text-emerald-400">Praha a jižní Čechy</span>
           </h1>

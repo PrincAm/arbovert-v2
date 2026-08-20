@@ -51,7 +51,7 @@ Examples: `feat(seo): update keywords. NOTICKET`, `fix(form): button color. DAE-
 All service and realization content lives in `src/data/`:
 
 - **`arbo.js`** — `serviceContent` object keyed by slug. Each entry has `title`, `description`, `longDescription`, `imageSrc`, `benefits[]`, `seoTitle`, `seoDescription`.
-- **`realizations.js`** — `realizations` array. Future entries are commented out with `// --- MONTH N ---` markers, intended to be uncommented one per month for SEO freshness. **The sitemap (`public/sitemap.xml`) must be updated manually when publishing new realizations.**
+- **`realizations.js`** — `realizations` array. Future entries are commented out with `// --- MONTH N ---` markers, intended to be uncommented one per month for SEO freshness. The sitemap is generated at build time by `src/app/sitemap.js` from this file and `arbo.js` — no manual sitemap edits are needed.
 
 ### Server vs Client Component Pattern
 

@@ -5,7 +5,7 @@ const Hamburger = ({ toggle, isExpanded, ...props }) => {
     <button
       type="button"
       onClick={toggle}
-      className="relative w-6 h-6 flex flex-col justify-center items-center cursor-pointer z-10 mr-6"
+      className="relative w-11 h-11 flex flex-col justify-center items-center cursor-pointer z-10 mr-4"
       aria-label="Toggle menu"
       {...props}
     >

@@ -46,27 +46,26 @@ const CookieBanner = () => {
         width: '100%',
         background: '#06371B',
         color: 'white',
-        padding: '1rem',
-        textAlign: 'center',
         zIndex: 1000,
       }}
+      className="px-4 py-2"
     >
-      <p>
-        Používáme cookies, abychom vylepšili vaše zážitky. Pokračováním v
-        návštěvě tohoto webu souhlasíte s používáním cookies.
-      </p>
-      <div className="flex items-center justify-center gap-2">
-        <Button onClick={handleAccept} size="sm" radius="full">
-          Přijmout
-        </Button>
-        <Button
-          onClick={handleDecline}
-          className="bg-blue-100 text-gray-900"
-          size="sm"
-          radius="full"
-        >
-          Odmítnout
-        </Button>
+      <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+        <p className="text-sm text-center sm:text-left m-0">
+          Používáme cookies, abychom vylepšili vaše zážitky.
+        </p>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <Button onClick={handleAccept} radius="full" className="min-h-11">
+            Přijmout
+          </Button>
+          <Button
+            onClick={handleDecline}
+            className="bg-blue-100 text-gray-900 min-h-11"
+            radius="full"
+          >
+            Odmítnout
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -68,15 +68,24 @@ const NavBar = () => {
           <NextLink href="/" onClick={handleLogoClick}>
             <Image
               src="/images/arbovert-logo.svg"
-              width={220}
-              height={76}
-              className="hover:cursor-pointer relative z-[9999] m-6"
+              width={180}
+              height={62}
+              className="hover:cursor-pointer relative z-[9999] my-4 ml-4 mr-2"
               alt="green logo arbovert"
             />
           </NextLink>
-          <HamburgerContainer>
-            <Hamburger toggle={() => setIsExpanded(!isExpanded)} isExpanded={isExpanded} />
-          </HamburgerContainer>
+          <div className="flex items-center">
+            <a
+              href="tel:+420739969933"
+              aria-label="Zavolejte nám: 739 969 933"
+              className="flex items-center justify-center min-w-11 min-h-11 rounded-full bg-emerald-700 text-white mr-3"
+            >
+              <FontAwesomeIcon icon={faPhone} className="w-5 h-5" />
+            </a>
+            <HamburgerContainer>
+              <Hamburger toggle={() => setIsExpanded(!isExpanded)} isExpanded={isExpanded} />
+            </HamburgerContainer>
+          </div>
         </StyledMobileNavBar>
       ) : (
         <StyledNavBar showBlur detached>
