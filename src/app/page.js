@@ -1,6 +1,5 @@
 "use client";
 
-import Script from 'next/script';
 import Welcome from '../components/Welcome';
 import Intro from '../components/Intro';
 import TrustSection from '../components/TrustSection';
@@ -130,19 +129,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-8GZ2HM5LBZ"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-8GZ2HM5LBZ');
-        `}
-      </Script>
       <Welcome />
       <Intro />
       <TrustSection />
