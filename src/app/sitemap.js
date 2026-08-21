@@ -11,11 +11,16 @@ export default function sitemap() {
     .sort()
     .at(-1);
 
-  const staticRoutes = ['', '/o-nas', '/sluzby', '/kontakt', '/gdpr'].map(
-    (path) => ({
-      url: `${BASE_URL}${path}`,
-    })
-  );
+  const staticRoutes = [
+    '',
+    '/o-nas',
+    '/sluzby',
+    '/kontakt',
+    '/gdpr',
+    '/kaceni-stromu-vimperk',
+  ].map((path) => ({
+    url: `${BASE_URL}${path}`,
+  }));
 
   const serviceRoutes = Object.keys(serviceContent).map((slug) => ({
     url: `${BASE_URL}/sluzby/${slug}`,
