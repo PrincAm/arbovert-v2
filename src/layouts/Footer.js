@@ -72,6 +72,9 @@ const Footer = () => (
             Arboristika Jižní Čechy
           </h3>
           <nav className="flex flex-col space-y-2">
+            <FooterLink href="/kaceni-stromu-vimperk">
+              Kácení stromů Vimperk
+            </FooterLink>
             <FooterLink href="/sluzby/rizikove-kaceni-stromu">
               Kácení stromů Šumava
             </FooterLink>
@@ -108,7 +111,9 @@ const Footer = () => (
       {/* Bottom bar */}
       <div className="mt-10 pt-6 border-t border-default-200 text-center">
         <p className="text-xs text-default-500">
-          © {new Date().getFullYear()} Arbovert s.r.o. - Profesionální kácení stromů a arboristika v Praze a na Šumavě. Certifikovaní arboristé od roku 2011.
+          © {new Date().getFullYear()} Arbovert s.r.o. - Profesionální kácení
+          stromů a arboristika v Praze a na Šumavě. Certifikovaní arboristé od
+          roku 2011.
         </p>
       </div>
     </div>
